@@ -1,0 +1,98 @@
+.iphone-exchange-main-container{
+    // background-color: orange;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    @keyframes phoneFromDownSideUp {
+        0%{
+            bottom: -100%;
+            left: 100%;
+            opacity: 0;
+        }
+        100%{
+            bottom: 24%;
+            left: 42%;
+            opacity: 1;
+        }
+        
+    }
+    @keyframes phoneFromUpSideDown {
+        0%{
+            bottom: 0%;
+            left: 10%;
+            opacity: 1;
+        }
+        100%{
+            bottom: -30%;
+            left: 30%;
+            opacity: 0;
+        }
+        
+    }
+
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        // background-color: #f8f2e6;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .img-div-style {
+            position: absolute;
+            // border:1px solid black ;
+            width: 17%;
+            height: 60%;
+            z-index: 1;
+            transition: 0.8s;
+        }
+
+        .img1-div {
+            @extend .img-div-style;
+            left: 10%;
+            bottom: 0%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .img2-div {
+            @extend .img-div-style;
+            left: 42%;
+            bottom: 0%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .img3-div {
+            @extend .img-div-style;
+            left: 74%;
+            bottom: 0%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+}

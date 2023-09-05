@@ -1,0 +1,289 @@
+.comp-three-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+
+    .content-container {
+        width: 100%;
+        height: 80%;
+        border-radius: 340px 0 0 340px;
+        // background-color: #ffffff;
+        // border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+
+        .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .phone-img {
+            position: absolute;
+            top: 46%;
+            left: 68%;
+            width: 28%;
+            height: 65%;
+            object-fit: contain;
+        }
+        .heading-div {
+            position: absolute;
+            top: 20%;
+            left: 45%;
+            width: 80%;
+            h1 {
+                .span1 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    border-bottom: 1px solid #ffffff;
+                }
+                .span2 {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    color: #ffffff;
+                    border-bottom: 1px solid #ffffff;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1536px  --------------------------------------
+
+@media only screen and (max-width: 1536px) {
+    .comp-three-main-container {
+        width: 100%;
+        height: 90%;
+        .content-container {
+            border-radius: 280px 0 0 280px;
+
+            .heading-div {
+                h1 {
+                    .span1 {
+                        font-size: 1.6rem;
+                    }
+                    .span2 {
+                        font-size: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1440px  --------------------------------------
+
+@media only screen and (max-width: 1440px) {
+    .comp-three-main-container {
+        .content-container {
+            border-radius: 260px 0 0 260px;
+
+            .heading-div {
+                h1 {
+                    .span1 {
+                        font-size: 1.5rem;
+                    }
+                    .span2 {
+                        font-size: 2.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1360px  --------------------------------------
+
+@media only screen and (max-width: 1360px) {
+    .comp-three-main-container {
+        .content-container {
+            border-radius: 240px 0 0 240px;
+
+            .heading-div {
+                h1 {
+                    .span1 {
+                        font-size: 1.4rem;
+                    }
+                    .span2 {
+                        font-size: 1.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1280px  --------------------------------------
+
+@media only screen and (max-width: 1280px) {
+    .comp-three-main-container {
+        .content-container {
+            border-radius: 240px 0 0 240px;
+
+            .heading-div {
+                h1 {
+                    .span1 {
+                        font-size: 1.3rem;
+                    }
+                    .span2 {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .comp-three-main-container {
+        width: 100%;
+        height: 85%;
+        .content-container {
+            border-radius: 240px 0 0 240px;
+
+            .heading-div {
+                h1 {
+                    .span1 {
+                        font-size: 1.2rem;
+                    }
+                    .span2 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .comp-three-main-container {
+        width: 100%;
+        height: 80%;
+        .content-container {
+            border-radius: 220px 0 0 220px;
+
+            .heading-div {
+                h1 {
+                    .span1 {
+                        font-size: 1.2rem;
+                    }
+                    .span2 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .comp-three-main-container {
+        width: 100%;
+        height: 100%;
+        .content-container {
+            border-radius: 150px 0 0 150px;
+
+            .heading-div {
+                h1 {
+                    line-height: 1.2rem;
+                    .span1 {
+                        font-size: 0.9rem;
+                    }
+                    .span2 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .comp-three-main-container {
+        width: 100%;
+        height: 105%;
+        .content-container {
+            border-radius: 140px 0 0 140px;
+
+            .heading-div {
+                h1 {
+                    line-height: 1.1rem;
+                    .span1 {
+                        font-size: 0.8rem;
+                    }
+                    .span2 {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .comp-three-main-container {
+        width: 100%;
+        height: 105%;
+        .content-container {
+            border-radius: 130px 0 0 130px;
+
+            .heading-div {
+                h1 {
+                    line-height: 1rem;
+                    .span1 {
+                        font-size: 0.7rem;
+                    }
+                    .span2 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .comp-three-main-container {
+        width: 100%;
+        height: 95%;
+        .content-container {
+            border-radius: 120px 0 0 120px;
+
+            .heading-div {
+                h1 {
+                    line-height: 0.9rem;
+                    .span1 {
+                        font-size: 0.65rem;
+                    }
+                    .span2 {
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,384 @@
+.video-marketing-comp-main-component {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .btn-style {
+        position: absolute;
+        bottom: 4%;
+        width: 6%;
+        height: 5%;
+        // background-color: bisque;
+
+        button {
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+            height: 100%;
+            border: none;
+            cursor: pointer;
+            color: #ff4d4d;
+            text-shadow: 1px 1px gray;
+            background-color: rgba(255, 117, 117, 0.11);
+            transition: 0.4s ease-in-out;
+            border-radius: 4px;
+            box-shadow: inset -0.5px -0.5px 5px #ff4d4d;
+
+            &:hover {
+                color: #ffffff;
+                text-shadow: 1px 1px gray;
+                // background-color: #ff4d4d;
+                box-shadow: 2px 2px 3px gray;
+                box-shadow: inset -5em 0em #ff4d4d;
+            }
+        }
+    }
+
+    .btn-one-div {
+        @extend .btn-style;
+        left: 5%;
+        button {
+            &:hover {
+                box-shadow: inset -5em 0em #ff4d4d;
+            }
+        }
+    }
+    .btn-two-div {
+        @extend .btn-style;
+        right: 5%;
+        button {
+            &:hover {
+                box-shadow: inset 5em 0em #ff4d4d;
+            }
+        }
+    }
+
+    .slider-div {
+        width: 90%;
+        height: 80%;
+        // border: 1px solid black;
+        margin-top: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .slides-div {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            // border: 1px solid black;
+            display: flex;
+
+            .img-div {
+                min-width: 100%;
+                height: 100%;
+                transition: 0.8s;
+                // background-color: blue;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .dot-container {
+        position: absolute;
+        bottom: 0%;
+        width: 40%;
+        height: 10%;
+        // background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .dot-button-div {
+            width: 40px;
+            height: 40px;
+            // margin: 0 20px;
+            box-sizing: content-box;
+            padding: 5px 20px;
+            // background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            button {
+                font-size: 0.95rem;
+                border-radius: 3.8px;
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 38px;
+                height: 38px;
+                padding: 4.8px 19px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            button {
+                font-size: 0.9rem;
+                border-radius: 3.6px;
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 36px;
+                height: 36px;
+                padding: 4.6px 18px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            button {
+                font-size: 0.85rem;
+                border-radius: 3.4px;
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 34px;
+                height: 34px;
+                padding: 4.4px 17px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            button {
+                font-size: 0.8rem;
+                border-radius: 3.2px;
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 32px;
+                height: 32px;
+                padding: 4.2px 16px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            button {
+                font-size: 0.75rem;
+                border-radius: 3px;
+                text-shadow: 0.5px 0.5px gray;
+
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 30px;
+                height: 30px;
+                padding: 4px 15px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            button {
+                font-size: 0.7rem;
+                border-radius: 2.8px;
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 28px;
+                height: 28px;
+                padding: 3.8px 14px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            button {
+                font-size: 0.65rem;
+                border-radius: 2.6px;
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 26px;
+                height: 26px;
+                padding: 3.6px 13px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            width: 8%;
+            height: 8%;
+            bottom: 1%;
+
+            button {
+                font-size: 0.65rem;
+                border-radius: 2.6px;
+
+                &:hover {
+                   
+                    box-shadow: 2px 2px 3px gray;
+                    box-shadow: inset -6em 0em #ff4d4d;
+                }
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 24px;
+                height: 24px;
+                padding: 3.4px 12px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            width: 8%;
+            height: 8%;
+            bottom: 1.5%;
+
+            button {
+                font-size: 0.6rem;
+                border-radius: 2.4px;
+
+                &:hover {
+                   
+                    box-shadow: 2px 2px 3px gray;
+                    box-shadow: inset -6em 0em #ff4d4d;
+                }
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 22px;
+                height: 22px;
+                padding: 3.2px 11px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            width: 8%;
+            height: 7%;
+            bottom: 4%;
+
+            button {
+                font-size: 0.55rem;
+                border-radius: 2.2px;
+
+                &:hover {
+                   
+                    box-shadow: 2px 2px 3px gray;
+                    box-shadow: inset -6em 0em #ff4d4d;
+                }
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 20px;
+                height: 20px;
+                padding: 3px 10px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .video-marketing-comp-main-component {
+        .btn-style {
+            width: 8%;
+            height: 6.5%;
+            bottom: 4%;
+
+            button {
+                font-size: 0.5rem;
+                border-radius: 2px;
+
+                &:hover {
+                   
+                    box-shadow: 2px 2px 3px gray;
+                    box-shadow: inset -6em 0em #ff4d4d;
+                }
+            }
+        }
+
+        .dot-container {
+            .dot-button-div {
+                width: 18px;
+                height: 18px;
+                padding: 2.8px 9px;
+            }
+        }
+    }
+}

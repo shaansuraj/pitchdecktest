@@ -1,0 +1,1274 @@
+.eleventhPD-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 95vh;
+    // margin-top: 2%;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    .heading {
+        position: absolute;
+        top: 5%;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        text-align: center;
+        text-shadow: 1px 1px #333;
+
+        span {
+            color: #ff4d4d;
+            font-weight: 600;
+        }
+    }
+
+    .pricing-details-div-style {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        // background-color: #333333;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1% 2%;
+        box-sizing: border-box;
+        transition: 0.5s;
+        display: flex;
+
+        .pricing-img-div {
+            position: relative;
+            width: 50%;
+            height: 48%;
+            display: flex;
+            // border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+
+            .pricing-img {
+                // position: absolute;
+                // top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            .cross-icon-div {
+                position: absolute;
+                cursor: pointer;
+                background-color: #ff4d4d;
+                border-radius: 50%;
+                z-index: 1;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .cross-icon {
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .pricing-details-div-one {
+        @extend .pricing-details-div-style;
+        justify-content: left;
+
+        .cross-icon-div {
+            left: 0%;
+            top: 0%;
+        }
+    }
+    .pricing-details-div-five {
+        @extend .pricing-details-div-style;
+        justify-content: left;
+        align-items: center;
+
+        .cross-icon-div {
+            left: 0%;
+            top: 0%;
+        }
+    }
+    .pricing-details-div-two {
+        @extend .pricing-details-div-style;
+        justify-content: right;
+
+        .cross-icon-div {
+            right: 0%;
+            top: 0%;
+        }
+    }
+    .pricing-details-div-three {
+        @extend .pricing-details-div-style;
+        justify-content: left;
+        align-items: flex-end;
+
+        .cross-icon-div {
+            left: 0%;
+            top: 0%;
+        }
+    }
+    .pricing-details-div-six {
+        @extend .pricing-details-div-style;
+        justify-content: right;
+        align-items: center;
+
+        .cross-icon-div {
+            right: 0%;
+            top: 0%;
+        }
+    }
+    .pricing-details-div-four {
+        @extend .pricing-details-div-style;
+        justify-content: right;
+        align-items: flex-end;
+
+        .cross-icon-div {
+            right: 0%;
+            top: 0%;
+        }
+    }
+
+    .shape-style {
+        position: absolute;
+        width: 4%;
+        height: 8%;
+        background-color: #ff4d4d;
+    }
+    .shape-one {
+        @extend .shape-style;
+        left: 0;
+        top: 0;
+        box-shadow: 2px 2px 2px gray;
+    }
+    .shape-two {
+        @extend .shape-style;
+        left: 0;
+        bottom: 0;
+        box-shadow: 2px -2px 2px gray;
+    }
+    .shape-three {
+        @extend .shape-style;
+        right: 0;
+        top: 0;
+        box-shadow: -2px 2px 2px gray;
+    }
+    .shape-four {
+        @extend .shape-style;
+        right: 0;
+        bottom: 0;
+        box-shadow: -2px -2px 2px gray;
+    }
+
+    .circle-div {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        // background-color: #ff4d4d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        transition: 0.2s;
+
+        .small-circle-div {
+            position: absolute;
+            width: 35%;
+            height: 35%;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+
+            .img-two {
+                width: 65%;
+                height: 65%;
+                object-fit: contain;
+            }
+        }
+        .image-style {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            // z-index: 0;
+            // cursor: pointer;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                object-fit: contain;
+            }
+        }
+        .img-div-one {
+            @extend .image-style;
+            left: -0.5%;
+            top: -0.5%;
+            // background-color: green;
+
+            img {
+                // top: -10%;
+                // left: -220%;
+                top: -85%;
+                left: -160%;
+                width: 300%;
+                height: 300%;
+                object-fit: contain;
+            }
+        }
+        .img-div-two {
+            @extend .image-style;
+            right: -0.5%;
+            top: -0.5%;
+            background-color: #ff4f4f;
+
+            img {
+                // top: 45%;
+                // left: 30%;
+                top: 1%;
+                left: 30%;
+                width: 110%;
+                height: 150%;
+                object-fit: contain;
+            }
+        }
+        .img-div-three {
+            @extend .image-style;
+            left: -0.5%;
+            bottom: -0.5%;
+            // background-color: brown;
+
+            img {
+                // top: -45%;
+                // left: -30%;
+                top: -55%;
+                left: -10%;
+                width: 160%;
+                height: 200%;
+                object-fit: contain;
+            }
+        }
+        .img-div-four {
+            @extend .image-style;
+            right: -0.5%;
+            bottom: -0.5%;
+            // background-color: orange;
+
+            img {
+                // top: -35%;
+                // left: -35%;
+                top: -66%;
+                left: -45%;
+                width: 200%;
+                height: 200%;
+                object-fit: contain;
+            }
+        }
+    }
+    .hr-line-style {
+        position: absolute;
+        width: 250px;
+        height: 100px;
+        z-index: -1;
+    }
+    .hrline-one {
+        @extend .hr-line-style;
+        top: 25%;
+        left: 24%;
+        border-top: 2px solid #ff4d4d;
+        border-right: 2px solid #ff4d4d;
+        transform: skew(35deg);
+    }
+    .hrline-five {
+        @extend .hr-line-style;
+        top: 51%;
+        left: 25%;
+        border-top: 2px solid #ff4d4d;
+        border-right: 2px solid #ff4d4d;
+        height: 1px;
+    }
+    .hrline-two {
+        @extend .hr-line-style;
+        top: 25%;
+        right: 24%;
+        border-top: 2px solid #ff4d4d;
+        border-left: 2px solid #ff4d4d;
+        transform: skew(-35deg);
+    }
+    .hrline-three {
+        @extend .hr-line-style;
+        bottom: 25%;
+        left: 24%;
+        border-bottom: 2px solid #ff4d4d;
+        border-right: 2px solid #ff4d4d;
+        transform: skew(-35deg);
+    }
+    .hrline-six {
+        @extend .hr-line-style;
+        top: 51%;
+        right: 25%;
+        border-top: 2px solid #ff4d4d;
+        border-left: 2px solid #ff4d4d;
+        height: 1px;
+    }
+    .hrline-four {
+        @extend .hr-line-style;
+        bottom: 25%;
+        right: 24%;
+        border-bottom: 2px solid #ff4d4d;
+        border-left: 2px solid #ff4d4d;
+        transform: skew(35deg);
+    }
+
+    .property-para-style {
+        position: absolute;
+        width: auto;
+        z-index: 0;
+        p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            span {
+                font-size: 1.8rem;
+                color: #ff4d4d;
+                font-weight: 500;
+            }
+        }
+        .price-chart-btn-style {
+            position: absolute;
+            background-color: #333;
+            width: 150px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            border-radius: 5px;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                box-shadow: 3px 3px 2px gray;
+            }
+
+            .price-chart-btn {
+                font-size: 1.2rem;
+                color: #ffffff;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    margin: 0 0 -30% 20%;
+                    font-size: 1.5rem;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    @keyframes priceChart-keyframe {
+        0% {
+            padding-bottom: 0%;
+        }
+        60% {
+            padding-bottom: 8%;
+            color: #ff4d4d;
+        }
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+    @keyframes tapIcon-KeyFrame {
+        0% {
+            padding-bottom: 0%;
+        }
+        60% {
+            padding-bottom: 20%;
+        }
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+
+    .property-para-one {
+        @extend .property-para-style;
+        top: 15%;
+        left: 12%;
+
+        .price-chart-btn-div {
+            @extend .price-chart-btn-style;
+            left: 0;
+            top: 100%;
+        }
+    }
+    .property-para-five {
+        @extend .property-para-style;
+        top: 45%;
+        left: 12%;
+
+        .price-chart-btn-div {
+            @extend .price-chart-btn-style;
+            left: 0;
+            top: 100%;
+        }
+    }
+    .property-para-two {
+        @extend .property-para-style;
+        top: 15%;
+        right: 8%;
+        .price-chart-btn-div {
+            @extend .price-chart-btn-style;
+            right: 0;
+            top: 100%;
+        }
+    }
+
+    .property-para-three {
+        @extend .property-para-style;
+        bottom: 15%;
+        left: 12%;
+        .price-chart-btn-div {
+            @extend .price-chart-btn-style;
+            left: 0;
+            top: 100%;
+        }
+    }
+    .property-para-six {
+        @extend .property-para-style;
+        top: 45%;
+        right: 8%;
+        .price-chart-btn-div {
+            @extend .price-chart-btn-style;
+            right: 0;
+            top: 100%;
+        }
+    }
+    .property-para-four {
+        @extend .property-para-style;
+        bottom: 15%;
+        right: 8%;
+
+        .price-chart-btn-div {
+            @extend .price-chart-btn-style;
+            right: 0;
+            top: 100%;
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .eleventhPD-comp-main-container {
+        // height: 800px;
+
+        .heading {
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+        }
+
+        .circle-div {
+            width: 390px;
+            height: 390px;
+        }
+        .hr-line-style {
+            width: 230px;
+            height: 90px;
+        }
+        .hrline-one {
+            border-top: 2px solid #ff4d4d;
+            border-right: 2px solid #ff4d4d;
+        }
+        .hrline-five {
+            height: 1px;
+            border-top: 2px solid #ff4d4d;
+            border-right: 2px solid #ff4d4d;
+        }
+        .hrline-two {
+            border-top: 2px solid #ff4d4d;
+            border-left: 2px solid #ff4d4d;
+        }
+        .hrline-three {
+            border-bottom: 2px solid #ff4d4d;
+            border-right: 2px solid #ff4d4d;
+        }
+        .hrline-six {
+            height: 1px;
+            border-top: 2px solid #ff4d4d;
+            border-right: 2px solid #ff4d4d;
+        }
+
+        .hrline-four {
+            border-bottom: 2px solid #ff4d4d;
+            border-left: 2px solid #ff4d4d;
+        }
+
+        .property-para-style {
+            p {
+                font-size: 1.45rem;
+                span {
+                    font-size: 1.7rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 140px;
+                height: 38px;
+
+                .price-chart-btn {
+                    font-size: 1.15rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .eleventhPD-comp-main-container {
+        // height: 750px;
+
+        .heading {
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+        }
+
+        .circle-div {
+            width: 380px;
+            height: 380px;
+        }
+
+        .hr-line-style {
+            width: 210px;
+            height: 80px;
+        }
+        .hrline-one {
+            border-top: 2px solid #ff4d4d;
+            border-right: 2px solid #ff4d4d;
+        }
+        .hrline-five {
+            height: 1px;
+            border-top: 2px solid #ff4d4d;
+            border-right: 2px solid #ff4d4d;
+        }
+        .hrline-two {
+            border-top: 2px solid #ff4d4d;
+            border-left: 2px solid #ff4d4d;
+        }
+        .hrline-three {
+            border-bottom: 2px solid #ff4d4d;
+            border-right: 2px solid #ff4d4d;
+        }
+        .hrline-six {
+            height: 1px;
+            border-top: 2px solid #ff4d4d;
+            border-right: 2px solid #ff4d4d;
+        }
+        .hrline-four {
+            border-bottom: 2px solid #ff4d4d;
+            border-left: 2px solid #ff4d4d;
+        }
+
+        .property-para-style {
+            p {
+                font-size: 1.4rem;
+                span {
+                    font-size: 1.65rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 130px;
+                height: 36px;
+
+                .price-chart-btn {
+                    font-size: 1.1rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .eleventhPD-comp-main-container {
+        // height: 700px;
+
+        .heading {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+        }
+
+        .circle-div {
+            width: 370px;
+            height: 370px;
+        }
+        .hr-line-style {
+            width: 190px;
+            height: 70px;
+        }
+        .hrline-one {
+            border-top: 1.5px solid #ff4d4d;
+            border-right: 1.5px solid #ff4d4d;
+        }
+        .hrline-five {
+            height: 1px;
+            border-top: 1.5px solid #ff4d4d;
+            border-right: 1.5px solid #ff4d4d;
+        }
+        .hrline-two {
+            border-top: 1.5px solid #ff4d4d;
+            border-left: 1.5px solid #ff4d4d;
+        }
+        .hrline-three {
+            border-bottom: 1.5px solid #ff4d4d;
+            border-right: 1.5px solid #ff4d4d;
+        }
+        .hrline-six {
+            height: 1px;
+            border-top: 1.5px solid #ff4d4d;
+            border-right: 1.5px solid #ff4d4d;
+        }
+        .hrline-four {
+            border-bottom: 1.5px solid #ff4d4d;
+            border-left: 1.5px solid #ff4d4d;
+        }
+
+        .property-para-style {
+            p {
+                font-size: 1.35rem;
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 120px;
+                height: 34px;
+
+                .price-chart-btn {
+                    font-size: 1.05rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .eleventhPD-comp-main-container {
+        // height: 650px;
+
+        .heading {
+            font-size: 2.1rem;
+            line-height: 2.1rem;
+        }
+
+        .circle-div {
+            width: 360px;
+            height: 360px;
+        }
+        .hr-line-style {
+            width: 180px;
+            height: 65px;
+        }
+        .hrline-one {
+            border-top: 1.5px solid #ff4d4d;
+            border-right: 1.5px solid #ff4d4d;
+        }
+        .hrline-five {
+            height: 1px;
+            border-top: 1.5px solid #ff4d4d;
+            border-right: 1.5px solid #ff4d4d;
+        }
+        .hrline-two {
+            border-top: 1.5px solid #ff4d4d;
+            border-left: 1.5px solid #ff4d4d;
+        }
+        .hrline-three {
+            border-bottom: 1.5px solid #ff4d4d;
+            border-right: 1.5px solid #ff4d4d;
+        }
+        .hrline-six {
+            height: 1px;
+            border-top: 1.5px solid #ff4d4d;
+            border-right: 1.5px solid #ff4d4d;
+        }
+        .hrline-four {
+            border-bottom: 1.5px solid #ff4d4d;
+            border-left: 1.5px solid #ff4d4d;
+        }
+
+        .property-para-style {
+            p {
+                font-size: 1.3rem;
+                span {
+                    font-size: 1.55rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 110px;
+                height: 32px;
+
+                .price-chart-btn {
+                    font-size: 0.95rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .eleventhPD-comp-main-container {
+        // height: 600px;
+
+        .heading {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        .circle-div {
+            width: 350px;
+            height: 350px;
+        }
+        .hr-line-style {
+            width: 170px;
+            height: 60px;
+        }
+        .hrline-one {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+        }
+        .hrline-five {
+            height: 1px;
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+        }
+        .hrline-two {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+        }
+        .hrline-three {
+            border-bottom: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+        }
+        .hrline-six {
+            height: 1px;
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+        }
+        .hrline-four {
+            border-bottom: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+        }
+
+        .property-para-style {
+            p {
+                font-size: 1.25rem;
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 100px;
+                height: 30px;
+                border-radius: 4px;
+
+                .price-chart-btn {
+                    font-size: 0.9rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .eleventhPD-comp-main-container {
+        .pricing-details-div-one {
+            .cross-icon-div {
+                left: 0%;
+                top: 4%;
+            }
+        }
+        .pricing-details-div-two {
+            .cross-icon-div {
+                right: 0%;
+                top: 4%;
+            }
+        }
+        .pricing-details-div-three {
+            .cross-icon-div {
+                left: 0%;
+                top: 4%;
+            }
+        }
+        .pricing-details-div-four {
+            .cross-icon-div {
+                right: 0%;
+                top: 4%;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .eleventhPD-comp-main-container {
+        .heading {
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+        }
+
+        .hr-line-style {
+            width: 120px;
+            height: 30px;
+        }
+        .hrline-one {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            top: 30%;
+            left: 25%;
+        }
+        .hrline-five {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            height: 1px;
+            left: 25%;
+        }
+        .hrline-two {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            top: 30%;
+            right: 25%;
+        }
+        .hrline-three {
+            border-bottom: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            bottom: 30%;
+            left: 25%;
+        }
+        .hrline-six {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            height: 1px;
+            right: 25%;
+        }
+        .hrline-four {
+            border-bottom: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            bottom: 30%;
+            right: 25%;
+        }
+
+        //---------------------------
+        .circle-div {
+            width: 240px;
+            height: 240px;
+        }
+        //---------------------------
+
+        .property-para-style {
+            p {
+                font-size: 0.9rem;
+                span {
+                    font-size: 1.1rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 90px;
+                height: 25px;
+                border-radius: 3px;
+
+                .price-chart-btn {
+                    font-size: 0.8rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+        .property-para-four {
+            bottom: 8%;
+            right: 8%;
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .eleventhPD-comp-main-container {
+        .heading {
+            font-size: 1.3rem;
+            line-height: 1.4rem;
+        }
+
+        .hr-line-style {
+            width: 115px;
+            height: 30px;
+        }
+        .hrline-one {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            top: 30%;
+            left: 25%;
+        }
+        .hrline-five {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            height: 1px;
+            left: 25%;
+        }
+        .hrline-two {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            top: 30%;
+            right: 25%;
+        }
+        .hrline-three {
+            border-bottom: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            bottom: 30%;
+            left: 25%;
+        }
+        .hrline-six {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            height: 1px;
+            right: 25%;
+        }
+        .hrline-four {
+            border-bottom: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            bottom: 30%;
+            right: 25%;
+        }
+
+        //---------------------------
+        .circle-div {
+            width: 210px;
+            height: 210px;
+        }
+        //---------------------------
+
+        .property-para-style {
+            p {
+                font-size: 0.8rem;
+                span {
+                    font-size: 1rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 90px;
+                height: 25px;
+
+                .price-chart-btn {
+                    font-size: 0.75rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .property-para-four {
+            bottom: 8%;
+            right: 8%;
+        }
+    }
+}
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .eleventhPD-comp-main-container {
+        .heading {
+            font-size: 1.2rem;
+            line-height: 1.3rem;
+        }
+
+        .hr-line-style {
+            width: 90px;
+            height: 25px;
+        }
+        .hrline-one {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            top: 30%;
+            left: 25%;
+        }
+        .hrline-five {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            height: 1px;
+            left: 25%;
+        }
+        .hrline-two {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            top: 30%;
+            right: 25%;
+        }
+        .hrline-three {
+            border-bottom: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            bottom: 30%;
+            left: 25%;
+        }
+        .hrline-six {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            height: 1px;
+            right: 25%;
+        }
+        .hrline-four {
+            border-bottom: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            bottom: 30%;
+            right: 25%;
+        }
+
+        //---------------------------
+        .circle-div {
+            width: 210px;
+            height: 210px;
+        }
+        //---------------------------
+
+        .property-para-style {
+            p {
+                font-size: 0.7rem;
+                span {
+                    font-size: 0.9rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 85px;
+                height: 25px;
+
+                .price-chart-btn {
+                    font-size: 0.7rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+        .property-para-four {
+            bottom: 8%;
+            right: 8%;
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .eleventhPD-comp-main-container {
+        .heading {
+            font-size: 1.1rem;
+            line-height: 1.2rem;
+        }
+
+        .hr-line-style {
+            width: 90px;
+            height: 20px;
+        }
+        .hrline-one {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            top: 30%;
+            left: 25%;
+        }
+        .hrline-five {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            height: 1px;
+            left: 25%;
+        }
+        .hrline-two {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            top: 30%;
+            right: 25%;
+        }
+        .hrline-three {
+            border-bottom: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            bottom: 30%;
+            left: 25%;
+        }
+        .hrline-six {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            height: 1px;
+            right: 25%;
+        }
+        .hrline-four {
+            border-bottom: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            bottom: 30%;
+            right: 25%;
+        }
+
+        //---------------------------
+        .circle-div {
+            width: 190px;
+            height: 190px;
+        }
+        //---------------------------
+
+        .property-para-style {
+            p {
+                font-size: 0.7rem;
+                span {
+                    font-size: 0.9rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 85px;
+                height: 25px;
+
+                .price-chart-btn {
+                    font-size: 0.7rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .property-para-four {
+            bottom: 8%;
+            right: 8%;
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .eleventhPD-comp-main-container {
+        .heading {
+            font-size: 1rem;
+            line-height: 1.1rem;
+        }
+
+        .hr-line-style {
+            width: 75px;
+            height: 20px;
+        }
+        .hrline-one {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            top: 30%;
+            left: 25%;
+        }
+        .hrline-five {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            height: 1px;
+            left: 25%;
+        }
+        .hrline-two {
+            border-top: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            top: 30%;
+            right: 25%;
+        }
+        .hrline-three {
+            border-bottom: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            bottom: 30%;
+            left: 25%;
+        }
+        .hrline-six {
+            border-top: 1px solid #ff4d4d;
+            border-right: 1px solid #ff4d4d;
+            height: 1px;
+            right: 25%;
+        }
+        .hrline-four {
+            border-bottom: 1px solid #ff4d4d;
+            border-left: 1px solid #ff4d4d;
+            bottom: 30%;
+            right: 25%;
+        }
+
+        //---------------------------
+        .circle-div {
+            width: 170px;
+            height: 170px;
+        }
+        //---------------------------
+
+        .property-para-style {
+            p {
+                font-size: 0.65rem;
+                span {
+                    font-size: 0.85rem;
+                }
+            }
+            .price-chart-btn-style {
+                width: 80px;
+                height: 20px;
+
+                .price-chart-btn {
+                    font-size: 0.65rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+        .property-para-four {
+            bottom: 8%;
+            right: 8%;
+        }
+    }
+}

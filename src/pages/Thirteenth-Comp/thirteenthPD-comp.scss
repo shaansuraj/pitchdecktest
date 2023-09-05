@@ -1,0 +1,1643 @@
+.thirteenthPD-comp-main-container {
+    width: 100%;
+    height: 95vh;
+    // height: 850px;
+    // border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+
+    .hidden-hover-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+    }
+
+    .heading-div {
+        width: 15%;
+        height: 10%;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        // border: 1px solid black;
+        display: flex;
+
+        .shape1-div {
+            width: 20%;
+            height: 100%;
+            background-color: #ff4d4d;
+        }
+
+        h1 {
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: #333333;
+            line-height: 2rem;
+        }
+    }
+
+    .funding-request-div {
+        position: absolute;
+        top: 27%;
+        z-index: 1;
+        // border: 1px solid black;
+        width: 22%;
+        height: 54%;
+        border-radius: 0 30px 30px 0;
+        background-color: #ff4d4d;
+
+        .hr-line-div {
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            z-index: 2;
+            width: 12%;
+            height: 85%;
+            border-left: 1px solid #ffffff;
+            border-top: 1px solid #ffffff;
+            border-radius: 20px 0 0 0;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-shadow: 1px 2px #333333;
+            color: #ffffff;
+            position: absolute;
+            left: 18%;
+            top: 10%;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 2px #333333;
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            display: inline-block;
+            padding-bottom: 2%;
+            position: absolute;
+            left: 18%;
+            top: 36%;
+
+            span {
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
+        }
+
+        .amount-div {
+            width: 40%;
+            height: 20%;
+            background-color: #ffffff;
+            position: absolute;
+            right: -5%;
+            top: 35%;
+            box-shadow: 0px 2px 3px gray;
+            border-radius: 10px 0 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .para1,
+            .para2,
+            .para3 {
+                text-shadow: 1px 1px gray;
+                color: #ff4d4d;
+            }
+            .para1 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #333333;
+                margin: 0 2% 10% 0;
+            }
+            .para2 {
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: #ff4d4d;
+            }
+            .para3 {
+                font-size: 1.5rem;
+                margin-top: 10%;
+                color: #333333;
+            }
+        }
+    }
+    .use-of-funds-div {
+        position: absolute;
+        top: 5%;
+        right: 0;
+        z-index: 0;
+        // border: 1px solid black;
+        width: 82%;
+        height: 90%;
+        border-radius: 20px;
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .property-name-style {
+            position: absolute;
+            width: 15%;
+            height: 5%;
+            // border: 1px solid black;
+            display: flex;
+            align-items: flex-end;
+            gap: 5%;
+            .shape {
+                width: 10%;
+                height: 100%;
+            }
+            p {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #333333;
+            }
+        }
+
+        .propertyOne-name-div {
+            @extend .property-name-style;
+            top: 22%;
+            left: 23%;
+            .shape {
+                background-color: #ff62e8;
+            }
+        }
+        .propertyTwo-name-div {
+            @extend .property-name-style;
+            top: 42%;
+            left: 20%;
+            .shape {
+                background-color: #0fedd2;
+            }
+        }
+        .propertyThree-name-div {
+            @extend .property-name-style;
+            top: 68%;
+            left: 20%;
+            .shape {
+                background-color: #ffd23b;
+            }
+        }
+        .propertyFour-name-div {
+            @extend .property-name-style;
+            top: 15%;
+            right: 15%;
+            .shape {
+                background-color: #f46d1c;
+            }
+        }
+        .propertyFive-name-div {
+            @extend .property-name-style;
+            top: 72%;
+            right: 10%;
+            .shape {
+                background-color: #2f72c3;
+            }
+        }
+
+        .propertyOne-hr {
+            position: absolute;
+            top: 26%;
+            left: 34%;
+            width: 50px;
+            height: 60px;
+            border-top: 1px solid #43fde7;
+            border-right: 1px solid #43fde7;
+            transform: skew(45deg);
+        }
+        .propertyTwo-hr {
+            position: absolute;
+            top: 45%;
+            left: 30%;
+            width: 50px;
+            height: 30px;
+            border-top: 1px solid #43fde7;
+            border-right: 1px solid #43fde7;
+            transform: skew(65deg);
+        }
+        .propertyThree-hr {
+            position: absolute;
+            top: 65%;
+            left: 32%;
+            width: 60px;
+            height: 50px;
+            border-bottom: 1px solid #43fde7;
+            border-right: 1px solid #43fde7;
+            transform: skew(-55deg);
+        }
+        .propertyFour-hr {
+            position: absolute;
+            top: 18%;
+            right: 34%;
+            width: 250px;
+            height: 55px;
+            border-top: 1px solid #43fde7;
+            border-left: 1px solid #43fde7;
+            transform: skew(-25deg);
+        }
+        .propertyFive-hr {
+            position: absolute;
+            top: 68%;
+            right: 28%;
+            width: 150px;
+            height: 50px;
+            border-bottom: 1px solid #43fde7;
+            border-left: 1px solid #43fde7;
+            transform: skew(35deg);
+        }
+        .hr-line-2-div {
+            position: absolute;
+            left: 2%;
+            top: 5%;
+            width: 40%;
+            height: 30%;
+            border-top: 1px solid #707070;
+            border-left: 1px solid #707070;
+            border-top-left-radius: 20px;
+        }
+        .heading-two-div {
+            width: auto;
+            height: auto;
+            position: absolute;
+            left: 40%;
+            top: 2%;
+            background-color: #f6f6f6;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                color: #333333;
+                span {
+                    color: #ff4d4d;
+                }
+            }
+        }
+
+        .circle-div {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            // background-color: #ff4d4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+
+            .img-one {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 0;
+            }
+
+            .small-circle-div {
+                position: absolute;
+                width: 35%;
+                height: 35%;
+                border-radius: 50%;
+                background-color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+
+                .img-two {
+                    width: 50%;
+                    height: 50%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 2.4rem;
+                line-height: 1.9rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 29px 29px 0;
+
+            .hr-line-div {
+                border-radius: 19px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.7rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+
+                span {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 9px 0 0 9px;
+
+                .para1 {
+                    font-size: 1.3rem;
+                }
+                .para2 {
+                    font-size: 2.4rem;
+                }
+                .para3 {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 19px;
+
+            .property-name-style {
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 26%;
+                left: 34%;
+                width: 50px;
+                height: 60px;
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 30%;
+                width: 50px;
+                height: 30px;
+            }
+            .propertyThree-hr {
+                top: 65%;
+                left: 32%;
+                width: 60px;
+                height: 50px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 250px;
+                height: 58px;
+            }
+            .propertyFive-hr {
+                top: 68%;
+                right: 28%;
+                width: 150px;
+                height: 55px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .circle-div {
+                width: 390px;
+                height: 390px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 2.3rem;
+                line-height: 1.8rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 28px 28px 0;
+
+            .hr-line-div {
+                border-radius: 18px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.35rem;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 9px 0 0 9px;
+
+                .para1 {
+                    font-size: 1.25rem;
+                }
+                .para2 {
+                    font-size: 2.3rem;
+                }
+                .para3 {
+                    font-size: 1.35rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 19px;
+
+            .property-name-style {
+                p {
+                    font-size: 1.25rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 26%;
+                left: 34%;
+                width: 50px;
+                height: 60px;
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 30%;
+                width: 50px;
+                height: 30px;
+            }
+            .propertyThree-hr {
+                top: 65%;
+                left: 32%;
+                width: 60px;
+                height: 50px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 250px;
+                height: 58px;
+            }
+            .propertyFive-hr {
+                top: 68%;
+                right: 28%;
+                width: 150px;
+                height: 55px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .circle-div {
+                width: 380px;
+                height: 380px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 2.2rem;
+                line-height: 1.7rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 27px 27px 0;
+
+            .hr-line-div {
+                border-radius: 17px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 9px 0 0 9px;
+
+                .para1 {
+                    font-size: 1.2rem;
+                }
+                .para2 {
+                    font-size: 2.2rem;
+                }
+                .para3 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 18px;
+
+            .property-name-style {
+                p {
+                    font-size: 1.15rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 26%;
+                left: 34%;
+                width: 50px;
+                height: 60px;
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 30%;
+                width: 50px;
+                height: 30px;
+            }
+            .propertyThree-hr {
+                top: 65%;
+                left: 32%;
+                width: 60px;
+                height: 50px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 250px;
+                height: 58px;
+            }
+            .propertyFive-hr {
+                top: 68%;
+                right: 28%;
+                width: 150px;
+                height: 55px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .circle-div {
+                width: 370px;
+                height: 370px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 2.1rem;
+                line-height: 1.6rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 26px 26px 0;
+
+            .hr-line-div {
+                border-radius: 16px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.45rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+
+                span {
+                    font-size: 1.45rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 9px 0 0 9px;
+
+                .para1 {
+                    font-size: 1.15rem;
+                }
+                .para2 {
+                    font-size: 2.1rem;
+                }
+                .para3 {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 17px;
+
+            .property-name-style {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 26%;
+                left: 34%;
+                width: 50px;
+                height: 60px;
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 30%;
+                width: 50px;
+                height: 30px;
+            }
+            .propertyThree-hr {
+                top: 65%;
+                left: 32%;
+                width: 60px;
+                height: 50px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 250px;
+                height: 58px;
+            }
+            .propertyFive-hr {
+                top: 68%;
+                right: 28%;
+                width: 150px;
+                height: 55px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .circle-div {
+                width: 360px;
+                height: 360px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 2rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 25px 25px 0;
+
+            .hr-line-div {
+                border-radius: 15px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 8px 0 0 8px;
+
+                .para1 {
+                    font-size: 1.1rem;
+                }
+                .para2 {
+                    font-size: 2rem;
+                }
+                .para3 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 17px;
+
+            .property-name-style {
+                p {
+                    font-size: 1.05rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 25.5%;
+                left: 35%;
+                width: 30px;
+                height: 65px;
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 30.5%;
+                width: 30px;
+                height: 30px;
+            }
+            .propertyThree-hr {
+                top: 64%;
+                left: 32%;
+                width: 40px;
+                height: 50px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 200px;
+                height: 58px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 28%;
+                width: 135px;
+                height: 40px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.45rem;
+                }
+            }
+
+            .circle-div {
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.9rem;
+                line-height: 1.45rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 24px 24px 0;
+
+            .hr-line-div {
+                border-radius: 14px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.35rem;
+            }
+            h2 {
+                font-size: 1.15rem;
+
+                span {
+                    font-size: 1.35rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 8px 0 0 8px;
+
+                .para1 {
+                    font-size: 1.05rem;
+                }
+                .para2 {
+                    font-size: 1.9rem;
+                }
+                .para3 {
+                    font-size: 1.15rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 16px;
+
+            .property-name-style {
+                p {
+                    font-size: 1rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 25.5%;
+                left: 35%;
+                width: 30px;
+                height: 65px;
+                transform: skew(35deg);
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 30.5%;
+                width: 30px;
+                height: 30px;
+            }
+            .propertyThree-hr {
+                top: 64%;
+                left: 32%;
+                width: 40px;
+                height: 50px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 190px;
+                height: 65px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 28%;
+                width: 135px;
+                height: 40px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .circle-div {
+                width: 340px;
+                height: 340px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.8rem;
+                line-height: 1.4rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 23px 23px 0;
+
+            .hr-line-div {
+                border-radius: 13px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+
+                span {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 8px 0 0 8px;
+
+                .para1 {
+                    font-size: 1rem;
+                }
+                .para2 {
+                    font-size: 1.8rem;
+                }
+                .para3 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 16px;
+
+            .property-name-style {
+                p {
+                    font-size: 0.95rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 25.5%;
+                left: 35%;
+                width: 30px;
+                height: 65px;
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 30.5%;
+                width: 30px;
+                height: 30px;
+            }
+            .propertyThree-hr {
+                top: 64%;
+                left: 32%;
+                width: 40px;
+                height: 50px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 180px;
+                height: 70px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 28%;
+                width: 135px;
+                height: 40px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.35rem;
+                }
+            }
+
+            .circle-div {
+                width: 330px;
+                height: 330px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1080px  --------------------------------------
+
+@media only screen and (max-width: 1080px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.7rem;
+                line-height: 1.35rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 22px 22px 0;
+
+            .hr-line-div {
+                border-radius: 12px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.25rem;
+                text-shadow: 1px 1px #333;
+            }
+            h2 {
+                font-size: 1.05rem;
+                text-shadow: 1px 1px #333;
+                span {
+                    font-size: 1.25rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 7px 0 0 7px;
+
+                .para1 {
+                    font-size: 0.95rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .para2 {
+                    font-size: 1.7rem;
+                }
+                .para3 {
+                    font-size: 1.05rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 15px;
+
+            .property-name-style {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 25.5%;
+                left: 34%;
+                width: 20px;
+                height: 65px;
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 30.5%;
+                width: 20px;
+                height: 30px;
+            }
+            .propertyThree-hr {
+                top: 64%;
+                left: 32%;
+                width: 20px;
+                height: 50px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 170px;
+                height: 70px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 28%;
+                width: 135px;
+                height: 40px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.35rem;
+                }
+            }
+
+            .circle-div {
+                width: 320px;
+                height: 320px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.6rem;
+                line-height: 1.3rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 21px 21px 0;
+
+            .hr-line-div {
+                border-radius: 11px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1.15rem;
+            }
+            h2 {
+                font-size: 1rem;
+
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 6px 0 0 6px;
+
+                .para1 {
+                    font-size: 0.9rem;
+                }
+                .para2 {
+                    font-size: 1.6rem;
+                }
+                .para3 {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 14px;
+
+            .property-name-style {
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 24.5%;
+                left: 35%;
+                width: 40px;
+                height: 65px;
+            }
+            .propertyTwo-hr {
+                top: 44%;
+                left: 31%;
+                width: 30px;
+                height: 20px;
+            }
+            .propertyThree-hr {
+                top: 62%;
+                left: 31.5%;
+                width: 40px;
+                height: 30px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33%;
+                width: 155px;
+                height: 70px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 27%;
+                width: 110px;
+                height: 20px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .circle-div {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.25rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 20px 20px 0;
+
+            .hr-line-div {
+                border-radius: 10px 0 0 0;
+            }
+
+            h1 {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 0.9rem;
+
+                span {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 6px 0 0 6px;
+
+                .para1 {
+                    font-size: 0.8rem;
+                }
+                .para2 {
+                    font-size: 1.4rem;
+                }
+                .para3 {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 13px;
+
+            .property-name-style {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 24.5%;
+                left: 36%;
+                width: 30px;
+                height: 65px;
+            }
+            .propertyTwo-hr {
+                top: 44%;
+                left: 31.5%;
+                width: 25px;
+                height: 20px;
+            }
+            .propertyThree-hr {
+                top: 62.5%;
+                left: 32%;
+                width: 40px;
+                height: 25px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33.5%;
+                width: 145px;
+                height: 70px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 27%;
+                width: 110px;
+                height: 20px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.25rem;
+                }
+            }
+
+            .circle-div {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.4rem;
+                line-height: 1.2rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 19px 19px 0;
+
+            .hr-line-div {
+                border-radius: 9px 0 0 0;
+            }
+
+            h1 {
+                font-size: 0.95rem;
+            }
+            h2 {
+                font-size: 0.85rem;
+
+                span {
+                    font-size: 1.05rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 6px 0 0 6px;
+
+                .para1 {
+                    font-size: 0.75rem;
+                }
+                .para2 {
+                    font-size: 1.35rem;
+                }
+                .para3 {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 12px;
+
+            .property-name-style {
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 24.5%;
+                left: 36%;
+                width: 30px;
+                height: 65px;
+            }
+            .propertyTwo-hr {
+                top: 44%;
+                left: 31.5%;
+                width: 25px;
+                height: 15px;
+            }
+            .propertyThree-hr {
+                top: 62.5%;
+                left: 32%;
+                width: 40px;
+                height: 25px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33.5%;
+                width: 130px;
+                height: 70px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 27%;
+                width: 100px;
+                height: 15px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .circle-div {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.3rem;
+                line-height: 1.1rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 18px 18px 0;
+
+            .hr-line-div {
+                border-radius: 8px 0 0 0;
+            }
+
+            h1 {
+                font-size: 0.9rem;
+            }
+            h2 {
+                font-size: 0.8rem;
+
+                span {
+                    font-size: 1rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 5px 0 0 5px;
+
+                .para1 {
+                    font-size: 0.7rem;
+                }
+                .para2 {
+                    font-size: 1.3rem;
+                }
+                .para3 {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 11px;
+
+            .property-name-style {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 24.5%;
+                left: 36%;
+                width: 30px;
+                height: 65px;
+            }
+            .propertyTwo-hr {
+                top: 44%;
+                left: 31.5%;
+                width: 25px;
+                height: 15px;
+            }
+            .propertyThree-hr {
+                top: 62.5%;
+                left: 32%;
+                width: 40px;
+                height: 25px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33.5%;
+                width: 130px;
+                height: 70px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 27%;
+                width: 100px;
+                height: 15px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.15rem;
+                }
+            }
+
+            .circle-div {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .thirteenthPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.1rem;
+                line-height: 1rem;
+            }
+        }
+
+        .funding-request-div {
+            border-radius: 0 16px 16px 0;
+
+            .hr-line-div {
+                border-radius: 6px 0 0 0;
+            }
+
+            h1 {
+                font-size: 0.8rem;
+            }
+            h2 {
+                font-size: 0.7rem;
+
+                span {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .amount-div {
+                border-radius: 5px 0 0 5px;
+
+                .para1 {
+                    font-size: 0.6rem;
+                }
+                .para2 {
+                    font-size: 1.2rem;
+                }
+                .para3 {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .use-of-funds-div {
+            border-radius: 9px;
+
+            .property-name-style {
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+            //-------------------------
+
+            .propertyOne-hr {
+                top: 24.5%;
+                left: 36%;
+                width: 30px;
+                height: 65px;
+            }
+            .propertyTwo-hr {
+                top: 45%;
+                left: 31%;
+                width: 20px;
+                height: 15px;
+            }
+            .propertyThree-hr {
+                top: 63%;
+                left: 32%;
+                width: 40px;
+                height: 25px;
+            }
+            .propertyFour-hr {
+                top: 18%;
+                right: 33.5%;
+                width: 110px;
+                height: 70px;
+            }
+            .propertyFive-hr {
+                top: 70%;
+                right: 27%;
+                width: 75px;
+                height: 15px;
+            }
+            //--------------------------
+
+            .heading-two-div {
+                h1 {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .circle-div {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+}

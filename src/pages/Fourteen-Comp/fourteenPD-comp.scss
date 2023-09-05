@@ -1,0 +1,1118 @@
+.fourteenPD-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 95vh;
+    // border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    .linked-in-div-style {
+        position: absolute;
+        // z-index: 1;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #ffffff;
+
+        a {
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .linked-in-img-div1 {
+        @extend .linked-in-div-style;
+        top: 26%;
+        left: 28.5%;
+    }
+
+    .linked-in-img-div2 {
+        @extend .linked-in-div-style;
+        top: 47%;
+        left: 40.5%;
+    }
+    .linked-in-img-div3 {
+        @extend .linked-in-div-style;
+        top: 70%;
+        left: 28.5%;
+    }
+
+    .bg-img {
+        position: absolute;
+        top: 0;
+        left: -5%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 0;
+    }
+
+    .heading-div {
+        position: absolute;
+        right: 0;
+        top: 0%;
+        width: 25%;
+        height: 12%;
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            opacity: 0.9;
+
+            span {
+                font-weight: 600;
+                color: #ff4d4d;
+                border-bottom: 2px solid #ff4d4d;
+            }
+        }
+
+        .shape-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10%;
+            background-color: #ff4d4d;
+        }
+        .hr-line-div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4%;
+            background-color: #333333;
+        }
+    }
+
+    .details-hover-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        .team-img {
+            margin-top: 5%;
+            width: 75%;
+            height: 85%;
+            object-fit: contain;
+        }
+    }
+    @keyframes tapIcon-keyframe {
+        0% {
+            padding-bottom: 0%;
+        }
+        60% {
+            padding-bottom: 20%;
+        }
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+
+    .tech-team-div {
+        width: 22%;
+        height: 12%;
+        border-top-left-radius: 50px;
+        background-color: #464646;
+        position: absolute;
+        right: 0;
+        bottom: 13%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -5px 5px 4px #333333;
+        cursor: pointer;
+        z-index: 2;
+        transition: 0.2s;
+
+        @keyframes teamText-keyframe {
+            0% {
+                padding-bottom: 0%;
+            }
+            60% {
+                padding-bottom: 8%;
+            }
+            100% {
+                padding-bottom: 0%;
+            }
+        }
+
+        &:hover {
+            background-color: #ff4d4d;
+            // box-shadow: none;
+            .bullet-point,
+            h1,
+            h2 {
+                transform: scale(1.1);
+                transition: 0.2s;
+            }
+            .name-heading {
+                gap: 8%;
+                transition: 0.2s;
+            }
+        }
+
+        .name-heading {
+            width: 100%;
+            display: flex;
+            // justify-content: center;
+            padding-left: 15%;
+            align-items: center;
+            gap: 5%;
+
+            .bullet-point {
+                width: 10px;
+                height: 10px;
+                background-color: aliceblue;
+                border-radius: 50%;
+                text-shadow: 1px 1px gray;
+            }
+            h2 {
+                font-size: 1.5rem;
+                color: #ffffff;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                //--------disabling text selection-------
+                -moz-user-select: none; /* firefox */
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE*/
+                user-select: none; /* Standard syntax */
+            }
+            h1 {
+                font-size: 2.5rem;
+                color: #ffffff;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                //--------disabling text selection-------
+                -moz-user-select: none; /* firefox */
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE*/
+                user-select: none; /* Standard syntax */
+            }
+            .tap-icon-div {
+                position: absolute;
+                bottom: 1%;
+                left: 2.5%;
+                .tap-icon {
+                    font-size: 2.2rem;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .non-tech-team-div {
+        width: 22%;
+        height: 12%;
+        background-color: #464646;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -5px 5px 4px #333333;
+        cursor: pointer;
+        z-index: 2;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: #ff4d4d;
+            // box-shadow: none;
+            .bullet-point,
+            h1,
+            h2 {
+                transform: scale(1.1);
+                transition: 0.2s;
+            }
+            .name-heading {
+                gap: 8%;
+                transition: 0.2s;
+            }
+        }
+
+        .name-heading {
+            width: 100%;
+            display: flex;
+            // justify-content: center;
+            padding-left: 15%;
+            align-items: center;
+            gap: 5%;
+
+            .bullet-point {
+                width: 10px;
+                height: 10px;
+                background-color: aliceblue;
+                border-radius: 50%;
+                text-shadow: 1px 1px gray;
+            }
+            h2 {
+                font-size: 1.5rem;
+                color: #ffffff;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                //--------disabling text selection-------
+                -moz-user-select: none; /* firefox */
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE*/
+                user-select: none; /* Standard syntax */
+            }
+            h1 {
+                font-size: 2.5rem;
+                color: #ffffff;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                //--------disabling text selection-------
+                -moz-user-select: none; /* firefox */
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE*/
+                user-select: none; /* Standard syntax */
+            }
+            .tap-icon-div {
+                position: absolute;
+                bottom: 1%;
+                left: 2.5%;
+                .tap-icon {
+                    font-size: 2.2rem;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1650px --------------------------------------
+@media only screen and (max-width: 1650px) {
+    .fourteenPD-comp-main-container {
+        // height: 800px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 48px;
+
+            box-shadow: -10px 10px 5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 9px;
+                    height: 9px;
+                }
+                h2 {
+                    font-size: 1.4rem;
+                }
+                h1 {
+                    font-size: 2.3rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 2rem;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -10px 10px 5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 9px;
+                    height: 9px;
+                }
+                h2 {
+                    font-size: 1.4rem;
+                }
+                h1 {
+                    font-size: 2.3rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 2rem;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1600px --------------------------------------
+@media only screen and (max-width: 1600px) {
+    .fourteenPD-comp-main-container {
+        // height: 750px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 46px;
+
+            box-shadow: -9px 9px 4.8px gray;
+
+            .name-heading {
+                h2 {
+                    font-size: 1.35rem;
+                }
+                h1 {
+                    font-size: 2.1rem;
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -9px 9px 4.8px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 9px;
+                    height: 9px;
+                }
+                h2 {
+                    font-size: 1.35rem;
+                }
+                h1 {
+                    font-size: 2.1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1550px --------------------------------------
+@media only screen and (max-width: 1550px) {
+    .fourteenPD-comp-main-container {
+        // height: 700px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 44px;
+            box-shadow: -9px 9px 4.8px gray;
+
+            .name-heading {
+                h2 {
+                    font-size: 1.3rem;
+                }
+                h1 {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -9px 9px 4.8px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 9px;
+                    height: 9px;
+                }
+                h2 {
+                    font-size: 1.3rem;
+                }
+                h1 {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1500px --------------------------------------
+@media only screen and (max-width: 1500px) {
+    .fourteenPD-comp-main-container {
+        // height: 650px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 42px;
+            box-shadow: -8px 8px 4.6px gray;
+
+            .name-heading {
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h1 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -8px 8px 4.6px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 6px;
+                    height: 6px;
+                }
+                h2 {
+                    font-size: 1.25rem;
+                }
+                h1 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1450px --------------------------------------
+@media only screen and (max-width: 1450px) {
+    .fourteenPD-comp-main-container {
+        // height: 600px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 40px;
+            box-shadow: -8px 8px 4.5px gray;
+
+            .name-heading {
+                h2 {
+                    font-size: 1.2rem;
+                }
+                h1 {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -8px 8px 4.5px gray;
+
+            .name-heading {
+                h2 {
+                    font-size: 1.2rem;
+                }
+                h1 {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1350px --------------------------------------
+@media only screen and (max-width: 1350px) {
+    .fourteenPD-comp-main-container {
+        // height: 550px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+        .tech-team-div {
+            border-top-left-radius: 38px;
+            box-shadow: -7px 7px 4.4px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 8px;
+                    height: 8px;
+                }
+                h2 {
+                    font-size: 1.15rem;
+                }
+                h1 {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -7px 7px 4.2px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 8px;
+                    height: 8px;
+                }
+                h2 {
+                    font-size: 1.15rem;
+                }
+                h1 {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1250px --------------------------------------
+@media only screen and (max-width: 1250px) {
+    .fourteenPD-comp-main-container {
+        // height: 500px;
+
+        .heading-div {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 36px;
+
+            box-shadow: -6px 6px 3.5px gray;
+
+            .name-heading {
+                h2 {
+                    font-size: 1.1rem;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -6px 6px 4px gray;
+
+            .name-heading {
+                h2 {
+                    font-size: 1.1rem;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1180px --------------------------------------
+@media only screen and (max-width: 1180px) {
+    .fourteenPD-comp-main-container {
+        // height: 500px;
+
+        .linked-in-div-style {
+            width: 30px;
+            height: 30px;
+        }
+        .linked-in-img-div1 {
+            top: 30%;
+            left: 26.5%;
+        }
+
+        .linked-in-img-div2 {
+            top: 47%;
+            left: 38.5%;
+        }
+        .linked-in-img-div3 {
+            top: 67%;
+            left: 26.5%;
+        }
+
+        .heading-div {
+            h1 {
+                font-size: 1.45rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 34px;
+            box-shadow: -6px 6px 3.5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 8px;
+                    height: 8px;
+                }
+                h2 {
+                    font-size: 1.1rem;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -6px 6px 4px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 8px;
+                    height: 8px;
+                }
+                h2 {
+                    font-size: 1.1rem;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1112px --------------------------------------
+@media only screen and (max-width: 1112px) {
+    .fourteenPD-comp-main-container {
+        // height: 500px;
+
+        .linked-in-div-style {
+            width: 30px;
+            height: 30px;
+        }
+
+        .heading-div {
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 32px;
+            box-shadow: -6px 6px 3.5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 8px;
+                    height: 8px;
+                }
+                h2 {
+                    font-size: 1.05rem;
+                }
+                h1 {
+                    font-size: 1.45rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -6px 6px 4px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 8px;
+                    height: 8px;
+                }
+                h2 {
+                    font-size: 1.05rem;
+                }
+                h1 {
+                    font-size: 1.45rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1080px --------------------------------------
+@media only screen and (max-width: 1080px) {
+    .fourteenPD-comp-main-container {
+        // height: 500px;
+
+        .linked-in-div-style {
+            width: 30px;
+            height: 30px;
+        }
+
+        .heading-div {
+            h1 {
+                font-size: 1.35rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 30px;
+            box-shadow: -6px 6px 3.5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 8px;
+                    height: 8px;
+                }
+                h2 {
+                    font-size: 1rem;
+                }
+                h1 {
+                    font-size: 1.4rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -6px 6px 4px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 8px;
+                    height: 8px;
+                }
+                h2 {
+                    font-size: 1rem;
+                }
+                h1 {
+                    font-size: 1.4rem;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 926px --------------------------------------
+@media only screen and (max-width: 926px) {
+    .fourteenPD-comp-main-container {
+        // height: 500px;
+
+        .linked-in-div-style {
+            width: 20px;
+            height: 20px;
+        }
+        .linked-in-img-div1 {
+            top: 25%;
+            left: 23.5%;
+        }
+
+        .linked-in-img-div2 {
+            top: 46%;
+            left: 33.5%;
+        }
+        .linked-in-img-div3 {
+            top: 68%;
+            left: 24%;
+        }
+        .bg-img {
+            top: 0;
+            left: -12%;
+        }
+
+        .heading-div {
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 28px;
+            box-shadow: -6px 6px 3.5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 6px;
+                    height: 6px;
+                }
+                h2 {
+                    font-size: 0.9rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                h1 {
+                    font-size: 1.2rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -6px 6px 4px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 6px;
+                    height: 6px;
+                }
+                h2 {
+                    font-size: 0.9rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                h1 {
+                    font-size: 1.2rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 854px --------------------------------------
+@media only screen and (max-width: 854px) {
+    .fourteenPD-comp-main-container {
+        // height: 500px;
+
+        .linked-in-div-style {
+            width: 20px;
+            height: 20px;
+        }
+
+        .bg-img {
+            top: 0;
+            left: -12%;
+        }
+
+        .heading-div {
+            h1 {
+                font-size: 1.1rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 26px;
+            box-shadow: -6px 6px 3.5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 6px;
+                    height: 6px;
+                }
+                h2 {
+                    font-size: 0.8rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                h1 {
+                    font-size: 1.15rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -6px 6px 4px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 6px;
+                    height: 6px;
+                }
+                h2 {
+                    font-size: 0.8rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                h1 {
+                    font-size: 1.15rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 740px --------------------------------------
+@media only screen and (max-width: 740px) {
+    .fourteenPD-comp-main-container {
+        // height: 500px;
+
+        .linked-in-div-style {
+            width: 15px;
+            height: 15px;
+        }
+
+        .heading-div {
+            h1 {
+                font-size: 1rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 24px;
+            box-shadow: -6px 6px 3.5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 6px;
+                    height: 6px;
+                }
+                h2 {
+                    font-size: 0.7rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                h1 {
+                    font-size: 1rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -6px 6px 4px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 6px;
+                    height: 6px;
+                }
+                h2 {
+                    font-size: 0.7rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                h1 {
+                    font-size: 1rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 640px --------------------------------------
+@media only screen and (max-width: 640px) {
+    .fourteenPD-comp-main-container {
+        // height: 500px;
+
+        .linked-in-div-style {
+            width: 15px;
+            height: 15px;
+        }
+        .linked-in-img-div1 {
+            top: 25%;
+            left: 20%;
+        }
+
+        .linked-in-img-div2 {
+            top: 46%;
+            left: 33.5%;
+        }
+        .linked-in-img-div3 {
+            top: 68%;
+            left: 21%;
+        }
+        .bg-img {
+            left: -5%;
+        }
+
+        .heading-div {
+            h1 {
+                font-size: 0.9rem;
+            }
+        }
+
+        .tech-team-div {
+            border-top-left-radius: 22px;
+            box-shadow: -6px 6px 3.5px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 5px;
+                    height: 5px;
+                }
+                h2 {
+                    font-size: 0.65rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                h1 {
+                    font-size: 0.95rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .non-tech-team-div {
+            box-shadow: -6px 6px 4px gray;
+
+            .name-heading {
+                .bullet-point {
+                    width: 5px;
+                    height: 5px;
+                }
+                h2 {
+                    font-size: 0.65rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                h1 {
+                    font-size: 0.95rem;
+                    text-shadow: 0.5px 0.5px gray;
+                }
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

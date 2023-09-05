@@ -1,0 +1,615 @@
+.secondPD-comp-content-card-container {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    box-sizing: border-box;
+    // border: 1px solid black;
+
+    .content-card-main-div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        // border: 1px solid black;
+
+        .top-part {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            .icon-div {
+                margin: 2%;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: #ffebeb;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .icon {
+                    font-size: 3rem;
+                    color: #ff4d4d;
+                }
+            }
+            .heading-div {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                // background-color: green;
+                align-items: center;
+
+                h1 {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    color: #333;
+                    padding-left: 10%;
+                    // width: 60%;
+                    border-bottom: 1px solid #333;
+                    transition: 0.4s;
+                }
+            }
+        }
+
+        .bottom-part {
+            width: 100%;
+            height: 70%;
+            background-color: #ff4d4d;
+            transition: 0.2s;
+            box-shadow: 10px 10px 5px gray;
+            
+            
+            .para-div {
+                width: 100%;
+                height: 100%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+
+                .list-div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        margin: 0 2%;
+                        border-radius: 50%;
+                        background-color: #fff;
+                    }
+                    p {
+                        width: 90%;
+                        align-items: center;
+                        color: #fff;
+                        font-size: 1.2rem;
+                        transition: 0.1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1650px --------------------------------------
+@media only screen and (max-width: 1650px) {
+    .secondPD-comp-content-card-container {
+        width: 370px;
+        height: 370px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 65px;
+                    height: 65px;
+
+                    .icon {
+                        font-size: 2.6rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 9px;
+                            height: 9px;
+                        }
+                        p {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1550px --------------------------------------
+@media only screen and (max-width: 1550px) {
+    .secondPD-comp-content-card-container {
+        width: 340px;
+        height: 340px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 60px;
+                    height: 60px;
+
+                    .icon {
+                        font-size: 2.4rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 8px;
+                            height: 8px;
+                        }
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1450px --------------------------------------
+@media only screen and (max-width: 1450px) {
+    .secondPD-comp-content-card-container {
+        width: 310px;
+        height: 310px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 55px;
+                    height: 55px;
+
+                    .icon {
+                        font-size: 2.2rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 7px;
+                            height: 7px;
+                        }
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1350px --------------------------------------
+@media only screen and (max-width: 1350px) {
+    .secondPD-comp-content-card-container {
+        width: 300px;
+        height: 300px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 50px;
+                    height: 50px;
+
+                    .icon {
+                        font-size: 2rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            // .bottom-part {
+            //     .para-div {
+            //         .list-div {
+            //             span {
+            //                 width: 6px;
+            //                 height: 6px;
+            //             }
+            //             p {
+            //                 font-size: 0.8rem;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+//--------------------------max-width: 1250px --------------------------------------
+@media only screen and (max-width: 1250px) {
+    .secondPD-comp-content-card-container {
+        width: 280px;
+        height: 280px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 45px;
+                    height: 45px;
+
+                    .icon {
+                        font-size: 1.8rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 5px;
+                            height: 5px;
+                        }
+                        p {
+                            font-size: 0.85rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1150px --------------------------------------
+@media only screen and (max-width: 1150px) {
+    .secondPD-comp-content-card-container {
+        width: 260px;
+        height: 260px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 40px;
+                    height: 40px;
+
+                    .icon {
+                        font-size: 1.6rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 5px;
+                            height: 5px;
+                        }
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 1050px --------------------------------------
+@media only screen and (max-width: 1050px) {
+    .secondPD-comp-content-card-container {
+        width: 240px;
+        height: 240px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 38px;
+                    height: 38px;
+
+                    .icon {
+                        font-size: 1.5rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 5px;
+                            height: 5px;
+                        }
+                        p {
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 950px --------------------------------------
+@media only screen and (max-width: 950px) {
+    .secondPD-comp-content-card-container {
+        width: 220px;
+        height: 220px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 36px;
+                    height: 36px;
+
+                    .icon {
+                        font-size: 1.4rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 5px;
+                            height: 5px;
+                        }
+                        p {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 850px --------------------------------------
+@media only screen and (max-width: 850px) {
+    .secondPD-comp-content-card-container {
+        width: 200px;
+        height: 200px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 34px;
+                    height: 34px;
+
+                    .icon {
+                        font-size: 1.3rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 5px;
+                            height: 5px;
+                        }
+                        p {
+                            font-size: 0.68rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 750px --------------------------------------
+@media only screen and (max-width: 750px) {
+    .secondPD-comp-content-card-container {
+        width: 180px;
+        height: 180px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 32px;
+                    height: 32px;
+
+                    .icon {
+                        font-size: 1.2rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 5px;
+                            height: 5px;
+                        }
+                        p {
+                            font-size: 0.66rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 700px --------------------------------------
+@media only screen and (max-width: 700px) {
+    .secondPD-comp-content-card-container {
+        width: 160px;
+        height: 160px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 30px;
+                    height: 30px;
+
+                    .icon {
+                        font-size: 1.1rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 4px;
+                            height: 4px;
+                        }
+                        p {
+                            font-size: 0.64rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 650px --------------------------------------
+@media only screen and (max-width: 650px) {
+    .secondPD-comp-content-card-container {
+        width: 150px;
+        height: 150px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 28px;
+                    height: 28px;
+
+                    .icon {
+                        font-size: 1rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 0.68rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 4px;
+                            height: 4px;
+                        }
+                        p {
+                            font-size: 0.62rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------max-width: 600px --------------------------------------
+@media only screen and (max-width: 600px) {
+    .secondPD-comp-content-card-container {
+        width: 140px;
+        height: 140px;
+
+        .content-card-main-div {
+            .top-part {
+                .icon-div {
+                    width: 26px;
+                    height: 26px;
+
+                    .icon {
+                        font-size: 1rem;
+                    }
+                }
+                .heading-div {
+                    h1 {
+                        font-size: 0.68rem;
+                    }
+                }
+            }
+
+            .bottom-part {
+                .para-div {
+                    .list-div {
+                        span {
+                            width: 4px;
+                            height: 4px;
+                        }
+                        p {
+                            font-size: 0.62rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

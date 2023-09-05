@@ -1,0 +1,367 @@
+.move-in-photos-card-main-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    .bg-img {
+        position: absolute;
+        bottom: -10%;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .left-div {
+        width: 50%;
+        height: 100%;
+        // border: 1px solid black;
+        overflow: hidden;
+        position: relative;
+
+        .shape1-div {
+            position: absolute;
+            top: -2%;
+            left: -2%;
+            width: 10%;
+            height: 10%;
+            background-color: #333333;
+            box-shadow: 6px 6px 3px gray;
+        }
+
+        .para-div {
+            position: absolute;
+            left: 20%;
+            top: 10%;
+
+            p {
+                font-size: 2rem;
+                font-weight: 300;
+                color: #333333;
+                border-bottom: 1px solid #ff4d4d;
+                
+                .span1 {
+                    font-weight: 500;
+                }
+                .span2 {
+                    font-weight: 600;
+                    color: #ff4d4d;
+                }
+            }
+        }
+
+        .property-list-div {
+            width: 100%;
+            height: 35%;
+            position: absolute;
+            left: 20%;
+            top: 32%;
+            // background-color: #ff4d4d;
+            ul {
+                width: 100%;
+                height: 100%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    transition: 0.2s;
+
+                    &:hover {
+                        transform: scale(1.02);
+                        color: #ff4d4d;
+                    }
+
+                    span {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        margin-right: 2.5%;
+                        border-radius: 50%;
+                        background-color: #ff4d4d;
+                    }
+                }
+            }
+        }
+        .img-div {
+            width: 65%;
+            height: 21%;
+            position: absolute;
+            bottom: 0;
+            left: 12%;
+            // background-color: bisque;
+
+            img {
+                position: absolute;
+                top: -50%;
+                left: 8%;
+                width: 120%;
+                height: 300%;
+                object-fit: contain;
+            }
+        }
+    }
+    .right-div {
+        width: 50%;
+        height: 100%;
+        // border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+
+        .phone1-div {
+            width: 50%;
+            height: 95%;
+            position: absolute;
+            bottom: -5%;
+            right: 2%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .phone2-div {
+            width: 35%;
+            height: 70%;
+            position: absolute;
+            bottom: -8%;
+            right: 43%;
+            // background-color: red;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            .screen-img-div {
+                position: absolute;
+                width: 87.8%;
+                height: 70%;
+                left: 5.8%;
+                top: 18%;
+                overflow: hidden;
+                // background-color: black;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    transition: 2s;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .move-in-photos-card-main-container {
+        .left-div {
+            .para-div {
+                p {
+                    font-size: 1.4rem;
+                    span {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 1.1rem;
+
+                        span {
+                            width: 0.75rem;
+                            height: 0.75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .move-in-photos-card-main-container {
+        .left-div {
+            .para-div {
+                p {
+                    font-size: 1.3rem;
+                    span {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 1rem;
+
+                        span {
+                            width: 0.7rem;
+                            height: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .move-in-photos-card-main-container {
+        .left-div {
+            .para-div {
+                p {
+                    font-size: 1.2rem;
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.9rem;
+
+                        span {
+                            width: 0.65rem;
+                            height: 0.65rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .move-in-photos-card-main-container {
+        .left-div {
+            .para-div {
+                p {
+                    font-size: 1.1rem;
+                    span {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.8rem;
+
+                        span {
+                            width: 0.6rem;
+                            height: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1050px  --------------------------------------
+
+@media only screen and (max-width: 1050px) {
+    .move-in-photos-card-main-container {
+        .left-div {
+            .para-div {
+                p {
+                    font-size: 1rem;
+                    span {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.75rem;
+
+                        span {
+                            width: 0.55rem;
+                            height: 0.55rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 850px  --------------------------------------
+
+@media only screen and (max-width: 850px) {
+    .move-in-photos-card-main-container {
+        .left-div {
+            .para-div {
+                p {
+                    font-size: 0.9rem;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.7rem;
+
+                        span {
+                            width: 0.53rem;
+                            height: 0.53rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 650px  --------------------------------------
+
+@media only screen and (max-width: 650px) {
+    .move-in-photos-card-main-container {
+        .left-div {
+            .para-div {
+                p {
+                    font-size: 0.85rem;
+                    span {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.65rem;
+
+                        span {
+                            width: 0.51rem;
+                            height: 0.51rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

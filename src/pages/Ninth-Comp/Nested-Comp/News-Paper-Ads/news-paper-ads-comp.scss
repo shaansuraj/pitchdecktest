@@ -1,0 +1,261 @@
+.news-paper-ads-comp-main-container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .shape1-div {
+        position: absolute;
+        width: 10%;
+        height: 22%;
+        background-color: #f4ecec;
+        bottom: 0;
+        left: 0;
+        border-top-right-radius: 100px;
+    }
+
+    .slider-div {
+        width: 90%;
+        height: 70%;
+        // border: 1px solid black;
+        margin-top: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .slides-div {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            // border: 1px solid black;
+            display: flex;
+
+            .img-div {
+                min-width: 100%;
+                height: 100%;
+                transition: 2s;
+                // background-color: blue;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .dot-container {
+        position: absolute;
+        bottom: 8%;
+        width: 40%;
+        height: 10%;
+        // background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .dot-button-div {
+            width: 40px;
+            height: 40px;
+            // margin: 0 20px;
+            box-sizing: content-box;
+            padding: 5px 20px;
+            // background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 95px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 38px;
+                height: 38px;
+                padding: 4.8px 19px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 90px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 36px;
+                height: 36px;
+                padding: 4.6px 18px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 85px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 34px;
+                height: 34px;
+                padding: 4.4px 17px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 80px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 32px;
+                height: 32px;
+                padding: 4.2px 16px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 75px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 30px;
+                height: 30px;
+                padding: 4px 15px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 70px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 28px;
+                height: 28px;
+                padding: 3.8px 14px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 65px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 26px;
+                height: 26px;
+                padding: 3.6px 13px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 60px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 24px;
+                height: 24px;
+                padding: 3.4px 12px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 55px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 22px;
+                height: 22px;
+                padding: 3.2px 11px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 55px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 20px;
+                height: 20px;
+                padding: 3px 10px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .news-paper-ads-comp-main-container {
+        .shape1-div {
+            border-top-right-radius: 50px;
+        }
+        .dot-container {
+            .dot-button-div {
+                width: 18px;
+                height: 18px;
+                padding: 2.8px 9px;
+            }
+        }
+    }
+}

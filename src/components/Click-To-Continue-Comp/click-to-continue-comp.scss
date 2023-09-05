@@ -1,0 +1,49 @@
+.click-to-continue-comp-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0, 0, 0, 0.8);
+
+    .click-to-continue-btn-div {
+        width: 100%;
+        height: 10%;
+        // border: 2px solid #ffffff;
+        // background-color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 30%;
+        z-index: 1;
+
+        @keyframes ClickHereToContinue-keyframe {
+            0% {
+                padding-bottom: 0%;
+            }
+            60% {
+                padding-bottom: 2%;
+            }
+            100% {
+                padding-bottom: 0%;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #ffffff;
+            opacity: 0.8;
+        }
+
+    }
+    .instruction-img {
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+        height: 80%;
+        // object-fit: cover;
+        opacity: 0.8;
+        border-radius: 20px;
+        box-shadow: 8px 8px 5px rgb(25, 24, 24);
+    }
+}

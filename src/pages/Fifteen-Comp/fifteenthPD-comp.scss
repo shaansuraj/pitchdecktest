@@ -1,0 +1,1020 @@
+.fifteenthPD-comp-main-container {
+  width: 100%;
+  // height: 850px;
+  height: 95vh;
+  position: relative;
+  // border: 1px solid black;
+  display: flex;
+
+  .hidden-frame-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-frame {
+      width: 80%;
+      height: 90%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .cross-icon {
+        position: absolute;
+        top: 2%;
+        right: 13%;
+        // background-color: #333333;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #crossIcon {
+          position: absolute;
+          color: #333;
+          opacity: 0.4;
+          font-size: 3rem;
+          cursor: pointer;
+
+          &:hover {
+            color: #333333;
+            opacity: 0.8;
+          }
+        }
+      }
+
+      #iframe-calendly {
+        width: 80%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .left-part {
+    width: 60%;
+    height: 100%;
+    // border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1%;
+
+    .top-part {
+      width: 100%;
+      height: 30%;
+      padding: 0 0 0 5%;
+      // background-color: aqua;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .join-us-heading {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5%;
+
+        .logo-img {
+          width: 80px;
+          height: 80px;
+        }
+        h1 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: #333333;
+          opacity: 0.9;
+          border-bottom: 1px solid #333333;
+
+          span {
+            color: #ff4d4d;
+          }
+        }
+      }
+      .icons-div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        // background-color: bisque;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        a {
+          img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            opacity: 0.8;
+
+            &:hover {
+              transform: scale(1.05);
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .middle-part {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+      gap: 15%;
+      // background-color: orangered;
+
+      @keyframes tapIcon-KeyFrame {
+        0% {
+          padding-bottom: 0%;
+        }
+        60% {
+          padding-bottom: 20%;
+        }
+        100% {
+          padding-bottom: 0%;
+        }
+      }
+
+      .frame-calendly-btn {
+        width: 67%;
+        height: 22%;
+        margin-left: 10%;
+        // border: 1px solid black;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          cursor: pointer;
+        }
+        .tap-icon-div {
+          position: absolute;
+          bottom: 10%;
+          right: 1.5%;
+
+          .tap-icon {
+            font-size: 2.5rem;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .bottom-part {
+      width: 90%;
+      height: 10%;
+      // background-color: aqua;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #878787;
+      margin-left: 10%;
+      margin-bottom: 3.8%;
+
+      .our-handles-div {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+
+        h1 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: #333333;
+          opacity: 0.9;
+          span {
+            color: #ff4d4d;
+          }
+        }
+      }
+      .icons-div {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        // background-color: bisque;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        a {
+          img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            opacity: 0.8;
+
+            &:hover {
+              transform: scale(1.05);
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .right-part {
+    width: 40%;
+    height: 100%;
+    // border: 1px solid green;
+    position: relative;
+
+    img {
+      position: absolute;
+      right: 0;
+      width: 102%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+  .fifteenthPD-comp-main-container {
+    // height: 800px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 48px;
+          height: 48px;
+
+          #crossIcon {
+            font-size: 2.8rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 9px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 76px;
+            height: 76px;
+          }
+          h1 {
+            font-size: 1.8rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 38px;
+              height: 38px;
+            }
+          }
+        }
+      }
+
+      .middle-part {
+        .frame-calendly-btn {
+          .tap-icon-div {
+            .tap-icon {
+              font-size: 2.3rem;
+            }
+          }
+        }
+      }
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.8rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 38px;
+              height: 38px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 1600px  --------------------------------------
+
+@media only screen and (max-width: 1600px) {
+  .fifteenthPD-comp-main-container {
+    // height: 750px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 46px;
+          height: 46px;
+
+          #crossIcon {
+            font-size: 2.6rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 72px;
+            height: 72px;
+          }
+          h1 {
+            font-size: 1.6rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 36px;
+              height: 36px;
+            }
+          }
+        }
+      }
+
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.6rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 36px;
+              height: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+  .fifteenthPD-comp-main-container {
+    // height: 700px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 44px;
+          height: 44px;
+
+          #crossIcon {
+            font-size: 2.4rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 7px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 68px;
+            height: 68px;
+          }
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 34px;
+              height: 34px;
+            }
+          }
+        }
+      }
+      .middle-part {
+        .frame-calendly-btn {
+          .tap-icon-div {
+            .tap-icon {
+              font-size: 2.1rem;
+            }
+          }
+        }
+      }
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 34px;
+              height: 34px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 1500px  --------------------------------------
+
+@media only screen and (max-width: 1500px) {
+  .fifteenthPD-comp-main-container {
+    // height: 650px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 42px;
+          height: 42px;
+
+          #crossIcon {
+            font-size: 2.2rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 6px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 64px;
+            height: 64px;
+          }
+          h1 {
+            font-size: 1.4rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+      }
+
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.4rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+  .fifteenthPD-comp-main-container {
+    // height: 600px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 40px;
+          height: 40px;
+
+          #crossIcon {
+            font-size: 2rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 60px;
+            height: 60px;
+          }
+          h1 {
+            font-size: 1.3rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+      .middle-part {
+        .frame-calendly-btn {
+          .tap-icon-div {
+            .tap-icon {
+              font-size: 1.9rem;
+            }
+          }
+        }
+      }
+
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.3rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+  .fifteenthPD-comp-main-container {
+    // height: 550px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 38px;
+          height: 38px;
+
+          #crossIcon {
+            font-size: 1.8rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 4.8px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 55px;
+            height: 55px;
+          }
+          h1 {
+            font-size: 1.2rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+      }
+      .middle-part {
+        .frame-calendly-btn {
+          .tap-icon-div {
+            .tap-icon {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.2rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+  .fifteenthPD-comp-main-container {
+    // height: 500px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 36px;
+          height: 36px;
+
+          #crossIcon {
+            font-size: 1.6rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 4.6px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 50px;
+            height: 50px;
+          }
+          h1 {
+            font-size: 1.1rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 26px;
+              height: 26px;
+            }
+          }
+        }
+      }
+      .middle-part {
+        .frame-calendly-btn {
+          .tap-icon-div {
+            .tap-icon {
+              font-size: 1.7rem;
+            }
+          }
+        }
+      }
+
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.1rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 26px;
+              height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+  .fifteenthPD-comp-main-container {
+    // height: 500px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 34px;
+          height: 34px;
+
+          #crossIcon {
+            font-size: 1.5rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 4.6px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 48px;
+            height: 48px;
+          }
+          h1 {
+            font-size: 1.05rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+      .middle-part {
+        .frame-calendly-btn {
+          .tap-icon-div {
+            .tap-icon {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.05rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+  .fifteenthPD-comp-main-container {
+    // height: 500px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 34px;
+          height: 34px;
+
+          #crossIcon {
+            font-size: 1.5rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 4.6px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 48px;
+            height: 48px;
+          }
+          h1 {
+            font-size: 1.05rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+      .middle-part {
+        width: 100%;
+        height: 60%;
+        gap: 15%;
+
+        .frame-calendly-btn {
+          width: 64%;
+          height: 25%;
+
+          .tap-icon-div {
+            bottom: 10%;
+            right: 1%;
+            .tap-icon {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1.05rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+  .fifteenthPD-comp-main-container {
+    // height: 500px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 32px;
+          height: 32px;
+
+          #crossIcon {
+            font-size: 1.4rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 4.6px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 46px;
+            height: 46px;
+          }
+          h1 {
+            font-size: 1rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 22px;
+              height: 22px;
+            }
+          }
+        }
+      }
+      .middle-part {
+        .frame-calendly-btn {
+          .tap-icon-div {
+            .tap-icon {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 1rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 22px;
+              height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+  .fifteenthPD-comp-main-container {
+    // height: 500px;
+
+    .hidden-frame-div {
+      .main-frame {
+        .cross-icon {
+          width: 30px;
+          height: 30px;
+
+          #crossIcon {
+            font-size: 1.3rem;
+          }
+        }
+
+        #iframe-calendly {
+          border-radius: 4.6px;
+        }
+      }
+    }
+
+    .left-part {
+      .top-part {
+        .join-us-heading {
+          .logo-img {
+            width: 44px;
+            height: 44px;
+          }
+          h1 {
+            font-size: 0.95rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+      .middle-part {
+        .frame-calendly-btn {
+          .tap-icon-div {
+            .tap-icon {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+
+      .bottom-part {
+        .our-handles-div {
+          h1 {
+            font-size: 0.95rem;
+          }
+        }
+        .icons-div {
+          a {
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

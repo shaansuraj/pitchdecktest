@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+}
+
+@media screen and (max-device-width: 950px) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+
+html,
+body {
+    -webkit-text-size-adjust: none;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes scrollingKeyframe {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.app-main {
+    display: flex;
+    overflow-x: hidden;
+
+    .click-to-continue-comp-div {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+        background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+    }
+
+    .phone-rotation-indication-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+        // background-color: #333;
+    }
+
+    .App-main-bottom-nav {
+        position: fixed;
+        width: 100%;
+        height: 20px;
+        z-index: 5;
+        bottom: 0;
+        left: 0;
+        // background-color:"#333"
+    }
+
+    .app-left-btn-nav {
+        position: fixed;
+        top: 45%;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #333333;
+        border: 2px solid #fff;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.3;
+        cursor: pointer;
+
+        .arrow-icon {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #fff;
+            //--------disabling text selection-------
+            -moz-user-select: none;
+            /* firefox */
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE*/
+            user-select: none;
+            /* Standard syntax */
+        }
+
+        &:hover {
+            opacity: 0.5;
+            transition: 0.2s ease-in-out;
+        }
+    }
+
+    .app-right-btn-nav {
+        position: fixed;
+        top: 45%;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #333333;
+        border: 2px solid #fff;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.3;
+        cursor: pointer;
+
+        .arrow-icon {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ffffff;
+            //--------disabling text selection-------
+            -moz-user-select: none;
+            /* firefox */
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE*/
+            user-select: none;
+            /* Standard syntax */
+        }
+
+        &:hover {
+            opacity: 0.5;
+            transition: 0.2s ease-in-out;
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 19px;
+        }
+
+        .app-left-btn-nav {
+            width: 76px;
+            height: 76px;
+
+            .arrow-icon {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 76px;
+            height: 76px;
+
+            .arrow-icon {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 18px;
+        }
+
+        .app-left-btn-nav {
+            width: 72px;
+            height: 72px;
+
+            .arrow-icon {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 72px;
+            height: 72px;
+
+            .arrow-icon {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 17px;
+        }
+
+        .app-left-btn-nav {
+            width: 68px;
+            height: 68px;
+
+            .arrow-icon {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.85rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 68px;
+            height: 68px;
+
+            .arrow-icon {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 16px;
+        }
+
+        .app-left-btn-nav {
+            width: 64px;
+            height: 64px;
+
+            .arrow-icon {
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 64px;
+            height: 64px;
+
+            .arrow-icon {
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 15px;
+        }
+
+        .app-left-btn-nav {
+            width: 60px;
+            height: 60px;
+
+            .arrow-icon {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.75rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 60px;
+            height: 60px;
+
+            .arrow-icon {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1150px  --------------------------------------
+
+@media only screen and (max-width: 1150px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 14px;
+        }
+
+        .app-left-btn-nav {
+            width: 56px;
+            height: 56px;
+
+            .arrow-icon {
+                font-size: 0.9rem;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 56px;
+            height: 56px;
+
+            .arrow-icon {
+                font-size: 0.9rem;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1050px  --------------------------------------
+
+@media only screen and (max-width: 1050px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 13px;
+        }
+
+        .app-left-btn-nav {
+            width: 52px;
+            height: 52px;
+
+            .arrow-icon {
+                font-size: 0.8rem;
+            }
+
+            p {
+                font-size: 0.68rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 52px;
+            height: 52px;
+
+            .arrow-icon {
+                font-size: 0.8rem;
+            }
+
+            p {
+                font-size: 0.68rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 950px  --------------------------------------
+
+@media only screen and (max-width: 950px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 12px;
+        }
+
+        .app-left-btn-nav {
+            width: 50px;
+            height: 50px;
+
+            .arrow-icon {
+                font-size: 0.75rem;
+            }
+
+            p {
+                font-size: 0.65rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 50px;
+            height: 50px;
+
+            .arrow-icon {
+                font-size: 0.75rem;
+            }
+
+            p {
+                font-size: 0.65rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 850px  --------------------------------------
+
+@media only screen and (max-width: 850px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 11px;
+        }
+
+        .app-left-btn-nav {
+            width: 46px;
+            height: 46px;
+
+            .arrow-icon {
+                font-size: 0.7rem;
+            }
+
+            p {
+                font-size: 0.6rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 46px;
+            height: 46px;
+
+            .arrow-icon {
+                font-size: 0.7rem;
+            }
+
+            p {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 750px  --------------------------------------
+
+@media only screen and (max-width: 750px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 10px;
+        }
+
+        .app-left-btn-nav {
+            width: 42px;
+            height: 42px;
+
+            .arrow-icon {
+                font-size: 0.65rem;
+            }
+
+            p {
+                font-size: 0.58rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 42px;
+            height: 42px;
+
+            .arrow-icon {
+                font-size: 0.65rem;
+            }
+
+            p {
+                font-size: 0.58rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 650px  --------------------------------------
+
+@media only screen and (max-width: 650px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 9px;
+        }
+
+        .app-left-btn-nav {
+            width: 38px;
+            height: 38px;
+
+            .arrow-icon {
+                font-size: 0.6rem;
+            }
+
+            p {
+                font-size: 0.56rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 38px;
+            height: 38px;
+
+            .arrow-icon {
+                font-size: 0.6rem;
+            }
+
+            p {
+                font-size: 0.56rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 600px  --------------------------------------
+
+@media only screen and (max-width: 600px) {
+    .app-main {
+        .App-main-bottom-nav {
+            height: 8px;
+        }
+
+        .app-left-btn-nav {
+            width: 36px;
+            height: 36px;
+
+            .arrow-icon {
+                font-size: 0.58rem;
+            }
+
+            p {
+                font-size: 0.54rem;
+            }
+        }
+
+        .app-right-btn-nav {
+            width: 36px;
+            height: 36px;
+
+            .arrow-icon {
+                font-size: 0.58rem;
+            }
+
+            p {
+                font-size: 0.54rem;
+            }
+        }
+    }
+}

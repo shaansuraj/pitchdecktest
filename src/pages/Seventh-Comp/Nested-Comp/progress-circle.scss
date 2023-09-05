@@ -1,0 +1,279 @@
+.progress-circle-main-container {
+    width: 100%;
+    height: 72%;
+    // background-color: black;
+    // border: 1px solid black;
+    position: absolute;
+    top: 14%;
+    z-index: 0;
+    overflow: hidden;
+
+    .circle-img-style {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        // right: -25%;
+        // background-color: pink;
+        img {
+            position: absolute;
+            bottom: -10%;
+            right: -22%;
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
+        }
+        .heading-style {
+            position: absolute;
+            right: 6%;
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-shadow: 0px 2px 2px #333333;
+        }
+        .para-style {
+            position: absolute;
+            right: 2%;
+            font-size: 0.8rem;
+            font-weight: 400;
+            text-shadow: 0px 2px 2px #333333;
+        }
+    }
+
+    .circle-img-div1 {
+        @extend .circle-img-style;
+        z-index: 0;
+        h1 {
+            @extend .heading-style;
+            bottom: 26%;
+            color: #ffffff;
+        }
+        p {
+            @extend .para-style;
+            bottom: 26%;
+            color: #ffffff;
+        }
+    }
+    .circle-img-div2 {
+        @extend .circle-img-style;
+        z-index: 1;
+        h1 {
+            @extend .heading-style;
+            bottom: 28%;
+            color: #333333;
+        }
+        p {
+            @extend .para-style;
+            bottom: 28%;
+            color: #333333;
+        }
+    }
+    .circle-img-div3 {
+        @extend .circle-img-style;
+        z-index: 2;
+        h1 {
+            @extend .heading-style;
+            bottom: 28%;
+            color: #ffffff;
+        }
+        p {
+            @extend .para-style;
+            bottom: 28%;
+            color: #ffffff;
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .progress-circle-main-container {
+        .circle-img-style {
+            .heading-style {
+                font-size: 1.5rem;
+            }
+            .para-style {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .progress-circle-main-container {
+        .circle-img-style {
+            .heading-style {
+                font-size: 1.4rem;
+            }
+            .para-style {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .progress-circle-main-container {
+        .circle-img-style {
+            .heading-style {
+                font-size: 1.3rem;
+            }
+            .para-style {
+                font-size: 0.55rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .progress-circle-main-container {
+        .circle-img-style {
+            .heading-style {
+                font-size: 1.2rem;
+            }
+            .para-style {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .progress-circle-main-container {
+        .circle-img-style {
+            .heading-style {
+                font-size: 1.1rem;
+            }
+            .para-style {
+                font-size: 0.45rem;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .progress-circle-main-container {
+        height: 60%;
+        top: 20%;
+
+        .circle-img-style {
+            .heading-style {
+                font-size: 1.1rem;
+            }
+            .para-style {
+                font-size: 0.45rem;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .progress-circle-main-container {
+        height: 55%;
+        top: 23%;
+
+        .circle-img-style {
+            .heading-style {
+                font-size: 1.1rem;
+            }
+            .para-style {
+                font-size: 0.45rem;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .progress-circle-main-container {
+        width: 76%;
+        height: 65%;
+        top: 23%;
+        right: 0;
+
+        .circle-img-style {
+            .heading-style {
+                font-size: 0.8rem;
+                text-shadow: 0px 1px 1px #333333;
+
+            }
+           
+        }
+    }
+}
+
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .progress-circle-main-container {
+        width: 76%;
+        height: 65%;
+        top: 23%;
+        right: 0;
+
+        .circle-img-style {
+            .heading-style {
+                font-size: 0.7rem;
+    
+            }
+           
+        }
+    }
+}
+
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .progress-circle-main-container {
+        width: 76%;
+        height: 65%;
+        top: 23%;
+        right: 0;
+
+        .circle-img-style {
+            .heading-style {
+                font-size: 0.6rem;
+    
+            }
+           
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .progress-circle-main-container {
+        width: 82%;
+        height: 60%;
+        top: 24%;
+        right: 0;
+
+        .circle-img-style {
+            .heading-style {
+                font-size: 0.5rem;
+    
+            }
+           
+        }
+    }
+}
+
+

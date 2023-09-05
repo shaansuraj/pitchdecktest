@@ -1,0 +1,585 @@
+.profiling-card-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: aqua;
+    display: flex;
+
+    .left-part {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+
+        .shape1-div {
+            width: 8%;
+            height: 20%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            // background-color: #ff4d4d;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .headings-div {
+            width: 75%;
+            height: auto;
+            // border-bottom: 2px solid #BEBEBE;
+
+            h1 {
+                font-size: 1.8rem;
+                font-weight: 300;
+                line-height: 2.4rem;
+                .span1 {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                }
+                .span2 {
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    color: #ff4d4d;
+                    border-bottom: 1px solid #ff4d4d;
+                }
+            }
+        }
+        .property-list-div {
+            width: 90%;
+            height: 35%;
+
+            // background-color: #ff4d4d;
+            ul {
+                width: 100%;
+                height: 100%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    transition: 0.2s;
+
+                    &:hover {
+                        transform: scale(1.02);
+                        color: #ff4d4d;
+                    }
+
+                    span {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        margin-right: 2.5%;
+                        border-radius: 50%;
+                        background-color: #ff4d4d;
+                    }
+                }
+            }
+        }
+    }
+    .right-part {
+        width: 45%;
+        height: 100%;
+        position: relative;
+        // background-color: red;
+        overflow: hidden;
+
+        .shape2-div {
+            width: 120%;
+            height: 40%;
+            position: absolute;
+            bottom: -20%;
+            right: -25%;
+            // background-color: #ff4d4d;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .phone-mockup-div {
+            width: 380px;
+            height: 800px;
+            position: relative;
+            margin-top: 10%;
+            margin-left: 6%;
+            overflow: hidden;
+            // background-color: aqua;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                // width: 180%;
+                // height: 130%;
+                object-fit: fill;
+                // left: -80%;
+                // top: 5%;
+            }
+
+            .screen-div {
+                width: 88.6%;
+                height: 76.5%;
+                // background-color: orange;
+                position: absolute;
+                z-index: 1;
+                top: 15%;
+                left: 5.5%;
+                overflow: hidden;
+
+                img {
+                    transition: 15s;
+                    width: 112%;
+                    height: 212%;
+                    left: -4%;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    .span1 {
+                        font-size: 2rem;
+                    }
+                    .span2 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 1.2rem;
+
+                        span {
+                            width: 0.75rem;
+                            height: 0.75rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 350px;
+                height: 750px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    .span1 {
+                        font-size: 1.8rem;
+                    }
+                    .span2 {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 1.1rem;
+
+                        span {
+                            width: 0.7rem;
+                            height: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 320px;
+                height: 700px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                    .span1 {
+                        font-size: 1.6rem;
+                    }
+                    .span2 {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 1rem;
+
+                        span {
+                            width: 0.65rem;
+                            height: 0.65rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 290px;
+                height: 650px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 1.3rem;
+                    line-height: 1.7rem;
+                    .span1 {
+                        font-size: 1.5rem;
+                    }
+                    .span2 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.9rem;
+
+                        span {
+                            width: 0.6rem;
+                            height: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 270px;
+                height: 600px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1050px  --------------------------------------
+
+@media only screen and (max-width: 1050px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    .span1 {
+                        font-size: 1.4rem;
+                    }
+                    .span2 {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.85rem;
+
+                        span {
+                            width: 0.6rem;
+                            height: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 260px;
+                height: 560px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 950px  --------------------------------------
+
+@media only screen and (max-width: 950px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                    .span1 {
+                        font-size: 1.3rem;
+                    }
+                    .span2 {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.8rem;
+
+                        span {
+                            width: 0.55rem;
+                            height: 0.55rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 240px;
+                height: 540px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 880px  --------------------------------------
+
+@media only screen and (max-width: 880px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                    .span1 {
+                        font-size: 1.3rem;
+                    }
+                    .span2 {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.8rem;
+
+                        span {
+                            width: 0.55rem;
+                            height: 0.55rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 230px;
+                height: 520px;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 850px  --------------------------------------
+
+@media only screen and (max-width: 850px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 1rem;
+                    line-height: 1.4rem;
+                    .span1 {
+                        font-size: 1.2rem;
+                    }
+                    .span2 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.75rem;
+
+                        span {
+                            width: 0.53rem;
+                            height: 0.53rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 220px;
+                height: 500px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 780px  --------------------------------------
+
+@media only screen and (max-width: 780px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 0.95rem;
+                    line-height: 1.3rem;
+                    .span1 {
+                        font-size: 1.1rem;
+                    }
+                    .span2 {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.7rem;
+
+                        span {
+                            width: 0.51rem;
+                            height: 0.51rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 200px;
+                height: 480px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 750px  --------------------------------------
+
+@media only screen and (max-width: 750px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 0.95rem;
+                    line-height: 1.3rem;
+                    .span1 {
+                        font-size: 1.1rem;
+                    }
+                    .span2 {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.7rem;
+
+                        span {
+                            width: 0.51rem;
+                            height: 0.51rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 180px;
+                height: 460px;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 680px  --------------------------------------
+
+@media only screen and (max-width: 680px) {
+    .profiling-card-main-container {
+        .left-part {
+            .headings-div {
+                h1 {
+                    font-size: 0.9rem;
+                    line-height: 1.2rem;
+                    .span1 {
+                        font-size: 1rem;
+                    }
+                    .span2 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .property-list-div {
+                ul {
+                    li {
+                        font-size: 0.65rem;
+
+                        span {
+                            width: 0.49rem;
+                            height: 0.49rem;
+                        }
+                    }
+                }
+            }
+        }
+        .right-part {
+            .phone-mockup-div {
+                width: 160px;
+                height: 440px;
+            }
+        }
+    }
+}

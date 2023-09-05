@@ -1,0 +1,188 @@
+.nev-item-main-conainer {
+    width: 100%;
+    height: 100%;
+    // background-color: #fff;
+
+    @keyframes paraDown-keyframe {
+        0% {
+            padding-bottom: 0%;
+        }
+        60% {
+            font-weight: 500;
+        }
+        80% {
+            padding-bottom: 8%;
+            font-weight: 500;
+
+        }
+
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+        // padding-bottom: 0%;
+        font-size: 1.4rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    @keyframes hr-line-keyframe {
+        0% {
+            opacity: 0;
+            width: 50%;
+        }
+
+        100% {
+            opacity: 1;
+            width: 100%;
+        }
+    }
+
+    hr {
+        position: absolute;
+        top: 75%;
+        right: 8%;
+        width: 98%;
+        height: 1px;
+        background-color: #ffffff;
+        border: none;
+        transition: 0.8s;
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 1.32rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 1.24rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 1.16rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 1.08rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 0.92rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 0.88rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 1080px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 0.82rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 0.65rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .nev-item-main-conainer {
+        p {
+            font-size: 0.5rem;
+        }
+    }
+}

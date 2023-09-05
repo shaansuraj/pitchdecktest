@@ -1,0 +1,390 @@
+.comp-nine-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    .content-container {
+        width: 100%;
+        height: 80%;
+        right: -1%;
+        border-radius: 340px 0 0 340px;
+        // background-color: #ffffff;
+        // box-shadow: -6px 4px 4px gray;
+        // border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+
+        .para1-div {
+            position: absolute;
+            padding: 2% 0 2% 25%;
+            border-top-right-radius: 30px;
+            width: 60%;
+            top: 15%;
+            left: -10%;
+            background-color: #ffffff;
+            transition: 0.8s;
+
+            p {
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: #333333;
+                border-bottom: 1px solid #333333;
+                transition: 0.8s;
+                display: inline-block;
+            }
+        }
+        .para2-div {
+            position: absolute;
+            top: 33.5%;
+            left: 72%;
+            padding: 0 2% 0 5%;
+            border-bottom: 1px solid #333333;
+            transition: 0.8s;
+
+            p {
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: #333333;
+                transition: 0.8s;
+            }
+        }
+
+        .bg-img {
+            position: absolute;
+            top: -2%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 1s;
+        }
+        .phone1-img {
+            width: 24%;
+            height: 56%;
+            object-fit: contain;
+            top: 42.5%;
+            left: 75%;
+            transition: 0.8s;
+        }
+        .phone2-img {
+            width: 22%;
+            height: 50%;
+            object-fit: contain;
+            top: 48.5%;
+            left: 53%;
+            transition: 0.8s;
+        }
+        .phone3-img {
+            width: 19.5%;
+            height: 45%;
+            object-fit: contain;
+            top: 53.5%;
+            left: 33.5%;
+            transition: 0.8s;
+        }
+
+        // .heading-div {
+        //     position: absolute;
+        //     top: 40%;
+        //     left: 35%;
+        //     padding-right: 2%;
+
+        //     h1 {
+        //         font-size: 2.5rem;
+        //         font-weight: 500;
+        //         text-align: left;
+        //         color: #333333;
+        //         line-height: 3rem;
+
+        //         span {
+        //             font-size: 2.2rem;
+        //             font-weight: 400;
+        //             color: #ffffff;
+        //             border-bottom: 1px solid #ffffff;
+        //         }
+        //     }
+        // }
+    }
+}
+
+//--------------------------  max-width: 1650x  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .comp-nine-main-container {
+        width: 100%;
+        height: 90%;
+        .content-container {
+            border-radius: 280px 0 0 280px;
+
+            .para1-div {
+                border-top-right-radius: 28px;
+
+                p {
+                    font-size: 1.25rem;
+                }
+            }
+            .para2-div {
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1536x  --------------------------------------
+
+@media only screen and (max-width: 1536px) {
+    .comp-nine-main-container {
+        width: 100%;
+        height: 90%;
+        .content-container {
+            border-radius: 260px 0 0 260px;
+
+            .para1-div {
+                border-top-right-radius: 26px;
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+            .para2-div {
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1440px  --------------------------------------
+
+@media only screen and (max-width: 1440px) {
+    .comp-nine-main-container {
+        .content-container {
+            border-radius: 240px 0 0 240px;
+
+            .para1-div {
+                border-top-right-radius: 24px;
+
+                p {
+                    font-size: 1.15rem;
+                }
+            }
+            .para2-div {
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1360px  --------------------------------------
+
+@media only screen and (max-width: 1360px) {
+    .comp-nine-main-container {
+        .content-container {
+            border-radius: 220px 0 0 220px;
+
+            .para1-div {
+                border-top-right-radius: 22px;
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+            .para2-div {
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1280px  --------------------------------------
+
+@media only screen and (max-width: 1280px) {
+    .comp-nine-main-container {
+        .content-container {
+            border-radius: 200px 0 0 200px;
+
+            .para1-div {
+                border-top-right-radius: 20px;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .para2-div {
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .comp-nine-main-container {
+        width: 100%;
+        height: 85%;
+        .content-container {
+            border-radius: 180px 0 0 180px;
+
+            .para1-div {
+                border-top-right-radius: 18px;
+
+                p {
+                    font-size: 0.95rem;
+                }
+            }
+            .para2-div {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .comp-nine-main-container {
+        width: 100%;
+        height: 80%;
+        .content-container {
+            border-radius: 160px 0 0 160px;
+
+            .para1-div {
+                border-top-right-radius: 16px;
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            .para2-div {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .comp-nine-main-container {
+        width: 100%;
+        height: 100%;
+        .content-container {
+            border-radius: 150px 0 0 150px;
+
+            .para1-div {
+                border-top-right-radius: 18px;
+                padding: 1% 0 1% 22%;
+
+                p {
+                    font-size: 0.65rem;
+                }
+            }
+            .para2-div {
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .comp-nine-main-container {
+        width: 100%;
+        height: 105%;
+        .content-container {
+            border-radius: 140px 0 0 140px;
+
+            .para1-div {
+                border-top-right-radius: 16px;
+
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+            .para2-div {
+                margin-left: 4%;
+
+                p {
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .comp-nine-main-container {
+        width: 100%;
+        height: 105%;
+        .content-container {
+            border-radius: 130px 0 0 130px;
+
+            .para1-div {
+                border-top-right-radius: 15px;
+
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+            .para2-div {
+                margin-left: 3%;
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .comp-nine-main-container {
+        width: 100%;
+        height: 95%;
+        .content-container {
+            border-radius: 120px 0 0 120px;
+
+            .para1-div {
+                border-top-right-radius: 14px;
+
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+            .para2-div {
+                margin-left: 1%;
+
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,437 @@
+.thirdPD-card-comp-main-container {
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 5px gray;
+    position: relative;
+    overflow: hidden;
+
+    .top-part {
+        width: 100%;
+        height: 30%;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon-div {
+            width: 60%;
+            height: 70%;
+            // background-color: gray;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .bottom-part {
+        width: 100%;
+        height: 70%;
+        position: relative;
+        // border: 1px solid black;
+        padding: 2% 7%;
+        display: flex;
+        flex-direction: column;
+        gap: 8%;
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #ff4d4d;
+            text-align: center;
+            border-bottom: 2px solid #ff4d4d;
+        }
+        p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #333333;
+            text-align: center;
+        }
+        .more-btn-div {
+            width: 86%;
+            height: 12%;
+            background-color: #ff4d4d;
+            position: absolute;
+            bottom: 8%;
+            left: 7%;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            border-radius: 6px;
+            cursor: pointer;
+
+
+            @keyframes paraDown-keyframe {
+                0% {
+                    padding-bottom: 0%;
+                }
+                60% {
+                    padding-bottom: -4%;
+                }
+                60% {
+                    padding-bottom: 4%;
+                }
+        
+                100% {
+                    padding-bottom: 0%;
+                }
+            }
+
+            .hover-div {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                // background-color: #333333;
+                // border: 1px solid black;
+                z-index: 2;
+                visibility: hidden;
+            }
+
+            p {
+                position: absolute;
+                top: 20%;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .thirdPD-card-comp-main-container {
+        width: 320px;
+        height: 460px;
+
+        .bottom-part {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .more-btn-div {
+                border-radius: 6px;
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .thirdPD-card-comp-main-container {
+        width: 300px;
+        height: 420px;
+
+        .bottom-part {
+            h1 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .more-btn-div {
+                border-radius: 6px;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .thirdPD-card-comp-main-container {
+        width: 280px;
+        height: 400px;
+
+        .bottom-part {
+            h1 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+            .more-btn-div {
+                border-radius: 5px;
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .thirdPD-card-comp-main-container {
+        width: 260px;
+        height: 380px;
+
+        .bottom-part {
+            h1 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.75rem;
+            }
+            .more-btn-div {
+                border-radius: 5px;
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .thirdPD-card-comp-main-container {
+        width: 240px;
+        height: 360px;
+
+        .bottom-part {
+            h1 {
+                font-size: 1.1rem;
+            }
+            // p {
+            //     font-size: 0.65rem;
+            // }
+            .more-btn-div {
+                border-radius: 4px;
+
+                // p {
+                //     font-size: 0.7rem;
+                // }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1150px  --------------------------------------
+
+@media only screen and (max-width: 1150px) {
+    .thirdPD-card-comp-main-container {
+        width: 220px;
+        height: 320px;
+
+        .bottom-part {
+            h1 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+            .more-btn-div {
+                border-radius: 4px;
+
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1050px  --------------------------------------
+
+@media only screen and (max-width: 1050px) {
+    .thirdPD-card-comp-main-container {
+        width: 205px;
+        height: 300px;
+
+        .bottom-part {
+            h1 {
+                font-size: 0.95rem;
+            }
+            p {
+                font-size: 0.68rem;
+            }
+            .more-btn-div {
+                border-radius: 4px;
+
+                p {
+                    font-size: 0.73rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 950px  --------------------------------------
+
+@media only screen and (max-width: 950px) {
+    .thirdPD-card-comp-main-container {
+        width: 190px;
+        height: 280px;
+
+        .bottom-part {
+            h1 {
+                font-size: 0.9rem;
+            }
+            p {
+                font-size: 0.64rem;
+            }
+            .more-btn-div {
+                border-radius: 4px;
+
+                p {
+                    font-size: 0.71rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 850px  --------------------------------------
+
+@media only screen and (max-width: 850px) {
+    .thirdPD-card-comp-main-container {
+        width: 175px;
+        height: 260px;
+
+        .bottom-part {
+            h1 {
+                font-size: 0.85rem;
+            }
+            p {
+                font-size: 0.6rem;
+            }
+            .more-btn-div {
+                border-radius: 4px;
+
+                p {
+                    font-size: 0.66rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .thirdPD-card-comp-main-container {
+        width: 160px;
+        height: 240px;
+
+        .bottom-part {
+            h1 {
+                font-size: 0.78rem;
+            }
+            p {
+                font-size: 0.54rem;
+            }
+            .more-btn-div {
+                border-radius: 4px;
+
+                p {
+                    font-size: 0.64rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 750px  --------------------------------------
+
+@media only screen and (max-width: 750px) {
+    .thirdPD-card-comp-main-container {
+        width: 145px;
+        height: 220px;
+
+        .bottom-part {
+            h1 {
+                font-size: 0.72rem;
+            }
+            p {
+                font-size: 0.48rem;
+            }
+            .more-btn-div {
+                border-radius: 4px;
+
+                p {
+                    font-size: 0.62rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 700px  --------------------------------------
+
+@media only screen and (max-width: 700px) {
+    .thirdPD-card-comp-main-container {
+        width: 130px;
+        height: 200px;
+
+        .bottom-part {
+            h1 {
+                font-size: 0.64rem;
+            }
+            p {
+                font-size: 0.44rem;
+            }
+            .more-btn-div {
+                border-radius: 4px;
+
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 600px  --------------------------------------
+
+@media only screen and (max-width: 600px) {
+    .thirdPD-card-comp-main-container {
+        width: 115px;
+        height: 180px;
+
+        .bottom-part {
+            h1 {
+                font-size: 0.56rem;
+            }
+            p {
+                font-size: 0.38rem;
+            }
+            .more-btn-div {
+                border-radius: 4px;
+
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+}

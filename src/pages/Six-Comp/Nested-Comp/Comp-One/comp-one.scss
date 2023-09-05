@@ -1,0 +1,175 @@
+.comp-one-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+
+    .content-container {
+        width: 100%;
+        height: 80%;
+        border-radius: 300px 0 0 300px;
+        background-color: aqua;
+        position: relative;
+        overflow: hidden;
+
+        .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .phones-div {
+            position: relative;
+            bottom: 0%;
+            left: 30%;
+            width: 60%;
+            height: 100%;
+            // background-color: bisque;
+            // z-index: 1;
+
+            .phone1-img {
+                position: absolute;
+                left: 0;
+                top: 30%;
+                width: 65%;
+                height: 90%;
+                object-fit: contain;
+                transition: 0.8s;
+            }
+            .phone2-img {
+                position: absolute;
+                left: 30%;
+                top: 45%;
+                width: 50%;
+                height: 70%;
+                object-fit: contain;
+                transition: 0.8s;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1536px  --------------------------------------
+
+@media only screen and (max-width: 1536px) {
+    .comp-one-main-container {
+        width: 100%;
+        height: 90%;
+        .content-container {
+            border-radius: 280px 0 0 280px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1440px  --------------------------------------
+
+@media only screen and (max-width: 1440px) {
+    
+    .comp-one-main-container {
+        .content-container {
+            border-radius: 260px 0 0 260px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1360px  --------------------------------------
+
+@media only screen and (max-width: 1360px) {
+    .comp-one-main-container {
+        .content-container {
+            border-radius: 240px 0 0 240px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1280px  --------------------------------------
+
+@media only screen and (max-width: 1280px) {
+    .comp-one-main-container {
+        .content-container {
+            border-radius: 240px 0 0 240px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .comp-one-main-container {
+        width: 100%;
+        height: 85%;
+        .content-container {
+            border-radius: 240px 0 0 240px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .comp-one-main-container {
+        width: 100%;
+        height: 80%;
+        .content-container {
+            border-radius: 220px 0 0 220px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .comp-one-main-container {
+        width: 100%;
+        height: 100%;
+        .content-container {
+            border-radius: 150px 0 0 150px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .comp-one-main-container {
+        width: 100%;
+        height: 105%;
+        .content-container {
+            border-radius: 140px 0 0 140px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .comp-one-main-container {
+        width: 100%;
+        height: 105%;
+        .content-container {
+            border-radius: 130px 0 0 130px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .comp-one-main-container {
+        width: 100%;
+        height: 95%;
+        .content-container {
+            border-radius: 120px 0 0 120px;
+        }
+    }
+}
+

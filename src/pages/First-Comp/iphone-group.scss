@@ -1,0 +1,151 @@
+.firstPD-comp-iphone-group-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: antiquewhite;
+    position: relative;
+    // overflow: hidden;
+
+
+
+    @keyframes singlePhone1 {
+        0% {
+            top: 100%;
+            left: 150%;
+            opacity: 1;
+        }
+        60% {
+            top: -1%;
+            left: -1%;
+        }
+        80% {
+            top: 1%;
+            left: 1%;
+        }
+        100% {
+            top: 0%;
+            left: 0%;
+        }
+    }
+    @keyframes singlePhone2 {
+        0% {
+            top: 0%;
+            left: 0%;
+            opacity: 1;
+        }
+
+        100% {
+            top: -20%;
+            left: 50%;
+        }
+    }
+
+    @keyframes groupPhone1 {
+        0% {
+            top: 100%;
+            opacity: 1;
+        }
+        60% {
+            top: -1%;
+        }
+        80% {
+            top: 1%;
+        }
+        100% {
+            top: 0%;
+        }
+    }
+    @keyframes groupPhone2 {
+        0% {
+            top: 100%;
+            left: 2%;
+            opacity: 1;
+        }
+
+        60% {
+            top: 28%;
+            left: 0.8%;
+        }
+        80% {
+            top: 32%;
+            left: 1.2%;
+        }
+
+        100% {
+            top: 30%;
+            left: 1%;
+        }
+    }
+
+    @keyframes groupPhone3 {
+        0% {
+            top: 100%;
+            opacity: 1;
+        }
+        60% {
+            top: 13%;
+        }
+        80% {
+            top: 17%;
+        }
+        100% {
+            top: 15%;
+        }
+    }
+    @keyframes groupPhone4 {
+        0% {
+            top: 15%;
+        }
+        100% {
+            top: 100%;
+
+        }
+    }
+
+    .image1 {
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        object-fit: fill;
+        opacity: 0;
+    }
+    .image2 {
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        left: 1%;
+        top: 30%;
+        object-fit: fill;
+        opacity: 0;
+    }
+    .phone-div {
+        position: absolute;
+        width: 8%;
+        height: 100%;
+        // background-color: black;
+        top: 0;
+        left: 41%;
+
+        img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 200%;
+            object-fit: fill;
+            opacity: 0;
+        }
+
+    }
+    .image3{
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        object-fit: fill;
+        top: 15%;
+        left: -0.5%;
+        opacity: 0;
+    }
+
+    
+}

@@ -1,0 +1,443 @@
+.sixteenth-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 95vh;
+    // border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+
+    .top-heading {
+        width: 100%;
+        height: 28%;
+        box-shadow: 0px 4px 4px gray;
+        // background-color: gold;
+
+        .top-part {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .shape-left {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 4%;
+                height: 40%;
+                background-color: #ff3737;
+                border-bottom-right-radius: 20px;
+                box-shadow: 0px 2px 3px gray;
+            }
+            .shape-right {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 4%;
+                height: 40%;
+                background-color: #ff3737;
+                border-bottom-left-radius: 20px;
+                box-shadow: 0px 2px 3px gray;
+            }
+
+            .logo-div {
+                position: absolute;
+                left: 5%;
+                width: 200px;
+                height: 50px;
+                // border: 1px solid black;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .heading-div {
+                width: 250px;
+                height: 60px;
+                // background-color: bisque;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .shape-div {
+                    width: 5%;
+                    height: 100%;
+                    background-color: #ff3737;
+                }
+                p {
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    font-weight: 400;
+                    span {
+                        font-weight: 600;
+                        color: #ff3737;
+                    }
+                }
+            }
+        }
+        .bottom-part {
+            width: 100%;
+            height: 40%;
+            // background-color: darkcyan;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .features-heading-div {
+                width: 20%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    background-color: #333;
+                    color: #fff;
+                    font-size: 1.2rem;
+                    padding: 10px 50px;
+                    border-radius: 50px;
+                }
+            }
+            .right-div {
+                width: 80%;
+                height: 100%;
+                // border: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .logo-div-style {
+                    width: 180px;
+                    height: 50px;
+                    // border: 1px solid black;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .rentainance-div {
+                    @extend .logo-div-style;
+                }
+                ._99acres-div {
+                    @extend .logo-div-style;
+                }
+                .no-brokers-div {
+                    @extend .logo-div-style;
+                }
+                .housing-div {
+                    @extend .logo-div-style;
+                }
+                .magic-bricks-div {
+                    @extend .logo-div-style;
+                }
+                .broker-network-div {
+                    @extend .logo-div-style;
+                }
+            }
+        }
+    }
+    .content-body {
+        width: 100%;
+        height: 70%;
+        overflow-y: scroll;
+        // border: 1px solid black;
+        
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
+        &::-webkit-scrollbar {
+            width: 10px;
+          }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #ff3737;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .content-item-div {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+//--------------------------  max-width: 1440px  --------------------------------------
+
+@media only screen and (max-width: 1440px) {
+    .sixteenth-comp-main-container {
+        .top-heading {
+            .top-part {
+                .logo-div {
+                    width: 200px;
+                    height: 50px;
+                }
+                .shape-left {
+                    border-bottom-right-radius: 18px;
+                }
+                .shape-right {
+                    border-bottom-left-radius: 18px;
+                }
+
+                .heading-div {
+                    width: 250px;
+                    height: 60px;
+                    p {
+                        font-size: 1.5rem;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+            .bottom-part {
+                .features-heading-div {
+                    p {
+                        font-size: 1.2rem;
+                        padding: 10px 50px;
+                    }
+                }
+                .right-div {
+                    .logo-div-style {
+                        width: 160px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .sixteenth-comp-main-container {
+        .top-heading {
+            .top-part {
+                .logo-div {
+                    width: 180px;
+                    height: 45px;
+                }
+                .shape-left {
+                    border-bottom-right-radius: 16px;
+                }
+                .shape-right {
+                    border-bottom-left-radius: 16px;
+                }
+
+                .heading-div {
+                    width: 230px;
+                    height: 55px;
+                    p {
+                        font-size: 1.3rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+            .bottom-part {
+                .features-heading-div {
+                    p {
+                        font-size: 1.1rem;
+                        padding: 10px 50px;
+                    }
+                }
+                .right-div {
+                    .logo-div-style {
+                        width: 150px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .sixteenth-comp-main-container {
+        .top-heading {
+            .top-part {
+                .logo-div {
+                    width: 180px;
+                    height: 45px;
+                }
+                .shape-left {
+                    border-bottom-right-radius: 14px;
+                }
+                .shape-right {
+                    border-bottom-left-radius: 14px;
+                }
+
+                .heading-div {
+                    width: 230px;
+                    height: 55px;
+                    p {
+                        font-size: 1.3rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+            .bottom-part {
+                .features-heading-div {
+                    p {
+                        font-size: 1.1rem;
+                        padding: 10px 50px;
+                    }
+                }
+                .right-div {
+                    .logo-div-style {
+                        width: 140px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .sixteenth-comp-main-container {
+        .top-heading {
+            .top-part {
+                .logo-div {
+                    width: 120px;
+                    height: 30px;
+                }
+                .shape-left {
+                    border-bottom-right-radius: 12px;
+                }
+                .shape-right {
+                    border-bottom-left-radius: 12px;
+                }
+
+                .heading-div {
+                    width: 160px;
+                    height: 35px;
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.2rem;
+                    }
+                }
+            }
+            .bottom-part {
+                .features-heading-div {
+                    p {
+                        font-size: 1rem;
+                        padding: 5px 25px;
+                    }
+                }
+                .right-div {
+                    .logo-div-style {
+                        width: 120px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .sixteenth-comp-main-container {
+        .top-heading {
+            .top-part {
+                .logo-div {
+                    width: 100px;
+                    height: 25px;
+                }
+                .shape-left {
+                    border-bottom-right-radius: 10px;
+                }
+                .shape-right {
+                    border-bottom-left-radius: 10px;
+                }
+
+                .heading-div {
+                    width: 130px;
+                    height: 30px;
+                    p {
+                        font-size: 0.8rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+            .bottom-part {
+                .features-heading-div {
+                    p {
+                        font-size: 0.8rem;
+                        padding: 4px 20px;
+                    }
+                }
+                .right-div {
+                    .logo-div-style {
+                        width: 95px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .sixteenth-comp-main-container {
+        .top-heading {
+            .top-part {
+                .logo-div {
+                    width: 90px;
+                    height: 22px;
+                }
+                .shape-left {
+                    border-bottom-right-radius: 9px;
+                }
+                .shape-right {
+                    border-bottom-left-radius: 9px;
+                }
+
+                .heading-div {
+                    width: 120px;
+                    height: 25px;
+                    p {
+                        font-size: 0.7rem;
+                        line-height: 0.8rem;
+                    }
+                }
+            }
+            .bottom-part {
+                .features-heading-div {
+                    p {
+                        font-size: 0.7rem;
+                        padding: 2px 16px;
+                    }
+                }
+                .right-div {
+                    .logo-div-style {
+                        width: 90px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

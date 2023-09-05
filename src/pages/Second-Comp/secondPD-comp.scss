@@ -1,0 +1,758 @@
+.secondPD-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 98vh;
+    position: relative;
+    // border: 1px solid black;
+    box-sizing: border-box;
+    // margin-top: 4%;
+    overflow: hidden;
+
+
+    .prev-btn {
+        position: absolute;
+        top: 46%;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        // background-color: #333333;
+        background: none;
+        cursor: pointer;
+    }
+
+    .next-btn {
+        position: absolute;
+        top: 46%;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        // background-color: #333333;
+        background: none;
+        cursor: pointer;
+    }
+
+    .top-div {
+        position: absolute;
+        // border: 1px solid black;
+        width: 100%;
+        height: 20%;
+        box-sizing: border-box;
+        padding-top: 1%;
+        top: 0;
+        left: 0;
+        display: flex;
+        gap: 2%;
+
+        .ractangle-div {
+            width: 20%;
+            height: 100%;
+            // border: 1px solid black;
+
+            .shape1 {
+                width: 100%;
+                height: 35%;
+                background-color: #ff4d4d;
+            }
+        }
+
+        .heading-div {
+            width: 78%;
+            height: 100%;
+
+            // border: 1px solid black;
+            h1 {
+                font-size: 3.2rem;
+                font-weight: 500;
+                line-height: 3rem;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 300;
+                margin-left: 1%;
+
+                span {
+                    font-size: 2.5rem;
+                    font-weight: 400;
+                    color: #ff4d4d;
+                }
+            }
+        }
+    }
+
+    .left-div {
+        position: absolute;
+        background-color: #e9e9e9;
+        width: 15%;
+        height: 80%;
+        top: 20%;
+        left: 0;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-evenly;
+
+        .focus-div {
+            position: absolute;
+            width: 97%;
+            height: 15%;
+            background-color: #ffffff;
+            box-shadow: 0px 6px 3px gray;
+            border-top-right-radius: 50px;
+            transition: 0.5s;
+            z-index: 0;
+        }
+
+        .text-div-style-1 {
+            position: unset;
+            z-index: 1;
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            // border: 1px solid black;
+            // background-color: #ffffff;
+
+            .tap-icon-div {
+                position: absolute;
+                right: 0;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .tap-icon {
+                    font-size: 2.5rem;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                font-weight: 400;
+                padding-left: 5%;
+                transition: 0.4s;
+                border-bottom: 1px solid #333333;
+            }
+        }
+
+        @keyframes NavBar-keyframe {
+            0% {
+                padding-bottom: 0%;
+            }
+
+            60% {
+                padding-bottom: 4%;
+                font-weight: 500;
+            }
+
+            100% {
+                padding-bottom: 0%;
+            }
+        }
+
+        @keyframes tapIcon-KeyFrame {
+            0% {
+                padding-bottom: 0%;
+            }
+
+            60% {
+                padding-bottom: 20%;
+
+            }
+
+            100% {
+                padding-bottom: 0%;
+            }
+        }
+
+        .landlord-div {
+            @extend .text-div-style-1;
+            position: absolute;
+            top: 10%;
+        }
+
+        .tenant-div {
+            @extend .text-div-style-1;
+            position: absolute;
+            top: 40%;
+        }
+
+        .broker-div {
+            @extend .text-div-style-1;
+            position: absolute;
+            top: 70%;
+        }
+    }
+
+    .right-div {
+        position: absolute;
+        width: 85%;
+        height: 80%;
+        top: 20%;
+        left: 15%;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid black;
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .secondPD-comp-main-container {
+
+        // height: 800px;
+        .next-btn , .prev-btn {
+            width: 76px;
+            height: 76px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 3rem;
+                    line-height: 2.8rem;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+
+                    span {
+                        font-size: 2.3rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 2.3rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1600px  --------------------------------------
+
+@media only screen and (max-width: 1600px) {
+    .secondPD-comp-main-container {
+        // height: 750px;
+        
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 2.8rem;
+                    line-height: 2.6rem;
+                }
+
+                h3 {
+                    font-size: 1.3rem;
+
+                    span {
+                        font-size: 2.1rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                h3 {
+                    font-size: 2.1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .secondPD-comp-main-container {
+        // height: 700px;
+        .next-btn , .prev-btn {
+            width: 72px;
+            height: 72px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 2.6rem;
+                    line-height: 2.4rem;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+
+                    span {
+                        font-size: 1.9rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.9rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .secondPD-comp-main-container {
+        // height: 650px;
+
+        .next-btn , .prev-btn {
+            width: 68px;
+            height: 68px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 2.4rem;
+                    line-height: 2.2rem;
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+
+                    span {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .secondPD-comp-main-container {
+        // height: 600px;
+
+        .next-btn , .prev-btn {
+            width: 64px;
+            height: 64px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 2.2rem;
+                    line-height: 2rem;
+                }
+
+                h3 {
+                    font-size: 1rem;
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.7rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .secondPD-comp-main-container {
+        // height: 550px;
+
+        .next-btn , .prev-btn {
+            width: 60px;
+            height: 60px;
+        }
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 2rem;
+                    line-height: 1.8rem;
+                }
+
+                h3 {
+                    font-size: 0.95rem;
+
+                    span {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1150px  --------------------------------------
+
+@media only screen and (max-width: 1150px) {
+    .secondPD-comp-main-container {
+        // height: 550px;
+
+        .next-btn , .prev-btn {
+            width: 56px;
+            height: 56px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 1.8rem;
+                    line-height: 1.6rem;
+                }
+
+                h3 {
+                    font-size: 0.95rem;
+
+                    span {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1050px  --------------------------------------
+
+@media only screen and (max-width: 1050px) {
+    .secondPD-comp-main-container {
+        // height: 550px;
+
+        .next-btn , .prev-btn {
+            width: 52px;
+            height: 52px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 1.6rem;
+                    line-height: 1.5rem;
+                }
+
+                h3 {
+                    font-size: 0.9rem;
+
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.45rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 950px  --------------------------------------
+
+@media only screen and (max-width: 950px) {
+    .secondPD-comp-main-container {
+        // height: 550px;
+
+        .next-btn , .prev-btn {
+            width: 50px;
+            height: 50px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 1.5rem;
+                    line-height: 1.4rem;
+                }
+
+                h3 {
+                    font-size: 0.8rem;
+
+                    span {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 850px  --------------------------------------
+
+@media only screen and (max-width: 850px) {
+    .secondPD-comp-main-container {
+        // height: 550px;
+
+        .next-btn , .prev-btn {
+            width: 46px;
+            height: 46px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 1.4rem;
+                    line-height: 1.3rem;
+                }
+
+                h3 {
+                    font-size: 0.7rem;
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.35rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 750px  --------------------------------------
+
+@media only screen and (max-width: 750px) {
+    .secondPD-comp-main-container {
+        // height: 550px;
+
+        .next-btn , .prev-btn {
+            width: 42px;
+            height: 42px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 1.3rem;
+                    line-height: 1.2rem;
+                }
+
+                h3 {
+                    font-size: 0.6rem;
+
+                    span {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 650px  --------------------------------------
+
+@media only screen and (max-width: 650px) {
+    .secondPD-comp-main-container {
+        // height: 550px;
+        .next-btn , .prev-btn {
+            width: 38px;
+            height: 38px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 1.1rem;
+                    line-height: 1.1rem;
+                }
+
+                h3 {
+                    font-size: 0.65rem;
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.25rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 600px  --------------------------------------
+
+@media only screen and (max-width: 600px) {
+    .secondPD-comp-main-container {
+        // height: 550px;
+
+        .next-btn , .prev-btn {
+            width: 36px;
+            height: 36px;
+        }
+
+        .top-div {
+            .heading-div {
+                h1 {
+                    font-size: 1rem;
+                    line-height: 1em;
+                }
+
+                h3 {
+                    font-size: 0.6rem;
+
+                    span {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .left-div {
+            .text-div-style-1 {
+                .tap-icon-div {
+                    .tap-icon {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

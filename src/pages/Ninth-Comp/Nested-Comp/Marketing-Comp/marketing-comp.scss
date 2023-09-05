@@ -1,0 +1,307 @@
+.marketing-comp-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // background-color: yellow;
+    overflow: hidden;
+    position: relative;
+
+    .heading-div {
+        position: absolute;
+        width: 60%;
+        height: 20%;
+        // border: 1px solid black;
+        top: 10%;
+        left: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @keyframes headingKeyframe {
+            0% {
+                top: 10%;
+                left: 25%;
+                opacity: 1;
+            }
+            100% {
+                top: -10%;
+                left: 30%;
+                opacity: 0;
+            }
+        }
+
+        .heading-style {
+            font-size: 3.2rem;
+            color: #333333;
+            font-weight: 600;
+            text-shadow: 1px 1px gray;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .headingOne {
+            @extend .heading-style;
+        }
+        .headingTwo {
+            @extend .heading-style;
+        }
+        .headingThree {
+            @extend .heading-style;
+        }
+    }
+
+    .phones-div {
+        width: 80%;
+        height: 40%;
+        margin-left: 10%;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .phone-image-style {
+            width: 34%;
+            height: 230%;
+            // border: 1px solid black;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                margin-top: 40%;
+            }
+        }
+
+        .phone1-img-div {
+            @extend .phone-image-style;
+        }
+        .phone2-img-div {
+            @extend .phone-image-style;
+        }
+        .phone3-img-div {
+            @extend .phone-image-style;
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 2.4rem;
+            }
+        }
+        .phones-div {
+            gap: 3.5%;
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 2.1rem;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1080px  --------------------------------------
+
+@media only screen and (max-width: 1080px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 1.9rem;
+            }
+        }
+    }
+}
+
+
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 1.8rem;
+            }
+        }
+        .phones-div {
+            gap: 0%;
+            .phone-image-style {
+                width: 34%;
+                height: 230%;
+                margin-left: -3.5%;
+
+    
+                img {
+                    width: 100%;
+                    height: 110%;
+                    object-fit: contain;
+                    margin-top: 28%;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 1.7rem;
+            }
+        }
+        
+    }
+}
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 1.6rem;
+            }
+        }
+        
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 1.5rem;
+            }
+        }
+        .phones-div {
+            gap: 0%;
+            .phone-image-style {
+                width: 34%;
+                height: 230%;
+                margin-left: 3.5%;
+
+    
+                img {
+                    width: 100%;
+                    height: 110%;
+                    object-fit: contain;
+                    margin-top: 28%;
+                }
+            }
+        }
+        
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .marketing-comp-main-container {
+        .heading-div {
+            .heading-style {
+                font-size: 1.4rem;
+            }
+        }
+        .phones-div {
+            gap: 0%;
+            .phone-image-style {
+                width: 34%;
+                height: 230%;
+                margin-left: 3.5%;
+
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    margin-top: 28%;
+                }
+            }
+        }
+        
+    }
+}

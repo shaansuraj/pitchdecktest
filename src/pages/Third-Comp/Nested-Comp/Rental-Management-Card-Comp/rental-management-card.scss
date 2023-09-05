@@ -1,0 +1,582 @@
+.user-management-card-main-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .para-div {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+
+        p {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #333333;
+            span {
+                font-weight: 500;
+                color: #ff4d4d;
+            }
+        }
+    }
+    .property-list-div {
+        width: 90%;
+        height: 35%;
+        margin-left: 5%;
+        padding-top: 12%;
+        // background-color: #ff4d4d;
+        ul {
+            width: 100%;
+            height: 100%;
+            list-style-type: none;
+            display: flex;
+            gap: 10%;
+            flex-direction: column;
+            justify-content: space-around;
+
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: #333333;
+                opacity: .9;
+                transition: 0.2s;
+
+                &:hover {
+                    transform: scale(1.02);
+                    color: #ff4d4d;
+                }
+
+                span {
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    margin-right: 2.5%;
+                    border-radius: 50%;
+                    background-color: #ff4d4d;
+                }
+            }
+        }
+    }
+    .para1-div {
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        border-bottom: 1px solid #ff4d4d;
+
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #333333;
+
+            span{
+                font-size: 2rem;
+            }
+
+            .span1 {
+                font-weight: 500;
+            }
+            .span2 {
+                font-weight: 600;
+                color: #ff4d4d;
+            }
+        }
+    }
+
+    .shape1-div {
+        width: 20%;
+        height: 20%;
+        border-radius: 50px;
+        background-color: #ff4d4d;
+        box-shadow: -6px 6px 5px gray;
+        position: absolute;
+        top: -10%;
+        right: -4%;
+    }
+    .phones-frame-div {
+        width: 100%;
+        height: 60%;
+        // border: 1px solid black;
+        position: absolute;
+        bottom: -25%;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .phone-img-style {
+        position: absolute;
+        width: 24%;
+        height: 100%;
+        top: 0;
+
+        // background-color: #333333;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 155%;
+            object-fit: contain;
+            transition: 1.5s;
+        }
+    }
+    .phone1-img-div {
+        @extend .phone-img-style;
+        left: 2%;
+    }
+    .phone2-img-div {
+        @extend .phone-img-style;
+        left: 26%;
+    }
+    .phone3-img-div {
+        @extend .phone-img-style;
+        left: 50%;
+    }
+    .phone4-img-div {
+        @extend .phone-img-style;
+        left: 74%;
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 1.8rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 1.2rem;
+
+                    span {
+                        width: 0.75rem;
+                        height: 0.75rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 1.4rem;
+                span{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 48px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 1.6rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 1.1rem;
+
+                    span {
+                        width: 0.7rem;
+                        height: 0.7rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 1.3rem;
+                span{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 46px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 1rem;
+
+                    span {
+                        width: 0.65rem;
+                        height: 0.65rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 1.2rem;
+                span{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 44px;
+        }
+    }
+}
+
+
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.95rem;
+
+                    span {
+                        width: 0.6rem;
+                        height: 0.6rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 1.1rem;
+                span{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 40px;
+        }
+    }
+}
+
+
+
+//--------------------------  max-width: 1150px  --------------------------------------
+
+@media only screen and (max-width: 1150px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 1.3rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.9rem;
+
+                    span {
+                        width: 0.55rem;
+                        height: 0.55rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 1rem;
+                span{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 38px;
+        }
+    }
+}
+
+
+
+//--------------------------  max-width: 1050px  --------------------------------------
+
+@media only screen and (max-width: 1050px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.85rem;
+
+                    span {
+                        width: 0.53rem;
+                        height: 0.53rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 0.95rem;
+                span{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 36px;
+        }
+    }
+}
+
+//--------------------------  max-width: 950px  --------------------------------------
+
+@media only screen and (max-width: 950px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 1.1rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.8rem;
+
+                    span {
+                        width: 0.51rem;
+                        height: 0.51rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 0.9rem;
+                span{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 34px;
+        }
+    }
+}
+
+//--------------------------  max-width: 850px  --------------------------------------
+
+@media only screen and (max-width: 850px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 1rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.75rem;
+
+                    span {
+                        width: 0.49rem;
+                        height: 0.49rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 0.85rem;
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 32px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 0.95rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.7rem;
+
+                    span {
+                        width: 0.47rem;
+                        height: 0.47rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 0.8rem;
+                span{
+                    font-size: 0.95rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 30px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 750px  --------------------------------------
+
+@media only screen and (max-width: 750px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 0.9rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.65rem;
+
+                    span {
+                        width: 0.45rem;
+                        height: 0.45rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 0.75rem;
+                span{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 28px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 700px  --------------------------------------
+
+@media only screen and (max-width: 700px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 0.85rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.6rem;
+
+                    span {
+                        width: 0.43rem;
+                        height: 0.43rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 0.7rem;
+                span{
+                    font-size: 0.85rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 26px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 650px  --------------------------------------
+
+@media only screen and (max-width: 650px) {
+    .user-management-card-main-container {
+        .para-div {
+            p {
+                font-size: 0.8rem;
+            }
+        }
+        .property-list-div {
+            ul {
+                li {
+                    font-size: 0.55rem;
+
+                    span {
+                        width: 0.42rem;
+                        height: 0.42rem;
+                    }
+                }
+            }
+        }
+        .para1-div {
+            p {
+                font-size: 0.7rem;
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .shape1-div {
+            border-radius: 24px;
+        }
+    }
+}

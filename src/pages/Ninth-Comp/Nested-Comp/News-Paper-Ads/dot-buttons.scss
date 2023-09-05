@@ -1,0 +1,11 @@
+.dotButton {
+    // margin: 0 25px;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: none;
+    background-color: #B2B2B2;
+    &:hover{
+      cursor: pointer;
+    }
+  }

@@ -1,0 +1,174 @@
+.billboard-marketing-comp-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: yellow;
+    display: flex;
+    align-items: center;
+    position: relative;
+    // justify-content: left;
+
+    .slider {
+        width: 80%;
+        height: 94%;
+        margin-left: 2%;
+        // background-color: blue;
+        border-radius: 0 120px 0 20px;
+        // border: 1px solid black;
+        overflow: hidden;
+        position: relative;
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            //  background-color: blue;
+            transition: 1.5s;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+                // transition: opacity 2s;
+                // opacity: 0;
+            }
+        }
+        .dot-container {
+            position: absolute;
+            bottom: 0%;
+            width: 40%;
+            height: 10%;
+            // background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .dot-button-div {
+                width: 40px;
+                height: 40px;
+                // margin: 0 20px;
+                box-sizing: content-box;
+                padding: 5px 20px;
+                // background-color: bisque;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 110px 0 19px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 100px 0 18px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 90px 0 17px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 80px 0 16px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 70px 0 15px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 65px 0 14px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 60px 0 13px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 55px 0 12px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 50px 0 11px;
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 45px 0 10px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .billboard-marketing-comp-main-container {
+        .slider {
+            border-radius: 0 40px 0 9px;
+        }
+    }
+}

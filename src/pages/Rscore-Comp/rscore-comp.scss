@@ -1,0 +1,1392 @@
+.rscore-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 95vh;
+    // border: 1px solid black;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+    @keyframes paraDown-keyframe {
+        0% {
+            padding-bottom: 0%;
+        }
+        60% {
+            padding-bottom: -4%;
+        }
+        60% {
+            padding-bottom: 4%;
+        }
+
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+    @keyframes tapIcon-KeyFrame {
+        0% {
+            padding-bottom: 0%;
+        }
+        60% {
+            padding-bottom: 20%;
+        }
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+
+    .back-btn{
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        width: 3%;
+        height:5.6%;
+        border: none;
+        background: none;
+        z-index: 3;
+        cursor: pointer;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+    .chart-view-btn-div {
+        position: absolute;
+        bottom: 18%;
+        left: 4%;
+        width: 12%;
+        height: 5%;
+        background-color: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        border-radius: 5px;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 5px 7px 5px gray;
+        }
+
+        .chart-view-btn {
+            border: none;
+            color: #ffffff;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px gray;
+        }
+        .tap-icon-div {
+            position: absolute;
+            right: 0;
+            bottom: -2%;
+            .tap-icon {
+                font-size: 1.8rem;
+                color: #ffffff;
+            }
+        }
+    }
+    .hidden-div-second {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 70%;
+            height: 80%;
+            object-fit: contain;
+        }
+    }
+
+    .hidden-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: none;
+    }
+
+    .left-part-div {
+        width: 50%;
+        height: 100%;
+        // background-color: orange;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+
+        .logo-div {
+            position: absolute;
+            top: 4%;
+            left: 6%;
+            width: 12%;
+            height: 10%;
+            // background-color: #333333;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .content-div {
+            width: 70%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            // background-color: #333333;
+            margin-left: 8%;
+
+            .para-div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                justify-content: space-around;
+                // background-color: #333333;
+
+                .list-div {
+                    width: 100%;
+                    height: 25%;
+                    font-size: 1.2rem;
+                    color: #333333;
+                    font-weight: 400;
+                    display: flex;
+                    // align-items: center;
+                    gap: 4%;
+                    // background-color: yellow;
+
+                    p {
+                        width: 78%;
+                        height: 100%;
+                    }
+
+                    span {
+                        width: 12%;
+                        height: 60%;
+                        // background-color: #d9d9d9;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-para-div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 25%;
+            height: 15%;
+            // background-color: #ff4d4d;
+
+            .top-div {
+                width: 100%;
+                height: 40%;
+                justify-content: center;
+                text-align: center;
+
+                p {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    color: #333333;
+                }
+            }
+            .bottom-div {
+                width: 100%;
+                height: 65%;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+
+                .shape1-div {
+                    width: 15%;
+                    height: 100%;
+                    background-color: #ff4d4d;
+                    border-radius: 0 40px 0 20px;
+                }
+                .hr-div {
+                    width: 85%;
+                    height: 4%;
+                    background-color: #ff4d4d;
+                }
+            }
+        }
+    }
+    .right-part-div {
+        width: 50%;
+        height: 100%;
+        // background-color: green;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        // border: 1px solid black;
+
+        @keyframes rscoreImgKF {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        .shape1-div {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 90%;
+            height: 25%;
+            background-color: #ff4d4d;
+            border-radius: 0 20px 0 80px;
+        }
+        .img-div {
+            width: 95%;
+            height: 105%;
+            position: absolute;
+            z-index: 1;
+            bottom: -8%;
+            left: 20%;
+
+            img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                visibility: hidden;
+            }
+
+            //---------------------------------HR LINES----------------------------------
+
+            .hr-group1-div {
+                width: 25%;
+                height: 34%;
+                // background-color: rgba(0,0,0,0.5);
+                position: absolute;
+                top: 11%;
+                left: -15.5%;
+                transition: 1s;
+                visibility: hidden;
+
+                .demo-div {
+                    width: 30%;
+                    height: 30%;
+                    background-color: orange;
+                    position: relative;
+                }
+
+                .hrline-1-div {
+                    position: absolute;
+                    top: 0%;
+                    left: 1.5%;
+                    width: 50%;
+                    height: 50%;
+                    border-left: 1.5px solid #d9d9d9;
+                    border-bottom: 1.5px solid #d9d9d9;
+                    transition: 0.2s;
+                }
+                .hrline-2-div {
+                    position: absolute;
+                    top: 50%;
+                    left: 50.2%;
+                    width: 50%;
+                    height: 50%;
+                    border-left: 1.5px solid #d9d9d9;
+                    border-bottom: 1.5px solid #d9d9d9;
+                    transition: 0.2s;
+                }
+            }
+            .hr-group2-div {
+                width: 19%;
+                height: 11%;
+                // background-color: rgba(0,0,0,0.5);
+                position: absolute;
+                top: 54%;
+                left: -11%;
+                transition: 1s;
+                visibility: hidden;
+
+                .hrline-1-div {
+                    position: absolute;
+                    top: 48%;
+                    left: 70.5%;
+                    width: 30%;
+                    height: 20;
+                    border-left: 1.5px solid #d9d9d9;
+                    border-bottom: 1.5px solid #d9d9d9;
+                    transition: 0.2s;
+                }
+                .hrline-2-div {
+                    position: absolute;
+                    top: 49%;
+                    left: 0%;
+                    width: 72.5%;
+                    height: 50%;
+                    border-right: 1.5px solid #d9d9d9;
+                    border-bottom: 1.5px solid #d9d9d9;
+                    transition: 0.2s;
+                }
+            }
+            .hr-group3-div {
+                width: 22%;
+                height: 18%;
+                // background-color: rgba(0,0,0,0.5);
+                position: absolute;
+                top: 67%;
+                left: -13.5%;
+                transition: 1s;
+                visibility: hidden;
+
+                .hrline-1-div {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 45%;
+                    height: 35%;
+                    border-right: 1.5px solid #d9d9d9;
+                    border-bottom: 1.5px solid #d9d9d9;
+                    transition: 0.2s;
+                }
+                .hrline-2-div {
+                    position: absolute;
+                    top: 33%;
+                    left: -1%;
+                    width: 56%;
+                    height: 62%;
+                    border-right: 1.5px solid #d9d9d9;
+                    border-bottom: 1.5px solid #d9d9d9;
+                    transition: 0.2s;
+                }
+            }
+            .hr-group4-div {
+                width: 250px;
+                height: 58px;
+                // background-color: rgba(0,0,0,0.5);
+                position: absolute;
+                top: 55%;
+                left: 33%;
+                transition: 1s;
+                visibility: hidden;
+
+                .hrline-div {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-top: 1.5px solid #d9d9d9;
+                    border-right: 1.5px solid #d9d9d9;
+                    transition: 0.2s;
+                }
+            }
+            //-------------------------------------------------------------------
+
+            //---------------------------------CARDS-----------------------------
+
+            .card-style {
+                position: absolute;
+                width: 250px;
+                height: 52px;
+                // background-color: pink;
+                border-radius: 8px;
+                box-shadow: 0px 2px 4px gray;
+                // transition: 1s;
+                overflow: hidden;
+                visibility: hidden;
+            }
+            .card1-div {
+                @extend .card-style;
+                top: 5%;
+                left: -32%;
+            }
+            .card2-div {
+                @extend .card-style;
+                top: 61%;
+                left: -38%;
+            }
+            .card3-div {
+                @extend .card-style;
+                top: 81%;
+                left: -40%;
+            }
+            .card4-div {
+                @extend .card-style;
+                top: 62%;
+                right: 28%;
+            }
+            //-------------------------------------------------------------------
+        }
+
+        .shape2-div {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 70%;
+            height: 22%;
+            background-color: #ff4d4d;
+            border-radius: 50px 0 20px 0;
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            .chart-view-btn {
+                font-size: 1.2rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 40px 0 20px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 20px 0 80px;
+            }
+            .img-div {
+                .card-style {
+                    width: 250px;
+                    height: 52px;
+                    border-radius: 8px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 50px 0 20px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1536px  --------------------------------------
+
+@media only screen and (max-width: 1536px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            .chart-view-btn {
+                font-size: 1.2rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 38px 0 19px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 19px 0 75px;
+            }
+            .img-div {
+                .card-style {
+                    width: 240px;
+                    height: 50px;
+                    border-radius: 8px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 45px 0 19px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1440px  --------------------------------------
+
+@media only screen and (max-width: 1440px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            .chart-view-btn {
+                font-size: 1.1rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 36px 0 18px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 18px 0 70px;
+            }
+            .img-div {
+                .card-style {
+                    width: 230px;
+                    height: 46px;
+                    border-radius: 8px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 40px 0 18px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1360px  --------------------------------------
+
+@media only screen and (max-width: 1360px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            .chart-view-btn {
+                font-size: 1rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.45rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 34px 0 17px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 17px 0 65px;
+            }
+            .img-div {
+                .card-style {
+                    width: 220px;
+                    height: 44px;
+                    border-radius: 7px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 38px 0 17px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1280px  --------------------------------------
+
+@media only screen and (max-width: 1280px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            .chart-view-btn {
+                font-size: 0.9rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 0.95rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 32px 0 16px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 16px 0 60px;
+            }
+            .img-div {
+                .card-style {
+                    width: 200px;
+                    height: 42px;
+                    border-radius: 7px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 36px 0 16px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            .chart-view-btn {
+                font-size: 0.9rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.35rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 0.95rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 32px 0 16px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 16px 0 60px;
+            }
+            .img-div {
+                width: 115%;
+                height: 120%;
+                bottom: -15%;
+                left: 15%;
+                //---------------------------------HR LINES----------------------------------
+
+                .hr-group1-div {
+                    height: 25%;
+                    top: 21%;
+                    left: -15.5%;
+                    .hrline-1-div {
+                        top: 0%;
+                        left: 1.5%;
+                    }
+                    .hrline-2-div {
+                        top: 50%;
+                        left: 50.2%;
+                    }
+                }
+                .hr-group2-div {
+                    height: 12%;
+                    top: 51.5%;
+                    left: -11%;
+
+                    .hrline-1-div {
+                        top: 48%;
+                        left: 71%;
+                    }
+                    .hrline-2-div {
+                        top: 49%;
+                        left: 0%;
+                    }
+                }
+                .hr-group3-div {
+                    height: 15%;
+                    top: 63.5%;
+                    left: -13%;
+
+                    .hrline-1-div {
+                        top: 0;
+                        right: 1.5%;
+                    }
+                    .hrline-2-div {
+                        top: 33%;
+                        left: -1%;
+                    }
+                }
+                .hr-group4-div {
+                    width: 25%;
+                    top: 55%;
+                    left: 33%;
+
+                    .hrline-div {
+                        top: 0;
+                        right: 0;
+                    }
+                }
+                //-------------------------------------------------------------------
+
+                .card-style {
+                    width: 200px;
+                    height: 42px;
+                    border-radius: 6px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+                .card1-div {
+                    top: 18%;
+                    left: -32%;
+                }
+                .card2-div {
+                    top: 61%;
+                    left: -38%;
+                }
+                .card3-div {
+                    top: 75%;
+                    left: -40%;
+                }
+                .card4-div {
+                    top: 60%;
+                    right: 35%;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 36px 0 16px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            .chart-view-btn {
+                font-size: 0.85rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 30px 0 15px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 15px 0 55px;
+            }
+            .img-div {
+                .card-style {
+                    width: 185px;
+                    height: 40px;
+                    border-radius: 6px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 34px 0 15px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1080px  --------------------------------------
+
+@media only screen and (max-width: 1080px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            .chart-view-btn {
+                font-size: 0.8rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 0.85rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 28px 0 14px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 14px 0 50px;
+            }
+            .img-div {
+                .card-style {
+                    width: 175px;
+                    height: 38px;
+                    border-radius: 6px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 32px 0 14px 0;
+            }
+        }
+    }
+}
+
+//=======================MOBILE RESPONSIVE===========================
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            width: 12%;
+            height: 7%;
+            .chart-view-btn {
+                font-size: 0.8rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 0.7rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 18px 0 10px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 14px 0 50px;
+            }
+            .img-div {
+                width: 100%;
+                height: 100%;
+                bottom: -5%;
+                //---------------------------------HR LINES----------------------------------
+
+                .hr-group1-div {
+                    width: 30%;
+                    height: 34%;
+                    top: 11%;
+                    left: -16.5%;
+                    .hrline-1-div {
+                        top: 0%;
+                        left: 1.5%;
+                    }
+                    .hrline-2-div {
+                        top: 49%;
+                        left: 50%;
+                    }
+                }
+                .hr-group2-div {
+                    width: 24%;
+                    height: 18%;
+                    top: 43%;
+                    left: -11%;
+
+                    .hrline-1-div {
+                        top: 48%;
+                        left: 70.5%;
+                    }
+                    .hrline-2-div {
+                        top: 49%;
+                        left: 0.5%;
+                    }
+                }
+                .hr-group3-div {
+                    height: 18%;
+                    top: 68.5%;
+                    left: -8%;
+
+                    .hrline-1-div {
+                        top: 0;
+                        right: 3%;
+                    }
+                    .hrline-2-div {
+                        top: 32.5%;
+                        left: -1%;
+                    }
+                }
+                .hr-group4-div {
+                    width: 25%;
+                    top: 55%;
+                    left: 34%;
+
+                    .hrline-div {
+                        top: 0;
+                        right: 0;
+                    }
+                }
+                //-------------------------------------------------------------------
+
+                .card-style {
+                    width: 155px;
+                    height: 32px;
+                    border-radius: 5px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+                .card1-div {
+                    top: 5%;
+                    left: -34%;
+                }
+                .card2-div {
+                    top: 57%;
+                    left: -36%;
+                }
+
+                .card3-div {
+                    top: 82%;
+                    left: -42%;
+                }
+                .card4-div {
+                    top: 65%;
+                    right: 28%;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 32px 0 14px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            width: 12%;
+            height: 7%;
+            .chart-view-btn {
+                font-size: 0.7rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.15rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 0.6rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 17px 0 9px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 13px 0 45px;
+            }
+            .img-div {
+                .card-style {
+                    width: 145px;
+                    height: 30px;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+               
+            }
+
+            .shape2-div {
+                border-radius: 30px 0 13px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            width: 12%;
+            height: 7%;
+            .chart-view-btn {
+                font-size: 0.6rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.55rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 0.55rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 16px 0 8px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 12px 0 40px;
+            }
+            .img-div {
+                //---------------------------------HR LINES----------------------------------
+
+                .hr-group1-div {
+                    width: 25%;
+                    height: 34%;
+                    top: 11%;
+                    left: -13%;
+                    .hrline-1-div {
+                        top: 0%;
+                        left: 1.5%;
+                    }
+                    .hrline-2-div {
+                        top: 49%;
+                        left: 48%;
+                    }
+                }
+                .hr-group2-div {
+                    width: 12%;
+                    top: 43%;
+                    left: 0%;
+
+                    .hrline-1-div {
+                        top: 48%;
+                        left: 67%;
+                    }
+                    .hrline-2-div {
+                        top: 49%;
+                        left: 1%;
+                    }
+                }
+                .hr-group3-div {
+                    top: 68.5%;
+                    left: -10%;
+
+                    .hrline-1-div {
+                        top: 0;
+                        right: 1.5%;
+                    }
+                    .hrline-2-div {
+                        top: 32.5%;
+                        left: 1%;
+                    }
+                }
+                .hr-group4-div {
+                    top: 55%;
+                    left: 33%;
+
+                    .hrline-div {
+                        top: 0;
+                        right: 0;
+                    }
+                }
+                //-------------------------------------------------------------------
+
+                .card-style {
+                    width: 135px;
+                    height: 30px;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+                .card2-div {
+                    left: -37%;
+                }
+                .card4-div {
+                    top: 65%;
+                    right: 26%;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 30px 0 13px 0;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .rscore-comp-main-container {
+        .chart-view-btn-div {
+            width: 12%;
+            height: 7%;
+            .chart-view-btn {
+                font-size: 0.5rem;
+            }
+            .tap-icon-div {
+                .tap-icon {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .left-part-div {
+            .content-div {
+                .para-div {
+                    .list-div {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+            .bottom-para-div {
+                .top-div {
+                    p {
+                        font-size: 0.5rem;
+                    }
+                }
+                .bottom-div {
+                    .shape1-div {
+                        border-radius: 0 15px 0 7px;
+                    }
+                }
+            }
+        }
+        .right-part-div {
+            .shape1-div {
+                border-radius: 0 11px 0 38px;
+            }
+            .img-div {
+                //---------------------------------HR LINES----------------------------------
+
+                .hr-group1-div {
+                    height: 34%;
+                    top: 11%;
+                    left: -15%;
+                    .hrline-1-div {
+                        top: 0%;
+                        left: 1.5%;
+                    }
+                    .hrline-2-div {
+                        top: 49%;
+                        left: 47%;
+                    }
+                }
+                .hr-group2-div {
+                    width: 20%;
+                    height: 30%;
+                    top: 37%;
+                    left: -11%;
+
+                    .hrline-1-div {
+                        top: 48%;
+                        left: 68%;
+                    }
+                    .hrline-2-div {
+                        top: 49%;
+                        left: 0%;
+                    }
+                }
+                .hr-group3-div {
+                    width: 25%;
+                    top: 67.5%;
+                    left: -15.5%;
+
+                    .hrline-1-div {
+                        top: 0;
+                        right: 1.5%;
+                    }
+                    .hrline-2-div {
+                        top: 32.5%;
+                        left: 1%;
+                    }
+                }
+                //-------------------------------------------------------------------
+
+                .card-style {
+                    width: 120px;
+                    height: 24px;
+                    border-radius: 4px;
+                    box-shadow: 0px 2px 4px gray;
+                }
+                .card1-div {
+                    top: 5%;
+                    left: -40%;
+                }
+                .card2-div {
+                    top: 64%;
+                    left: -45%;
+                }
+
+                .card3-div {
+                    top: 82%;
+                    left: -50%;
+                }
+                .card4-div {
+                    top: 65%;
+                    right: 25%;
+                }
+            }
+
+            .shape2-div {
+                border-radius: 28px 0 12px 0;
+            }
+        }
+    }
+}

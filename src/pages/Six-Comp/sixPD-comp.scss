@@ -1,0 +1,842 @@
+.sixPD-comp-main-container {
+    width: 100%;
+    // height: 880px;
+    height: 95vh;
+    box-sizing: border-box;
+    // border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    overflow: hidden;
+
+    img {
+        width: 120%;
+        height: 100%;
+        object-fit: fill;
+        position: absolute;
+        top: 0;
+        left: -15%;
+    }
+
+    .left-div {
+        width: 50%;
+        height: 100%;
+        // background-color: orange;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+
+        .top-div {
+            width: 100%;
+            height: 15%;
+            // border: 1px solid black;
+            display: flex;
+            align-items: flex-end;
+
+            .heading-div {
+                width: 35%;
+                height: 80%;
+                margin-left: 6%;
+                // background-color: rebeccapurple;
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid #cbcbcb;
+
+                .logo-img-div {
+                    width: 32%;
+                    height: 100%;
+                    position: relative;
+                    // background-color: black;
+
+                    .logo-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        left: 0;
+                    }
+                }
+                .logo-heading {
+                    h1 {
+                        font-size: 3rem;
+                        font-weight: 600;
+                        color: #ff4d4d;
+
+                        span {
+                            font-size: 2.5rem;
+                            font-weight: 400;
+                            color: #666666;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-div {
+            width: 100%;
+            height: 85%;
+            margin-top: -5%;
+            // border: 1px solid black;
+            z-index: 0;
+
+            @keyframes tapIcon-KeyFrame {
+                0% {
+                    padding-bottom: 0%;
+                }
+                60% {
+                    padding-bottom: 40%;
+                }
+                100% {
+                    padding-bottom: 0%;
+                }
+            }
+
+            .list-div {
+                width: 100%;
+                height: 90%;
+                margin: 10% 0 0 12%;
+                position: relative;
+
+                .hr-line-div {
+                    position: absolute;
+                    width: 86%;
+                    height: 0.42%;
+                    background-color: #ff4d4d;
+                    transition: 0.5s;
+                    // margin-left: -6%;
+
+                    img {
+                        position: absolute;
+                        top: -35px;
+                        left: -6%;
+                        width: 40px;
+                        height: 40px;
+                        object-fit: contain;
+                    }
+                }
+                .properties-para {
+                    p {
+                        width: 80%;
+                        position: absolute;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        color: #666666;
+                        cursor: pointer;
+                        transition: 0.4s ease-in-out;
+
+                        //--------disabling text selection-------
+                        -moz-user-select: none; /* firefox */
+                        -webkit-user-select: none; /* Safari */
+                        -ms-user-select: none; /* IE*/
+                        user-select: none; /* Standard syntax */
+
+                        .tap-icon-div {
+                            position: absolute;
+                            right: 0;
+                            bottom: -35%;
+
+                            .tap-icon {
+                                font-size: 1.58rem;
+                                color: rgba(0, 0, 0, 0.6);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-div {
+        width: 50%;
+        height: 100%;
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        // border: 1px solid black;
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 19px 19px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    .logo-heading {
+                        h1 {
+                            font-size: 2.8rem;
+
+                            span {
+                                font-size: 2.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        img {
+                            top: -32px;
+                            left: -5%;
+                            width: 38px;
+                            height: 38px;
+                        }
+                    }
+                    .properties-para {
+                        p {
+                            font-size: 1.15rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.54rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-div {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 18px 18px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    .logo-heading {
+                        h1 {
+                            font-size: 2.6rem;
+
+                            span {
+                                font-size: 2.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        img {
+                            top: -30px;
+                            left: -5%;
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 1.1rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-div {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 17px 17px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    .logo-heading {
+                        h1 {
+                            font-size: 2.4rem;
+
+                            span {
+                                font-size: 1.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        img {
+                            top: -28px;
+                            left: -5%;
+                            width: 34px;
+                            height: 34px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 1.05rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.45rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-div {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 16px 16px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    .logo-heading {
+                        h1 {
+                            font-size: 2.2rem;
+
+                            span {
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        img {
+                            top: -26px;
+                            left: -5%;
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 1rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-div {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+//--------------------------  max-width: 1280px  --------------------------------------
+
+@media only screen and (max-width: 1280px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 18px 18px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    width: 40%;
+                    border-bottom: 2px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 2.4rem;
+
+                            span {
+                                font-size: 1.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+
+                        img {
+                            top: -29px;
+                            left: -6%;
+                            width: 34px;
+                            height: 34px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 0.95rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.35rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 16px 16px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    width: 40%;
+                    border-bottom: 1.5px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 2.2rem;
+
+                            span {
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+                        margin-top: -0.5%;
+
+                        img {
+                            top: -27px;
+                            left: -6%;
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 0.9rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 15px 15px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    width: 40%;
+                    border-bottom: 1.5px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 2rem;
+
+                            span {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+                        margin-top: -1%;
+
+                        img {
+                            top: -25px;
+                            left: -6%;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 0.85rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.25rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1080px  --------------------------------------
+
+@media only screen and (max-width: 1080px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 15px 15px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    width: 40%;
+                    border-bottom: 1.5px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 1.8rem;
+
+                            span {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+                        margin-top: -1%;
+
+                        img {
+                            top: -25px;
+                            left: -6%;
+                            width: 28px;
+                            height: 28px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 0.8rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 12px 12px 0;
+
+        .left-div {
+            width: 60%;
+            .top-div {
+                .heading-div {
+                    width: 35%;
+                    border-bottom: 1px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 1.6rem;
+
+                            span {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+                        margin-top: 0.4%;
+
+                        img {
+                            top: -20px;
+                            left: -5.5%;
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 0.75rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.15rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-div {
+            width: 40%;
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 11px 11px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    width: 35%;
+                    border-bottom: 1px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 1.5rem;
+
+                            span {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+
+                        img {
+                            top: -19px;
+                            left: -5.5%;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 0.7rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 11px 11px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    width: 35%;
+                    border-bottom: 1px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 1.4rem;
+
+                            span {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+
+                        img {
+                            top: -18px;
+                            left: -5.5%;
+                            width: 19px;
+                            height: 19px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 0.65rem;
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1.05rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 10px 10px 0;
+
+        .left-div {
+            width: 56%;
+            .top-div {
+                .heading-div {
+                    width: 35%;
+                    border-bottom: 1px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 1.3rem;
+
+                            span {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+
+                        img {
+                            top: -17px;
+                            left: -5.5%;
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+
+                    .properties-para {
+                        p {
+                            font-size: 0.6rem;
+
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-div {
+            width: 44%;
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .sixPD-comp-main-container {
+        border-radius: 0 9px 9px 0;
+
+        .left-div {
+            .top-div {
+                .heading-div {
+                    width: 35%;
+                    border-bottom: 1px solid #cbcbcb;
+
+                    .logo-heading {
+                        h1 {
+                            font-size: 1.2rem;
+
+                            span {
+                                font-size: 0.95rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-div {
+                .list-div {
+                    .hr-line-div {
+                        position: absolute;
+                        // margin-top : -1.5%;
+
+                        img {
+                            top: -15px;
+                            left: -5.5%;
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+
+                   
+                    .properties-para {
+                        p {
+                            font-size: 0.55rem;
+                            
+                            .tap-icon-div {
+                                .tap-icon {
+                                    font-size: 0.95rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

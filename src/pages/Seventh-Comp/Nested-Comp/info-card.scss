@@ -1,0 +1,503 @@
+.info-card-main-container {
+    width: 100%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+
+    .left-part-div {
+        width: 20%;
+        height: 100%;
+
+        .shape-div {
+            width: 100%;
+            height: 50%;
+            // border: 1px solid black;
+            display: flex;
+            align-items: center;
+
+            .circle-div {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                // background-color: #333333;
+            }
+            .hr-div {
+                width: 80%;
+                height: 2px;
+                background-color: #989898;
+            }
+        }
+    }
+    .right-part-div {
+        width: 75%;
+        height: 100%;
+        border-bottom: 2px solid #989898;
+
+        // background-color: orange;
+        position: relative;
+
+        .census-heading-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #333333;
+                span {
+                    font-weight: 600;
+                    color: #ff4d4d;
+                }
+            }
+        }
+        .census-calculation-div {
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+
+            p {
+                font-size: 1rem;
+                font-weight: 500;
+                color: #ff4d4d;
+            }
+        }
+        .census-result-div {
+            position: absolute;
+            top: 32%;
+            right: 5%;
+
+            h1 {
+                font-size: 2.2rem;
+                font-weight: 500;
+                color: #333333;
+                span {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    // text-shadow: 1px 1px gray;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .info-card-main-container {
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 14px;
+                    height: 14px;
+                }
+                .hr-div {
+                    height: 2px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 2px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 2rem;
+
+                    span {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .info-card-main-container {
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 13px;
+                    height: 13px;
+                }
+                .hr-div {
+                    height: 2px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 2px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 1.8rem;
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .info-card-main-container {
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 12px;
+                    height: 12px;
+                }
+                .hr-div {
+                    height: 1.5px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 1.5px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 1.6rem;
+
+                    span {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .info-card-main-container {
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 11px;
+                    height: 11px;
+                }
+                .hr-div {
+                    height: 1.4px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 1.5px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 1.5rem;
+
+                    span {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .info-card-main-container {
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 10px;
+                    height: 10px;
+                }
+                .hr-div {
+                    height: 1.3px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 1px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 1.4rem;
+
+                    span {
+                        font-size: 0.55rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .info-card-main-container {
+        height: 70%;
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 9px;
+                    height: 9px;
+                }
+                .hr-div {
+                    height: 1.2px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 1px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 1.4rem;
+
+                    span {
+                        font-size: 0.55rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .info-card-main-container {
+        height: 70%;
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 9px;
+                    height: 9px;
+                }
+                .hr-div {
+                    height: 1.2px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 1px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 1.4rem;
+
+                    span {
+                        font-size: 0.55rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .info-card-main-container {
+        height: 90%;
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 9px;
+                    height: 9px;
+                }
+                .hr-div {
+                    height: 1.2px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 1px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.45rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 1rem;
+
+                    span {
+                        font-size: 0.55rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .info-card-main-container {
+        height: 90%;
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 8px;
+                    height: 8px;
+                }
+                .hr-div {
+                    height: 1px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 1px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.4rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 0.9rem;
+
+                    span {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .info-card-main-container {
+        height: 100%;
+        .left-part-div {
+            .shape-div {
+                .circle-div {
+                    width: 7px;
+                    height: 7px;
+                }
+                .hr-div {
+                    height: 0.8px;
+                }
+            }
+        }
+        .right-part-div {
+            border-bottom: 1px solid #989898;
+
+            .census-heading-div {
+                p {
+                    font-size: 0.48rem;
+                }
+            }
+            .census-calculation-div {
+                p {
+                    font-size: 0.38rem;
+                }
+            }
+            .census-result-div {
+                h1 {
+                    font-size: 0.8rem;
+
+                    span {
+                        font-size: 0.48rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,313 @@
+.comp-seven-main-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .content-container {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        height: 70%;
+        border-radius: 340px 0 0 340px;
+        // background-color: #333;
+        // border: 1px solid black;
+        overflow: hidden;
+        transition: 1s;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 101%;
+            object-fit: cover;
+            transition: 1s;
+        }
+
+        h1 {
+            position: absolute;
+            top: 35%;
+            left: 45%;
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 2rem;
+            color: #ffffff;
+
+            span {
+                font-size: 2.4rem;
+
+                font-weight: 500;
+            }
+        }
+    }
+    .phone-container {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        height: 70%;
+        border-radius: 340px 0 0 340px;
+        // background-color: #ffffff;
+        // border: 1px solid black;
+
+        .phone1-img-div {
+            position: absolute;
+            top: 75%;
+            left: 58%;
+            width: 17%;
+            height: 45%;
+            object-fit: contain;
+            transition-delay: 0.8s;
+            transition: 1s;
+        }
+        .phone2-img-div {
+            position: absolute;
+            top: 40%;
+            left: 70%;
+            width: 30%;
+            height: 80%;
+            object-fit: contain;
+            transition-delay: 0.8s;
+            transition: 1s;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1536px  --------------------------------------
+
+@media only screen and (max-width: 1536px) {
+    .comp-seven-main-container {
+        width: 100%;
+        height: 100%;
+        .content-container {
+            border-radius: 280px 0 0 280px;
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+
+                span {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 280px 0 0 280px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1440px  --------------------------------------
+
+@media only screen and (max-width: 1440px) {
+    .comp-seven-main-container {
+        .content-container {
+            border-radius: 260px 0 0 260px;
+
+            h1 {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+
+                span {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 260px 0 0 260px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1360px  --------------------------------------
+
+@media only screen and (max-width: 1360px) {
+    .comp-seven-main-container {
+        .content-container {
+            border-radius: 240px 0 0 240px;
+
+            h1 {
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+
+                span {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 240px 0 0 240px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1280px  --------------------------------------
+
+@media only screen and (max-width: 1280px) {
+    .comp-seven-main-container {
+        .content-container {
+            border-radius: 240px 0 0 240px;
+
+            h1 {
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 260px 0 0 260px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .comp-seven-main-container {
+        width: 100%;
+        height: 95%;
+        .content-container {
+            border-radius: 240px 0 0 240px;
+
+            h1 {
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 240px 0 0 240px;
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .comp-seven-main-container {
+        width: 100%;
+        height: 90%;
+        .content-container {
+            border-radius: 220px 0 0 220px;
+
+            h1 {
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 220px 0 0 220px;
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .comp-seven-main-container {
+        width: 100%;
+        height: 110%;
+        .content-container {
+            border-radius: 150px 0 0 150px;
+
+            h1 {
+                font-size: 0.95rem;
+                line-height: 1.1rem;
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 150px 0 0 150px;
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .comp-seven-main-container {
+        width: 100%;
+        height: 115%;
+        .content-container {
+            border-radius: 140px 0 0 140px;
+
+            h1 {
+                font-size: 0.9rem;
+                line-height: 1rem;
+
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 140px 0 0 140px;
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .comp-seven-main-container {
+        width: 100%;
+        height: 115%;
+        .content-container {
+            border-radius: 130px 0 0 130px;
+
+            h1 {
+                font-size: 0.8rem;
+                line-height: 0.9rem;
+
+                span {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 130px 0 0 130px;
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .comp-seven-main-container {
+        width: 100%;
+        height: 110%;
+        .content-container {
+            border-radius: 120px 0 0 120px;
+
+            h1 {
+                font-size: 0.75rem;
+                line-height: 0.85rem;
+
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .phone-container {
+            border-radius: 120px 0 0 120px;
+        }
+    }
+}

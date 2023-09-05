@@ -1,0 +1,699 @@
+.seventhPD-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 95vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    // border: 1px solid black;
+    position: relative;
+    display: flex;
+    // margin-top: 5%;
+
+    @keyframes paraDown-keyframe {
+        0% {
+            padding-bottom: 0%;
+        }
+        60% {
+            padding-bottom: -4%;
+        }
+        60% {
+            padding-bottom: 4%;
+        }
+
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+
+    .hover-hidden-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .bg-img {
+        position: absolute;
+        bottom: -15%;
+        width: 100%;
+        height: 30%;
+        object-fit: fill;
+    }
+
+    .left-div {
+        width: 45%;
+        height: 100%;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding: 0 0 0 5%;
+
+        .top-div {
+            width: 100%;
+            height: 20%;
+            // background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3 {
+                font-size: 2.2rem;
+                color: #333333;
+                font-weight: 300;
+                opacity: 0.8;
+
+                span {
+                    height: 30%;
+                    height: 40%;
+                    // text-decoration: underline;
+                    line-height: 5%;
+                    font-weight: 500;
+                    border-bottom: 1.5px solid #b8b8b8;
+                    color: #ff4d4d;
+                }
+            }
+            h4 {
+                width: 100%;
+                height: 60%;
+                font-size: 1.7rem;
+                font-weight: 500;
+                // text-align: center;
+
+                span {
+                    color: #ff4d4d;
+                }
+            }
+        }
+        .bottom-div {
+            width: 100%;
+            height: 65%;
+            // background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .blank-div {
+            width: 100%;
+            height: 10%;
+        }
+    }
+    .right-div {
+        width: 55%;
+        height: 100%;
+        // border: 1px solid black;
+        display: flex;
+        position: relative;
+
+        .census-year-div {
+            position: absolute;
+            bottom: 18%;
+            right: 38%;
+
+            p {
+                font-size: 1rem;
+                font-weight: 500;
+                color: #333333;
+
+                span {
+                    color: #ff4d4d;
+                }
+            }
+        }
+
+        .left-part {
+            width: 45%;
+            height: 100%;
+            // background-color: aqua;
+            position: relative;
+        }
+        .right-part {
+            width: 55%;
+            height: 100%;
+            // background-color: aliceblue;
+            position: relative;
+
+            .logo-div {
+                position: absolute;
+                right: 2%;
+                top: 1.1%;
+                width: 40%;
+                height: 8%;
+                // background-color: #ff4d4d;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            @keyframes infoCardsAnime {
+                0% {
+                    left: 100%;
+                    opacity: 1;
+                }
+                100% {
+                    left: 0;
+                }
+            }
+
+            .info-div {
+                width: 100%;
+                height: 55%;
+                // border: 1px solid black;
+                // background-color: #ff4d4d;
+                position: absolute;
+                top: 20.6%;
+                opacity: 0;
+
+                .info-card-div-style {
+                    width: 100%;
+                    height: 20%;
+                    // background-color: bisque;
+                    position: absolute;
+                }
+
+                .info-card1-div {
+                    @extend .info-card-div-style;
+                    top: 0%;
+                    left: 0;
+                }
+                .info-card2-div {
+                    @extend .info-card-div-style;
+                    top: 30%;
+                    left: 0;
+                }
+                .info-card3-div {
+                    @extend .info-card-div-style;
+                    top: 74%;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .seventhPD-comp-main-container {
+        // height: 800px;
+
+        .left-div {
+            .top-div {
+                h3 {
+                    font-size: 2rem;
+                }
+                h4 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1600px  --------------------------------------
+
+@media only screen and (max-width: 1600px) {
+    .seventhPD-comp-main-container {
+        // height: 750px;
+
+        .left-div {
+            .top-div {
+                h3 {
+                    font-size: 1.8rem;
+                }
+                h4 {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .seventhPD-comp-main-container {
+        // height: 700px;
+
+        .left-div {
+            .top-div {
+                h3 {
+                    font-size: 1.6rem;
+                }
+                h4 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1500px  --------------------------------------
+
+@media only screen and (max-width: 1500px) {
+    .seventhPD-comp-main-container {
+        // height: 650px;
+
+        .left-div {
+            .top-div {
+                h3 {
+                    font-size: 1.5rem;
+                }
+                h4 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .seventhPD-comp-main-container {
+        // height: 600px;
+
+        .left-div {
+            .top-div {
+                h3 {
+                    font-size: 1.4rem;
+                }
+                h4 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .seventhPD-comp-main-container {
+        // height: 550px;
+
+        .left-div {
+            .top-div {
+                h3 {
+                    font-size: 1.3rem;
+                }
+                h4 {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .seventhPD-comp-main-container {
+        // height: 500px;
+
+        .left-div {
+            .top-div {
+                h3 {
+                    font-size: 1.2rem;
+                }
+                h4 {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.45rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .seventhPD-comp-main-container {
+        // height: 500px;
+
+        .left-div {
+            .top-div {
+                height: 10%;
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+                h4 {
+                    margin-top: 2.5%;
+                    font-size: 0.9rem;
+                }
+            }
+            .bottom-div {
+                height: 65%;
+            }
+            .blank-div {
+                height: 15%;
+            }
+        }
+
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.45rem;
+                }
+            }
+            .right-part {
+                .info-div {
+                    // height: 45%;
+
+                    .info-card1-div {
+                        top: 12%;
+                    }
+                    .info-card2-div {
+                        top: 34%;
+                    }
+                    .info-card3-div {
+                        top: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .seventhPD-comp-main-container {
+        // height: 500px;
+
+        .left-div {
+            .top-div {
+                height: 10%;
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+                h4 {
+                    margin-top: 2.5%;
+                    font-size: 0.9rem;
+                }
+            }
+            .bottom-div {
+                height: 65%;
+            }
+            .blank-div {
+                height: 15%;
+            }
+        }
+
+        .right-div {
+            .census-year-div {
+                p {
+                    font-size: 0.45rem;
+                }
+            }
+            .right-part {
+                .info-div {
+                    // height: 45%;
+
+                    .info-card1-div {
+                        top: 16%;
+                    }
+                    .info-card2-div {
+                        top: 36%;
+                    }
+                    .info-card3-div {
+                        top: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .seventhPD-comp-main-container {
+        // height: 500px;
+
+        .left-div {
+            width: 45%;
+            // background-color: pink;
+            .top-div {
+                height: 20%;
+
+                h3 {
+                    margin-top: 2%;
+
+                    font-size: 1rem;
+                }
+                h4 {
+                    margin-top: 2%;
+                    font-size: 0.8rem;
+                }
+            }
+            .bottom-div {
+                height: 68%;
+            }
+            .blank-div {
+                height: 12%;
+            }
+        }
+
+        .right-div {
+            .left-part {
+                width: 45%;
+               
+            }
+           
+            .right-part {
+                .info-div {
+                    // height: 45%;
+
+                    .info-card1-div {
+                        top: 16%;
+                    }
+                    .info-card2-div {
+                        top: 40%;
+                    }
+                    .info-card3-div {
+                        top: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .seventhPD-comp-main-container {
+        // height: 500px;
+
+        .left-div {
+            width: 45%;
+            // background-color: pink;
+            .top-div {
+                height: 20%;
+
+                h3 {
+                    margin-top: 2.5%;
+
+                    font-size: 0.9rem;
+                }
+                h4 {
+                    margin-top: 1.5%;
+                    font-size: 0.7rem;
+                }
+            }
+            .bottom-div {
+                height: 68%;
+            }
+            .blank-div {
+                height: 12%;
+            }
+        }
+
+        .right-div {
+            .left-part {
+                width: 45%;
+               
+            }
+           
+            .right-part {
+                .info-div {
+                    // height: 45%;
+
+                    .info-card1-div {
+                        top: 16%;
+                    }
+                    .info-card2-div {
+                        top: 40%;
+                    }
+                    .info-card3-div {
+                        top: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .seventhPD-comp-main-container {
+        // height: 500px;
+
+        .left-div {
+            width: 45%;
+            // background-color: pink;
+            .top-div {
+                height: 20%;
+
+                h3 {
+                    margin-top: 2.5%;
+
+                    font-size: 0.8rem;
+                }
+                h4 {
+                    margin-top: 1.5%;
+                    font-size: 0.6rem;
+                }
+            }
+            .bottom-div {
+                height: 68%;
+            }
+            .blank-div {
+                height: 12%;
+            }
+        }
+
+        .right-div {
+            .left-part {
+                width: 45%;
+               
+            }
+           
+            .right-part {
+                .info-div {
+                    // height: 45%;
+
+                    .info-card1-div {
+                        top: 16%;
+                    }
+                    .info-card2-div {
+                        top: 40%;
+                    }
+                    .info-card3-div {
+                        top: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .seventhPD-comp-main-container {
+        // height: 500px;
+
+        .left-div {
+            width: 45%;
+            // background-color: pink;
+            .top-div {
+                height: 20%;
+
+                h3 {
+                    margin-top: 3.5%;
+
+                    font-size: 0.75rem;
+                }
+                h4 {
+                    margin-top: 1.5%;
+                    font-size: 0.55rem;
+                }
+            }
+            .bottom-div {
+                height: 68%;
+            }
+            .blank-div {
+                height: 12%;
+            }
+        }
+
+        .right-div {
+            .left-part {
+                width: 45%;
+               
+            }
+           
+            .right-part {
+                .info-div {
+                    // height: 45%;
+
+                    .info-card1-div {
+                        top: 18%;
+                    }
+                    .info-card2-div {
+                        top: 40%;
+                    }
+                    .info-card3-div {
+                        top: 76.5%;
+                    }
+                }
+            }
+        }
+    }
+}

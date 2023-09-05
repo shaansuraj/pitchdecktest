@@ -1,0 +1,137 @@
+.tenthPD-comp-main-container {
+    width: 100%;
+    height: 95vh;
+    // border: 1px solid black;
+    // margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffeced;
+
+    .hidden1-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        // background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hidden2-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        // background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .play-icon-div {
+            .play-icon {
+                font-size: 15rem;
+                // opacity: 0.5;
+                color: #ff4d4d;
+            }
+        }
+    }
+
+    // button {
+    //     position: absolute;
+    //     bottom: 2%;
+    //     padding: 1% 2%;
+    //     background-color: #ff4d4d;
+    //     border: none;
+    //     color: #fff;
+    //     font-size: 1.2rem;
+    //     font-weight: 600;
+    //     border-radius: 5px;
+    //     box-shadow: 3px 3px 3px gray;
+    //     cursor: pointer;
+    // }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .tenthPD-comp-main-container {
+        // height: 800px;
+
+        .hidden2-div {
+            .play-icon-div {
+                .play-icon {
+                    font-size: 14rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .tenthPD-comp-main-container {
+        // height: 750px;
+
+        .hidden2-div {
+            .play-icon-div {
+                .play-icon {
+                    font-size: 13rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .tenthPD-comp-main-container {
+        // height: 700px;
+
+        .hidden2-div {
+            .play-icon-div {
+                .play-icon {
+                    font-size: 12rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .tenthPD-comp-main-container {
+        // height: 650px;
+
+        .hidden2-div {
+            .play-icon-div {
+                .play-icon {
+                    font-size: 11rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .tenthPD-comp-main-container {
+        // height: 600px;
+
+        .hidden2-div {
+            .play-icon-div {
+                .play-icon {
+                    font-size: 10rem;
+                }
+            }
+        }
+    }
+}

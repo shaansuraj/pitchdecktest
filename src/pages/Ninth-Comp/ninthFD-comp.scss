@@ -1,0 +1,765 @@
+.ninthFD-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 95vh;
+    // border: 1px solid black;
+    background-color: #fafafa;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    .hidden-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: #333333;
+    }
+
+    .left-part-div {
+        width: 75%;
+        height: 100%;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .top-part-div {
+            width: 100%;
+            height: 25%;
+            position: relative;
+            // border: 1px solid black;
+
+            .heading-div {
+                position: absolute;
+                top: 0;
+                left: 2%;
+                width: 20%;
+                height: 45%;
+                // border: 1px solid black;
+                display: flex;
+                align-items: flex-end;
+
+                .shape1-div {
+                    width: 20%;
+                    height: 100%;
+                    background-color: #ff4d4d;
+                }
+                button {
+                    border: none;
+                    background: none;
+                    margin: 0 0 -5% 10%;
+
+                    span {
+                        font-size: 1.8rem;
+                        color: #333333;
+                        text-shadow: 1px 1px gray;
+                        cursor: pointer;
+                    }
+                }
+            } //----------------------------------------
+
+            .social-media-icons-div {
+                position: absolute;
+                top: 60%;
+                left: 8%;
+                width: 11.5%;
+                height: 25%;
+                // border: 1px solid black;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                    transition: 0.2s;
+                    opacity: 0.8;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.05);
+                    }
+                }
+            } //----------------------------------------
+
+            @keyframes headingKeyframe2 {
+                0% {
+                    top: -200%;
+                    opacity: 0;
+                }
+                100% {
+                    top: 5%;
+                }
+            }
+
+            .heading2-div {
+                width: 70%;
+                height: 80%;
+                // border: 1px solid black;
+                position: absolute;
+                left: 26%;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                .main-heading-div {
+                    width: 60%;
+                    height: 80%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    .para {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        // background-color: red;
+
+                        p {
+                            font-size: 2rem;
+                            color: #333333;
+                            font-weight: 500;
+                            text-shadow: 1px 1px gray;
+                        }
+                    }
+                    .headings {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+                        h1 {
+                            position: absolute;
+                            top: 0%;
+                            font-size: 3.2rem;
+                            color: #333333;
+                            font-weight: 600;
+                            letter-spacing: 5px;
+                            text-shadow: 1px 1px gray;
+                            opacity: 0;
+
+                            span {
+                                color: #ff4d4d;
+                            }
+                        }
+                    }
+                }
+            } //----------------------------------------
+            //------------------------------------------------
+        }
+        .bottom-part-div {
+            width: 100%;
+            height: 75%;
+            position: relative;
+            // border: 1px solid black;
+        }
+    }
+    .right-part-div {
+        width: 25%;
+        height: 100%;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .ninthFD-comp-main-container {
+        // height: 800px;
+        border-radius: 19px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 27px;
+                        height: 27px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.9rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 3.1rem;
+                                letter-spacing: 4.8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1600px  --------------------------------------
+
+@media only screen and (max-width: 1600px) {
+    .ninthFD-comp-main-container {
+        // height: 750px;
+        border-radius: 18px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.8rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 3rem;
+                                letter-spacing: 4.6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .ninthFD-comp-main-container {
+        // height: 700px;
+        border-radius: 17px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.7rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 2.9rem;
+                                letter-spacing: 4.4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1500px  --------------------------------------
+
+@media only screen and (max-width: 1500px) {
+    .ninthFD-comp-main-container {
+        // height: 650px;
+        border-radius: 16px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.45rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.6rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 2.8rem;
+                                letter-spacing: 4.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .ninthFD-comp-main-container {
+        // height: 600px;
+        border-radius: 15px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 23px;
+                        height: 23px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 2.7rem;
+                                letter-spacing: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .ninthFD-comp-main-container {
+        // height: 550px;
+        border-radius: 14px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.35rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.45rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 2.6rem;
+                                letter-spacing: 3.8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .ninthFD-comp-main-container {
+        // height: 500px;
+        border-radius: 13px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.3rem;
+                            text-shadow: 0.5px 0.5px gray;
+
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 21px;
+                        height: 21px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 2.4rem;
+                                letter-spacing: 3.6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .ninthFD-comp-main-container {
+        // height: 500px;
+        border-radius: 12px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    width: 14.5%;
+                    left: 7%;
+
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.3rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 2.2rem;
+                                letter-spacing: 3.6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .ninthFD-comp-main-container {
+        // height: 500px;
+        border-radius: 11px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 19px;
+                        height: 19px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        .para {
+                            p {
+                                font-size: 1.3rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 2rem;
+                                letter-spacing: 3.4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .ninthFD-comp-main-container {
+        // height: 500px;
+        border-radius: 10px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        height: 100%;
+
+                        .para {
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 1.8rem;
+                                letter-spacing: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .ninthFD-comp-main-container {
+        // height: 500px;
+        border-radius: 9px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1.05rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        height: 100%;
+
+                        .para {
+                            p {
+                                font-size: 1.05rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 1.6rem;
+                                letter-spacing: 2.8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .ninthFD-comp-main-container {
+        // height: 500px;
+        border-radius: 8px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        height: 100%;
+
+                        .para {
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 1.4rem;
+                                letter-spacing: 2.6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .ninthFD-comp-main-container {
+        // height: 500px;
+        border-radius: 7px;
+
+        .left-part-div {
+            .top-part-div {
+                .heading-div {
+                    button {
+                        span {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+
+                .social-media-icons-div {
+                    img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+
+                .heading2-div {
+                    .main-heading-div {
+                        height: 100%;
+
+                        .para {
+                            p {
+                                font-size: 0.9rem;
+                            }
+                        }
+                        .headings {
+                            h1 {
+                                font-size: 1.2rem;
+                                letter-spacing: 2.4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

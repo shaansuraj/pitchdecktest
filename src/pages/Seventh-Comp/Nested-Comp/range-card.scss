@@ -1,0 +1,472 @@
+.range-card-main-container {
+    width: 620px;
+    height: 150px;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+    .top-part-div {
+        width: 100%;
+        height: 50%;
+        // background-color: red;
+        display: flex;
+
+        .left-part-div {
+            width: 75%;
+            height: 100%;
+            // border: 1px solid black;
+            display: flex;
+            align-items: center;
+            p {
+                width: 100%;
+                font-size: 1.4rem;
+                font-weight: 400;
+                text-align: left;
+                span {
+                    font-weight: 500;
+                    color: #ff4d4d;
+                }
+            }
+        }
+        .rigth-part-div {
+            width: 25%;
+            height: 100%;
+            // border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+
+            h1 {
+                width: 100%;
+                font-size: 2.8rem;
+                font-weight: 500;
+                color: #ff4d4d;
+                display: flex;
+                align-items: baseline;
+                justify-content: center;
+                gap: 2%;
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    .bottom-part-div {
+        width: 100%;
+        height: 50%;
+        // background-color: green;
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+
+        .main-div {
+            width: 100%;
+            height: 80%;
+            background-color: #ffe9e9;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .div-style {
+                position: absolute;
+                left: 0;
+                border-radius: 0 20px 20px 0;
+                height: 50%;
+                // transition: 1s;
+            }
+
+            .div1 {
+                @extend .div-style;
+                width: 5%;
+                background-color: #ff4d4d;
+                z-index: 2;
+                box-shadow: 2px 2px 6px gray;
+                transition: 0.9s;
+            }
+            .div2 {
+                @extend .div-style;
+                width: 5%;
+                background-color: black;
+                opacity: 0.2;
+                z-index: 1;
+                transition: 0.8s;
+            }
+            .div3 {
+                @extend .div-style;
+                width: 5%;
+                background-color: black;
+                opacity: 0.1;
+                transition: 0.6s;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .range-card-main-container {
+        width: 580px;
+        height: 140px;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 2.6rem;
+
+                    span {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 19px 19px 0;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .range-card-main-container {
+        width: 540px;
+        height: 130px;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 2.4rem;
+
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 18px 18px 0;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .range-card-main-container {
+        width: 500px;
+        height: 120px;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 2.2rem;
+
+                    span {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 17px 17px 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .range-card-main-container {
+        width: 460px;
+        height: 110px;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 2rem;
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 16px 16px 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .range-card-main-container {
+        width: 440px;
+        height: 100px;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 1.8rem;
+
+                    span {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .range-card-main-container {
+        width: 440px;
+        height: 100px;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 1.8rem;
+
+                    span {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .range-card-main-container {
+        width: 440px;
+        height: 100px;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 1.8rem;
+
+                    span {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .range-card-main-container {
+        width: 350px;
+        height: 60px;
+        // background-color: aqua;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 1.4rem;
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .range-card-main-container {
+        width: 350px;
+        height: 60px;
+        // background-color: aqua;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 1.3rem;
+
+                    span {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .range-card-main-container {
+        width: 300px;
+        height: 55px;
+        // background-color: aqua;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 1.2rem;
+
+                    span {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .range-card-main-container {
+        width: 250px;
+        height: 50px;
+        // background-color: aqua;
+
+        .top-part-div {
+            .left-part-div {
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+            .rigth-part-div {
+                h1 {
+                    font-size: 1.1rem;
+
+                    span {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+        .bottom-part-div {
+            .main-div {
+                .div-style {
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+        }
+    }
+}

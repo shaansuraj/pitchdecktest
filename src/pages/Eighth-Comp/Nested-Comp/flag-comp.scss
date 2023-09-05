@@ -1,0 +1,1219 @@
+.flag-comp-main-container {
+    width: 350px;
+    height: 220px;
+    // border: 0.1px solid black;
+    position: relative;
+    display: flex;
+
+    .flag-div {
+        width: 45%;
+        height: 100%;
+        // border: 1px solid black;
+        .vr-line-div {
+            position: absolute;
+            left: 5%;
+            width: 2%;
+            height: 95%;
+            background-color: #d9d9d9;
+
+            .white-ract-div {
+                position: absolute;
+                top: 95%;
+                margin-left: -5px;
+                width: 250%;
+                height: 6%;
+                background-color: #f6f6f6;
+                // border: 0.1px solid black;
+            }
+            .shadow-div {
+                position: absolute;
+                top: 100%;
+                margin-left: -250%;
+                width: 600%;
+                height: 3%;
+                background-color: #303030;
+                opacity: 0.6;
+                border-radius: 50%;
+                // border: 0.1px solid black;
+            }
+        }
+
+        .shape1-div {
+            position: absolute;
+            display: flex;
+            width: 45%;
+            height: 25%;
+            transition: 0.5s;
+            // border:  1px solid black;
+
+            .arrow-right-div {
+                width: 0;
+                height: 0;
+                border-top: 25px solid transparent;
+                border-bottom: 25px solid transparent;
+                border-left: 55px solid #5a5a5a;
+            }
+
+            .ractangle-div {
+                width: 100px;
+                height: 50px;
+                background-color: #5a5a5a;
+            }
+        }
+        .shape2-div {
+            position: absolute;
+            display: flex;
+            margin: 1.2% 0 0 2.5%;
+            transition: 0.5s;
+
+            .arrow-right-div {
+                width: 0;
+                height: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 40px solid #666666;
+            }
+
+            .ractangle-div {
+                width: 80px;
+                height: 40px;
+                background-color: #666666;
+
+                p {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 1.2rem;
+                    color: #f6f6f6;
+                    text-shadow: 1px 1px #5a5a5a;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .rigth-div {
+        width: 55%;
+        height: 100%;
+        // border: 1px solid black;
+        position: relative;
+
+        @keyframes blinkEffect {
+            0% {
+                opacity: 0;
+                margin-top: -10%;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .content-one-div {
+            position: absolute;
+            top: 25%;
+            left: -50%;
+            visibility: hidden;
+            // display: flex;
+
+            .heading-1 {
+                font-size: 2.4rem;
+                font-weight: 500;
+                color: #303030;
+                border-bottom: 1px solid #595959;
+            }
+            .heading-2 {
+                font-size: 2.8rem;
+                font-weight: 600;
+                color: #ff4d4d;
+                // margin-top: -10%;
+            }
+        }
+
+        .content-two-div {
+            position: absolute;
+            top: 50%;
+            left: -50%;
+            visibility: hidden;
+
+            h1 {
+                font-size: 2.8rem;
+                font-weight: 600;
+                color: #ff4d4d;
+
+                span {
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    color: #303030;
+
+                    border-bottom: 1px solid #595959;
+                }
+            }
+        }
+
+        .content-three-div {
+            position: absolute;
+            top: 30%;
+            left: -55%;
+            visibility: hidden;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 400;
+                color: #333333;
+
+                span {
+                    font-weight: 600;
+                    color: #333333;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #ff4d4d;
+                margin-top: 5%;
+            }
+        }
+        .content-four-div {
+            position: absolute;
+            top: 40%;
+            left: -60%;
+            display: flex;
+            align-items: center;
+            visibility: hidden;
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: #ff4d4d;
+                padding-right: 20px;
+                border-bottom: 1px solid #ff4d4d;
+            }
+
+            span {
+                width: 70px;
+                height: 75px;
+                // border: 1px solid black;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .flag-comp-main-container {
+        width: 320px;
+        height: 210px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4.8px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 24px solid transparent;
+                    border-bottom: 24px solid transparent;
+                    border-left: 53px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 95px;
+                    height: 48px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 19px solid transparent;
+                    border-bottom: 19px solid transparent;
+                    border-left: 38px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 75px;
+                    height: 38px;
+
+                    p {
+                        font-size: 0.9rem;
+                        line-height: 1.1rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                .heading-1 {
+                    font-size: 2.2rem;
+                }
+                .heading-2 {
+                    font-size: 2.6rem;
+                }
+            }
+
+            .content-two-div {
+                h1 {
+                    font-size: 2.6rem;
+
+                    span {
+                        font-size: 2.2rem;
+                        border-bottom: 1px solid #595959;
+                    }
+                }
+            }
+
+            .content-three-div {
+                h1 {
+                    font-size: 1.8rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+            .content-four-div {
+                h1 {
+                    font-size: 2.3rem;
+                }
+
+                span {
+                    width: 65px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .flag-comp-main-container {
+        width: 300px;
+        height: 195px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4.6px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 23px solid transparent;
+                    border-bottom: 23px solid transparent;
+                    border-left: 51px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 90px;
+                    height: 46px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 18px solid transparent;
+                    border-bottom: 18px solid transparent;
+                    border-left: 36px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 70px;
+                    height: 36px;
+
+                    p {
+                        font-size: 0.8rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                .heading-1 {
+                    font-size: 2rem;
+                }
+                .heading-2 {
+                    font-size: 2.4rem;
+                }
+            }
+
+            .content-two-div {
+                h1 {
+                    font-size: 2.4rem;
+
+                    span {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                h1 {
+                    font-size: 1.6rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .content-four-div {
+                h1 {
+                    font-size: 2.1rem;
+                }
+
+                span {
+                    width: 60px;
+                    height: 65px;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .flag-comp-main-container {
+        width: 280px;
+        height: 182px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4.4px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 22px solid transparent;
+                    border-bottom: 22px solid transparent;
+                    border-left: 49px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 85px;
+                    height: 44px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 16px solid transparent;
+                    border-bottom: 16px solid transparent;
+                    border-left: 34px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 65px;
+                    height: 34px;
+
+                    p {
+                        font-size: 0.7rem;
+                        line-height: 0.9rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                .heading-1 {
+                    font-size: 2rem;
+                }
+                .heading-2 {
+                    font-size: 2.4rem;
+                }
+            }
+
+            .content-two-div {
+                h1 {
+                    font-size: 2.4rem;
+
+                    span {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                h1 {
+                    font-size: 1.6rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .content-four-div {
+                h1 {
+                    font-size: 2.1rem;
+                }
+
+                span {
+                    width: 60px;
+                    height: 65px;
+                }
+            }
+        }
+    }
+}
+
+
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .flag-comp-main-container {
+        width: 260px;
+        height: 170px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4.2px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 21px solid transparent;
+                    border-bottom: 21px solid transparent;
+                    border-left: 47px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 80px;
+                    height: 42px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 15px solid transparent;
+                    border-bottom: 15px solid transparent;
+                    border-left: 32px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 60px;
+                    height: 32px;
+
+                    p {
+                        font-size: 0.6rem;
+                        line-height: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                .heading-1 {
+                    font-size: 1.8rem;
+                }
+                .heading-2 {
+                    font-size: 2.2rem;
+                }
+            }
+
+            .content-two-div {
+                h1 {
+                    font-size: 2.2rem;
+
+                    span {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                h1 {
+                    font-size: 1.4rem;
+                }
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            .content-four-div {
+                h1 {
+                    font-size: 1.9rem;
+                }
+
+                span {
+                    width: 55px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .flag-comp-main-container {
+        width: 240px;
+        height: 157px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 20px solid transparent;
+                    border-bottom: 20px solid transparent;
+                    border-left: 45px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 75px;
+                    height: 40px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 14px solid transparent;
+                    border-bottom: 14px solid transparent;
+                    border-left: 30px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 55px;
+                    height: 30px;
+
+                    p {
+                        font-size: 0.55rem;
+                        line-height: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                .heading-1 {
+                    font-size: 1.6rem;
+                }
+                .heading-2 {
+                    font-size: 2rem;
+                }
+            }
+
+            .content-two-div {
+                h1 {
+                    font-size: 2rem;
+
+                    span {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                h1 {
+                    font-size: 1.3rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+            .content-four-div {
+                h1 {
+                    font-size: 1.7rem;
+                }
+
+                span {
+                    width: 50px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .flag-comp-main-container {
+        width: 230px;
+        height: 150px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 19px solid transparent;
+                    border-bottom: 19px solid transparent;
+                    border-left: 40px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 75px;
+                    height: 38px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 15px solid transparent;
+                    border-bottom: 15px solid transparent;
+                    border-left: 28px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 55px;
+                    height: 30px;
+
+                    p {
+                        font-size: 0.55rem;
+                        line-height: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                top: 35%;
+                .heading-1 {
+                    font-size: 1.5rem;
+                }
+                .heading-2 {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .content-two-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.8rem;
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+            .content-four-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.6rem;
+                }
+
+                span {
+                    width: 45px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .flag-comp-main-container {
+        width: 220px;
+        height: 140px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 18px solid transparent;
+                    border-bottom: 18px solid transparent;
+                    border-left: 38px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 75px;
+                    height: 36px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 14px solid transparent;
+                    border-bottom: 14px solid transparent;
+                    border-left: 30px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 55px;
+                    height: 28px;
+
+                    p {
+                        font-size: 0.55rem;
+                        line-height: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                top: 35%;
+                .heading-1 {
+                    font-size: 1.4rem;
+                }
+                .heading-2 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .content-two-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.6rem;
+
+                    span {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.1rem;
+                }
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            .content-four-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                span {
+                    width: 40px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .flag-comp-main-container {
+        width: 190px;
+        height: 110px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 15px solid transparent;
+                    border-bottom: 15px solid transparent;
+                    border-left: 32px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 65px;
+                    height: 30px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 11px solid transparent;
+                    border-bottom: 11px solid transparent;
+                    border-left: 22px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 45px;
+                    height: 22px;
+
+                    p {
+                        font-size: 0.5rem;
+                        line-height: 0.6rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                top: 35%;
+                .heading-1 {
+                    font-size: 1rem;
+                }
+                .heading-2 {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .content-two-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.2rem;
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+            .content-four-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                span {
+                    width: 35px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .flag-comp-main-container {
+        width: 180px;
+        height: 100px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 12px solid transparent;
+                    border-bottom: 12px solid transparent;
+                    border-left: 28px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 60px;
+                    height: 24px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 9px solid transparent;
+                    border-bottom: 9px solid transparent;
+                    border-left: 20px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 40px;
+                    height: 18px;
+
+                    p {
+                        font-size: 0.45rem;
+                        line-height: 0.55rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                top: 35%;
+                .heading-1 {
+                    font-size: 0.9rem;
+                }
+                .heading-2 {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .content-two-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1.1rem;
+
+                    span {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 0.9rem;
+                }
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+            .content-four-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1rem;
+                }
+
+                span {
+                    width: 30px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .flag-comp-main-container {
+        width: 160px;
+        height: 90px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 12px solid transparent;
+                    border-bottom: 12px solid transparent;
+                    border-left: 28px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 60px;
+                    height: 24px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 9px solid transparent;
+                    border-bottom: 9px solid transparent;
+                    border-left: 20px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 40px;
+                    height: 18px;
+
+                    p {
+                        font-size: 0.4rem;
+                        line-height: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                top: 35%;
+                .heading-1 {
+                    font-size: 0.8rem;
+                }
+                .heading-2 {
+                    font-size: 1rem;
+                }
+            }
+
+            .content-two-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 1rem;
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 0.8rem;
+                }
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+            .content-four-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 0.9rem;
+                }
+
+                span {
+                    width: 25px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .flag-comp-main-container {
+        width: 150px;
+        height: 80px;
+
+        .flag-div {
+            .vr-line-div {
+                .white-ract-div {
+                    margin-left: -4px;
+                }
+            }
+
+            .shape1-div {
+                .arrow-right-div {
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-left: 25px solid #5a5a5a;
+                }
+
+                .ractangle-div {
+                    width: 55px;
+                    height: 20px;
+                }
+            }
+            .shape2-div {
+                .arrow-right-div {
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent;
+                    border-left: 18px solid #666666;
+                }
+
+                .ractangle-div {
+                    width: 38px;
+                    height: 16px;
+
+                    p {
+                        font-size: 0.35rem;
+                        line-height: 0.45rem;
+                    }
+                }
+            }
+        }
+
+        .rigth-div {
+            .content-one-div {
+                top: 35%;
+                .heading-1 {
+                    font-size: 0.75rem;
+                }
+                .heading-2 {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .content-two-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 0.9rem;
+
+                    span {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+
+            .content-three-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 0.75rem;
+                }
+                p {
+                    font-size: 0.45rem;
+                }
+            }
+            .content-four-div {
+                top: 35%;
+
+                h1 {
+                    font-size: 0.8rem;
+                }
+
+                span {
+                    width: 20px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+

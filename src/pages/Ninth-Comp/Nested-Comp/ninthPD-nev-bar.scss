@@ -1,0 +1,481 @@
+.ninthPD-nev-bar-main-container {
+    width: 90%;
+    height: 96%;
+    background-color: #ff4d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+
+    .nev-item-style {
+        width: 100%;
+        height: 10%;
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .circle-style {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        left: 22%;
+        // background-color: #333333;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-shadow: 1px 1px gray;
+            color: #333333;
+        }
+    }
+
+    @keyframes tapIcon-KeyFrame {
+        0% {
+            padding-bottom: 0%;
+        }
+        60% {
+            padding-bottom: 20%;
+        }
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+
+    .tap-icon-style {
+        position: absolute;
+        left: 5%;
+        // border: 1px solid black;
+
+        .tap-icon {
+            font-size: 2.4rem;
+            color: #fff;
+        }
+    }
+
+    @keyframes btn-keyframe {
+        0% {
+            opacity: 0;
+            background-color: #ff4d4d;
+        }
+        100% {
+            opacity: 1;
+            background-color: #333333;
+        }
+    }
+
+    .btn-style {
+        position: absolute;
+        right: 0;
+        width: 250px;
+        height: 50px;
+        background: none;
+        border: none;
+        // background-color: pink;
+        transition: ease-in-out;
+    }
+
+    .nev-item-one-div {
+        @extend .nev-item-style;
+        .circle-div {
+            @extend .circle-style;
+        }
+        button {
+            @extend .btn-style;
+        }
+        .tap-icon-div {
+            @extend .tap-icon-style;
+        }
+    }
+
+    .nev-item-two-div {
+        @extend .nev-item-style;
+
+        .circle-div {
+            @extend .circle-style;
+        }
+        button {
+            @extend .btn-style;
+        }
+        .tap-icon-div {
+            @extend .tap-icon-style;
+        }
+    }
+
+    .nev-item-three-div {
+        @extend .nev-item-style;
+
+        .circle-div {
+            @extend .circle-style;
+        }
+        button {
+            @extend .btn-style;
+        }
+        .tap-icon-div {
+            @extend .tap-icon-style;
+        }
+    }
+
+    .nev-item-four-div {
+        @extend .nev-item-style;
+
+        .circle-div {
+            @extend .circle-style;
+        }
+        button {
+            @extend .btn-style;
+        }
+        .tap-icon-div {
+            @extend .tap-icon-style;
+        }
+    }
+
+    .nev-item-five-div {
+        @extend .nev-item-style;
+
+        .circle-div {
+            @extend .circle-style;
+        }
+        button {
+            @extend .btn-style;
+        }
+        .tap-icon-div {
+            @extend .tap-icon-style;
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 49px;
+            height: 49px;
+
+            p {
+                font-size: 1.15rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 2.2rem;
+            }
+        }
+
+        .btn-style {
+            width: 246px;
+            height: 46px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 48px;
+            height: 48px;
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+        
+    .tap-icon-style {
+        .tap-icon {
+            font-size: 2rem;
+        }
+    }
+
+        .btn-style {
+            width: 232px;
+            height: 42px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 47px;
+            height: 47px;
+
+            p {
+                font-size: 1.05rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.9rem;
+            }
+        }
+
+        .btn-style {
+            width: 216px;
+            height: 38px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 46px;
+            height: 46px;
+
+            p {
+                font-size: 1rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.8rem;
+            }
+        }
+
+        .btn-style {
+            width: 202px;
+            height: 42px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 45px;
+            height: 45px;
+
+            p {
+                font-size: 0.95rem;
+                text-shadow: 0.5px 0.5px gray;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.7rem;
+            }
+        }
+
+        .btn-style {
+            width: 186px;
+            height: 40px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 40px;
+            height: 40px;
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.6rem;
+            }
+        }
+
+        .btn-style {
+            width: 174px;
+            height: 36px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 38px;
+            height: 38px;
+
+            p {
+                font-size: 0.85rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.5rem;
+            }
+        }
+
+        .btn-style {
+            width: 166px;
+            height: 32px;
+        }
+    }
+}
+
+//--------------------------  max-width: 1080px  --------------------------------------
+
+@media only screen and (max-width: 1080px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 37px;
+            height: 37px;
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.4rem;
+            }
+        }
+
+        .btn-style {
+            width: 162px;
+            height: 30px;
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 30px;
+            height: 30px;
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.3rem;
+            }
+        }
+
+        .btn-style {
+            width: 138px;
+            height: 26px;
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 28px;
+            height: 28px;
+
+            p {
+                font-size: 0.6rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.2rem;
+            }
+        }
+
+        .btn-style {
+            width: 128px;
+            height: 24px;
+        }
+    }
+}
+
+//--------------------------  max-width: 800px  --------------------------------------
+
+@media only screen and (max-width: 800px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 26px;
+            height: 26px;
+
+            p {
+                font-size: 0.55rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1.1rem;
+            }
+        }
+
+        .btn-style {
+            width: 118px;
+            height: 22px;
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 24px;
+            height: 24px;
+
+            p {
+                font-size: 0.55rem;
+            }
+        }
+        .tap-icon-style {
+            .tap-icon {
+                font-size: 1rem;
+            }
+        }
+
+
+        .btn-style {
+            width: 110px;
+            height: 20px;
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .ninthPD-nev-bar-main-container {
+        .circle-style {
+            width: 22px;
+            height: 22px;
+
+            p {
+                font-size: 0.5rem;
+            }
+            .tap-icon-style {
+                .tap-icon {
+                    font-size: 0.95rem;
+                }
+            }
+        }
+
+        .btn-style {
+            width: 96px;
+            height: 18px;
+        }
+    }
+}

@@ -1,0 +1,210 @@
+.firstPD-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 98vh;
+    // border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+
+    @keyframes bg-img-animation {
+        0% {
+            // top: 0%;
+            left: -2%;
+        }
+        80% {
+            // top: 5%;
+            left: 27%;
+        }
+        100% {
+            // top: 5%;
+            left: 26%;
+        }
+    }
+    @keyframes bg-img-animation-reverse {
+        0% {
+            left: 26%;
+        }
+        80% {
+            left: -3%;
+        }
+        100% {
+            left: -2%;
+        }
+    }
+
+    .bg-img-div {
+        position: absolute;
+        // top: 5%;
+        // left: 26%;
+        top: 0%;
+        left: -2%;
+        width: 100%;
+        height: 100%;
+        // transition: 1s;
+
+        .bg-img {
+            position: absolute;
+            top: -5%;
+            left: 5%;
+            width: 108%;
+            height: 110%;
+            object-fit: fill;
+        }
+        .iphone-exchange-div {
+            position: absolute;
+            top: 18%;
+            left: 50.5%;
+            width: 50%;
+            height: 60%;
+            // border: 1px solid black;
+            opacity: 0;
+        }
+
+        .pc-img-div {
+            position: absolute;
+            top: -2%;
+            left: -21%;
+            width: 100%;
+            height: 92%;
+            // background-color:blue;
+            .pc-img {
+                position: absolute;
+                top: 7.5%;
+                left: 13%;
+                width: 98%;
+                height: 98%;
+                object-fit: contain;
+                opacity: 0;
+            }
+        }
+    }
+
+    .shape-div {
+        position: absolute;
+        width: 8%;
+        height: 30%;
+        border-radius: 20px 0 0 0;
+        // border: 1px solid black;
+        // background-color: #ff4d4d;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: -35%;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .content-div {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        height: 35%;
+        width: 20%;
+        // border: 1px solid black;
+
+        .top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 30%;
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+    }
+    .phone-group1 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        // border: 1px solid black;
+        width: 55%;
+        height: 10%;
+        z-index: 1;
+    }
+}
+
+// //--------------------------  max-width: 1650px  --------------------------------------
+
+// @media only screen and (max-width: 1650px) {
+//     .firstPD-comp-main-container {
+//         height: 800px;
+//     }
+// }
+// //--------------------------  max-width: 1600px  --------------------------------------
+
+// @media only screen and (max-width: 1600px) {
+//     .firstPD-comp-main-container {
+//         height: 750px;
+//     }
+// }
+// //--------------------------  max-width: 1550px  --------------------------------------
+
+// @media only screen and (max-width: 1550px) {
+//     .firstPD-comp-main-container {
+//         height: 700px;
+//     }
+// }
+// //--------------------------  max-width: 1500px  --------------------------------------
+
+// @media only screen and (max-width: 1500px) {
+//     .firstPD-comp-main-container {
+//         height: 650px;
+//     }
+// }
+
+// //--------------------------  max-width: 1450px  --------------------------------------
+
+// @media only screen and (max-width: 1450px) {
+//     .firstPD-comp-main-container {
+//         height: 600px;
+//     }
+// }
+
+// //--------------------------  max-width: 1400px  --------------------------------------
+
+// @media only screen and (max-width: 1400px) {
+//     .firstPD-comp-main-container {
+//         height: 450px;
+//     }
+// }
+
+// //--------------------------  max-width: 1350px  --------------------------------------
+
+// @media only screen and (max-width: 1350px) {
+//     .firstPD-comp-main-container {
+//         height: 400px;
+//     }
+// }
+
+// //--------------------------  max-width: 1300px  --------------------------------------
+
+// @media only screen and (max-width: 1300px) {
+//     .firstPD-comp-main-container {
+//         height: 350px;
+//     }
+// }
+

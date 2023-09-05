@@ -1,0 +1,407 @@
+.comp-two-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+
+    .content-container {
+        width: 100%;
+        height: 80%;
+        border-radius: 340px 0 0 340px;
+        background-color: #ffffff;
+        // border: 1px solid black;
+        box-shadow: -12px 6px 4px gray;
+        position: relative;
+        overflow: hidden;
+
+        .frame-div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 36%;
+            height: 50%;
+            // border: 1px solid black;
+            overflow: hidden;
+
+            .frame-part1-img {
+                position: absolute;
+                left: -10%;
+                top: -21.5%;
+                width: 160%;
+                height: 150%;
+                object-fit: contain;
+                transition: 0.8s;
+            }
+            .frame-part2-img {
+                position: absolute;
+                left: -4%;
+                top: 14%;
+                width: 60%;
+                height: 60%;
+                object-fit: contain;
+                transition: 0.8s;
+            }
+            .frame-part3-img {
+                position: absolute;
+                left: 60%;
+                top: 5%;
+                width: 13.5%;
+                height: 13%;
+                object-fit: contain;
+                transition: 0.8s;
+            }
+            .frame-part4-img {
+                position: absolute;
+                left: 78%;
+                top: 32%;
+                width: 22%;
+                height: 12%;
+                object-fit: contain;
+                transition: 0.8s;
+            }
+            .frame-part5-img {
+                position: absolute;
+                left: 67%;
+                top: 50%;
+                width: 35%;
+                height: 35%;
+                object-fit: contain;
+                transition: 0.8s;
+                // z-index: 1;
+            }
+            .frame-part6-img {
+                position: absolute;
+                left: 42%;
+                top: 18%;
+                width: 12%;
+                height: 15%;
+                object-fit: contain;
+                transition: 0.8s;
+            }
+        }
+        .heading-div {
+            position: absolute;
+            top: 10.5%;
+            left: 22%;
+            border-bottom: 2px solid #333333;
+            padding-right: 6%;
+
+            p {
+                font-size: 1.5rem;
+                color: #333333;
+            }
+            h1 {
+                font-size: 2.4rem;
+                color: #333333;
+                font-weight: 600;
+                span {
+                    color: #ff4d4d;
+                }
+            }
+        }
+        .phones-div {
+            width: 65%;
+            height: 80%;
+            // border: 1px solid black;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            // overflow: hidden;
+
+            .phone1 {
+                width: 50%;
+                height: 120%;
+                object-fit: contain;
+                position: absolute;
+                top: 22%;
+                left: 2%;
+            }
+            .phone2 {
+                width: 90%;
+                height: 150%;
+                object-fit: contain;
+                position: absolute;
+                top: 4%;
+                left: 42%;
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .comp-two-main-container {
+        .content-container {
+            border-radius: 320px 0 0 320px;
+
+            box-shadow: -12px 6px 4px gray;
+
+            // .frame-div {
+            //     width: 36%;
+            //     height: 50%;
+
+            // }
+            .heading-div {
+                p {
+                    font-size: 1.5rem;
+                }
+                h1 {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .comp-two-main-container {
+        .content-container {
+            border-radius: 300px 0 0 300px;
+
+            box-shadow: -12px 6px 4px gray;
+
+            // .frame-div {
+            //     width: 36%;
+            //     height: 50%;
+
+            // }
+            .heading-div {
+                p {
+                    font-size: 1.4rem;
+                }
+                h1 {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+//--------------------------  max-width: 1450px  --------------------------------------
+
+@media only screen and (max-width: 1450px) {
+    .comp-two-main-container {
+        .content-container {
+            border-radius: 280px 0 0 280px;
+
+            box-shadow: -10px 5px 3px gray;
+
+            // .frame-div {
+            //     width: 36%;
+            //     height: 50%;
+
+            // }
+            .heading-div {
+                p {
+                    font-size: 1.3rem;
+                }
+                h1 {
+                    font-size: 2.1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1350px  --------------------------------------
+
+@media only screen and (max-width: 1350px) {
+    .comp-two-main-container {
+        .content-container {
+            border-radius: 260px 0 0 260px;
+
+            box-shadow: -10px 5px 3px gray;
+
+            // .frame-div {
+            //     width: 36%;
+            //     height: 50%;
+
+            // }
+            .heading-div {
+                p {
+                    font-size: 1.2rem;
+                }
+                h1 {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1250px  --------------------------------------
+
+@media only screen and (max-width: 1250px) {
+    .comp-two-main-container {
+        .content-container {
+            border-radius: 240px 0 0 240px;
+
+            box-shadow: -10px 5px 3px gray;
+
+            // .frame-div {
+            //     width: 36%;
+            //     height: 50%;
+
+            // }
+            .heading-div {
+                p {
+                    font-size: 1.1rem;
+                }
+                h1 {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .comp-two-main-container {
+        width: 100%;
+        height: 85%;
+        .content-container {
+            border-radius: 240px 0 0 240px;
+            box-shadow: -8px 4px 4px gray;
+
+            .heading-div {
+                border-bottom: 1.3px solid #333333;
+
+                p {
+                    font-size: 1rem;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .comp-two-main-container {
+        width: 100%;
+        height: 80%;
+        .content-container {
+            border-radius: 220px 0 0 220px;
+            box-shadow: -8px 4px 4px gray;
+
+            .heading-div {
+                border-bottom: 1.3px solid #333333;
+
+                p {
+                    font-size: 1rem;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .comp-two-main-container {
+        width: 100%;
+        height: 100%;
+        .content-container {
+            border-radius: 150px 0 0 150px;
+            box-shadow: -6px 3px 2px gray;
+
+            .heading-div {
+                border-bottom: 1.3px solid #333333;
+
+                p {
+                    font-size: 0.75rem;
+                }
+                h1 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 854px  --------------------------------------
+
+@media only screen and (max-width: 854px) {
+    .comp-two-main-container {
+        width: 100%;
+        height: 105%;
+        .content-container {
+            border-radius: 140px 0 0 140px;
+            box-shadow: -4px 2px 2px gray;
+
+            .heading-div {
+                border-bottom: 1.3px solid #333333;
+
+                p {
+                    font-size: 0.7rem;
+                }
+                h1 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 740px  --------------------------------------
+
+@media only screen and (max-width: 740px) {
+    .comp-two-main-container {
+        width: 100%;
+        height: 105%;
+        .content-container {
+            border-radius: 130px 0 0 130px;
+            box-shadow: -4px 2px 2px gray;
+
+            .heading-div {
+                border-bottom: 1px solid #333333;
+
+                p {
+                    font-size: 0.58rem;
+                }
+                h1 {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 640px  --------------------------------------
+
+@media only screen and (max-width: 640px) {
+    .comp-two-main-container {
+        width: 100%;
+        height: 95%;
+        .content-container {
+            border-radius: 120px 0 0 120px;
+            box-shadow: -2px 2px 2px gray;
+
+            .heading-div {
+                border-bottom: 1px solid #333333;
+
+                p {
+                    font-size: 0.54rem;
+                }
+                h1 {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

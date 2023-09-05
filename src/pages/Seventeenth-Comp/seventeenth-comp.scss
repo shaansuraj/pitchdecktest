@@ -1,0 +1,1078 @@
+.seventeenth-comp-main-container {
+    width: 100%;
+    height: 95vh;
+    // border: 1px solid green;
+    position: relative;
+    overflow: hidden;
+
+    .hidden-details-contents-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 5;
+        padding: 6% 15%;
+        visibility: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .cross-icon {
+            position: absolute;
+            right: 5%;
+            top: 5%;
+            color: #fff;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+    .tenant-data-hidden-div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background:none;
+        z-index: 2;
+    }
+    .landlord-data-hidden-div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: none;
+        z-index: 2;
+    }
+
+    .top-heading-div {
+        width: 100%;
+        height: 15%;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .rscore-monetization-div {
+            position: absolute;
+            // top: 1%;
+            left: 1%;
+            opacity: 1;
+            cursor: pointer;
+            z-index: 2;
+            width: 16%;
+            height: 6%;
+            transition: 1.5s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+       
+        .middle-heading-div {
+            width: auto;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .heading-before {
+                line-height: 1.6rem;
+                text-transform: uppercase;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                transition: 0.4s;
+
+                .span1 {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    border-bottom: 1px solid gray;
+                    margin-bottom: 5px;
+                    letter-spacing: 1px;
+                }
+                .span2 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+                .span3 {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: #ff3737;
+                }
+            }
+            .heading-after {
+                @extend .heading-before;
+                position: absolute;
+                transition: 0.5s;
+                width: 100%;
+                top: 350%;
+                left: 150%;
+                opacity: 0;
+
+            }
+        }
+        @keyframes moreButtonAnim1 {
+            0% {
+                transform: rotate(-4deg);
+            }
+
+            10% {
+                transform: rotate(-2deg);
+            }
+            20% {
+                transform: rotate(-4deg);
+            }
+
+            100% {
+                transform: rotate(-3.16deg);
+            }
+        }
+
+        @keyframes moreButtonAnim2 {
+            0% {
+                transform: rotate(4deg);
+            }
+            10% {
+                transform: rotate(3deg);
+            }
+            20% {
+                transform: rotate(4deg);
+            }
+
+            100% {
+                transform: rotate(4.11deg);
+            }
+        }
+        @keyframes moreButtonAnim3 {
+            0% {
+                transform: rotate(2deg);
+            }
+            30% {
+                transform: rotate(-2deg);
+            }
+            60% {
+                transform: rotate(1deg);
+            }
+            80% {
+                transform: rotate(-1deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes viewButtonAnim2 {
+            0% {
+                bottom: 12%;
+            }
+            40% {
+                bottom: 15%;
+            }
+            80% {
+                bottom: 11%;
+            }
+
+            100% {
+                bottom: 12%;
+            }
+        }
+        @keyframes viewButtonAnim1 {
+            0% {
+                bottom: 20%;
+            }
+            40% {
+                bottom: 23%;
+            }
+            80% {
+                bottom: 17%;
+            }
+            100% {
+                bottom: 20%;
+            }
+        }
+
+        .more-details-btn {
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 8px 25px;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            background-color: #ff3737;
+            box-shadow: 2px 3px 3px gray;
+            transform: rotate(0deg);
+            transition: 0.4s;
+            margin-right: 8%;
+            user-select: none;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+        }
+        .view-dashboard-btn {
+            position: absolute;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 8px 25px;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            background-color: #ff3737;
+            transform: rotate(0deg);
+            transition: 1s;
+            right: 8%;
+            transition: 0.6s;
+            opacity: 0;
+            user-select: none;
+            z-index: -1;
+
+            span {
+                position: absolute;
+                right: 1.5%;
+                top: 10%;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #fff;
+                box-shadow: 1px 1px 2px gray;
+            }
+        }
+    }
+    .bottom-part-div {
+        width: 100%;
+        height: 85%;
+        // border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+
+        .bg-img {
+            position: absolute;
+            left: -30%;
+            bottom: -58%;
+            width: 160%;
+            height: 135%;
+            object-fit: contain;
+        }
+
+        .dashbord-name-div {
+            position: absolute;
+            left: -0.5%;
+            padding: 0.5% 1% 0.5% 1%;
+            border-radius: 0 50px 50px 0;
+            border: 1px solid #333;
+            // transition: 0.2s;
+            opacity: 0;
+            p {
+                font-weight: 500;
+            }
+        }
+        
+
+        .tenant-data-div {
+            width: 35%;
+            height: 65%;
+            // border: 1px solid black;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s;
+
+            @mixin assignValue($properties, $value) {
+                @each $property in $properties {
+                    #{$property}: $value;
+                }
+            }
+            @keyframes tapIcon-KeyFrame {
+                0% {
+                    padding-bottom: 0%;
+                }
+                60% {
+                    padding-bottom: 20%;
+                }
+                100% {
+                    padding-bottom: 0%;
+                }
+            }
+
+            .view-btn {
+                position: absolute;
+                bottom: 20%;
+                left: 8%;
+                width: 100px;
+                height: 30px;
+                @include assignValue(transform transform, rotate(-4.5deg) skew(-5deg));
+                background-color: #ff3737;
+                border-radius: 5px;
+                box-shadow: -3px -4px 3px gray;
+                padding: 0.4% 2%;
+                cursor: pointer;
+                transition: 0.5s;
+                z-index: 2;
+
+                p {
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    user-select: none;
+                }
+
+                .tap-icon {
+                    position: absolute;
+                    right: 0;
+                    top: 40%;
+                    font-size: 2rem;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+            }
+
+            .top-div {
+                width: 85%;
+                height: 8%;
+                // border: 1px solid black;
+                position: absolute;
+                top: -6%;
+                right: 2%;
+                transform: rotate(-2.8deg);
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 1.2rem;
+
+                    span {
+                        font-weight: 500;
+                        color: #fff;
+                        text-shadow: 1px 1px 1px #333;
+                    }
+                }
+                .toggle-div {
+                    width: 80px;
+                    height: 30px;
+                    border-radius: 20px;
+                    background-color: #2ccd3c;
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                    padding: 5px;
+
+                    .toggle-circle {
+                        width: 20px;
+                        height: 20px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: 0.5s;
+                z-index: 1;
+            }
+        }
+        .tenant-content-div {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 40%;
+            height: 90%;
+            background-color: rgba(0, 0, 0, 0.8);
+            transition: 0.5s;
+            padding: 1%;
+
+            .content-img-div {
+                width: 100%;
+                height: 100%;
+                overflow: scroll;
+                position: relative;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0%;
+                    left: 0;
+                    width: 100%;
+                    height: 200%;
+                    object-fit: contain;
+                }
+            }
+            .cross-btn {
+                position: absolute;
+                top: -3%;
+                right: -2%;
+                color: #fff;
+                z-index: 1;
+                background-color: #ff3737;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                user-select: none;
+                cursor: pointer;
+            }
+        }
+
+        .landlord-content-div {
+            position: absolute;
+            top: 10%;
+            right: 0;
+            width: 50%;
+            height: 90%;
+            // background-color: rgba(0, 0, 0, 0.8);
+            background-color: #333;
+            transition: 0.5s;
+            padding: 1%;
+            z-index: 2;
+
+            .content-img-div {
+                width: 100%;
+                height: 100%;
+                overflow: scroll;
+                position: relative;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 200%;
+                    object-fit: contain;
+                }
+            }
+            .cross-btn {
+                position: absolute;
+                top: -3.5%;
+                left: -2.5%;
+                color: #fff;
+                z-index: 1;
+                background-color: #ff3737;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                user-select: none;
+                cursor: pointer;
+            }
+        }
+
+        //===================================================================
+        .landlord-data-div {
+            width: 65%;
+            height: 100%;
+            // border: 1px solid black;
+            position: absolute;
+            // z-index: 0;
+            right: 0;
+            bottom: 0;
+            transition: 0.5s;
+
+            @mixin assignValue($properties, $value) {
+                @each $property in $properties {
+                    #{$property}: $value;
+                }
+            }
+
+            .view-btn {
+                position: absolute;
+                bottom: 12%;
+                right: 15%;
+                width: 100px;
+                height: 30px;
+                @include assignValue(transform transform, rotate(2deg) skew(-5deg));
+                background-color: #ff3737;
+                border-radius: 5px;
+                box-shadow: 0px 5px 3px gray;
+                padding: 0.2% 1%;
+                z-index: 1;
+                cursor: pointer;
+                transition: 0.4s;
+
+                p {
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    user-select: none;
+                }
+                .tap-icon {
+                    position: absolute;
+                    right: 0;
+                    top: 40%;
+                    font-size: 2rem;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+            }
+
+            img {
+                width: 110%;
+                height: 115%;
+                object-fit: contain;
+                position: absolute;
+                bottom: -26.5%;
+                right: -13%;
+                transition: 0.4s;
+            }
+
+            .landlord-data-top-div {
+                width: 72.5%;
+                height: 11%;
+                position: absolute;
+                top: 2.6%;
+                right: 6%;
+                // border: 1px solid black;
+                transform: rotate(-2.45deg);
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    transition: 0.4s;
+
+                    span {
+                        font-weight: 500;
+                        color: #ff3737;
+                    }
+                }
+
+                .landlord-icon-div {
+                    width: 35%;
+                    height: 100%;
+                    // border: 1px solid black;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    transition: 0.4s;
+
+                    .img-style {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    .no-smoking-icon-div {
+                        width: 25%;
+                        height: 90%;
+                        position: relative;
+                        img {
+                            @extend .img-style;
+                        }
+                    }
+
+                    .non-veg-icon-div {
+                        width: 20%;
+                        height: 70%;
+                        position: relative;
+                        img {
+                            @extend .img-style;
+                        }
+                    }
+                    .no-alocohol-icon-div {
+                        width: 18%;
+                        height: 60%;
+                        position: relative;
+                        img {
+                            @extend .img-style;
+                        }
+                    }
+                    .family-icon-div {
+                        width: 15%;
+                        height: 50%;
+                        position: relative;
+
+                        img {
+                            @extend .img-style;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1650px  --------------------------------------
+
+@media only screen and (max-width: 1650px) {
+    .seventeenth-comp-main-container {
+        .top-heading-div {
+            .more-details-btn {
+                padding: 7px 25px;
+            }
+            .view-dashboard-btn {
+                padding: 7px 25px;
+            }
+        }
+        .bottom-part-div {
+            .tenant-data-div {
+                .view-btn {
+                    left: 12%;
+                }
+
+                .top-div {
+                    right: 7%;
+                }
+            }
+
+            //===================================================================
+            .landlord-data-div {
+                .view-btn {
+                    right: 18%;
+                }
+
+                .landlord-data-top-div {
+                    width: 66%;
+                    right: 9%;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1550px  --------------------------------------
+
+@media only screen and (max-width: 1550px) {
+    .seventeenth-comp-main-container {
+        .top-heading-div {
+            .more-details-btn {
+                padding: 7px 25px;
+            }
+            .view-dashboard-btn {
+                padding: 7px 25px;
+            }
+        }
+        .bottom-part-div {
+            .tenant-data-div {
+                .view-btn {
+                    left: 12%;
+                }
+
+                .top-div {
+                    right: 5.5%;
+                }
+            }
+
+            //===================================================================
+            .landlord-data-div {
+                .view-btn {
+                    right: 18%;
+                }
+
+                .landlord-data-top-div {
+                    width: 68%;
+                    right: 8%;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1440px  --------------------------------------
+
+@media only screen and (max-width: 1440px) {
+    .seventeenth-comp-main-container {
+        .bottom-part-div {
+            .tenant-data-div {
+                .view-btn {
+                    left: 8%;
+                }
+
+                .top-div {
+                    right: 2%;
+                    top: -4%;
+                }
+            }
+
+            //===================================================================
+            .landlord-data-div {
+                .view-btn {
+                    right: 14%;
+                }
+
+                .landlord-data-top-div {
+                    width: 78%;
+                    right: 3%;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1340px  --------------------------------------
+
+@media only screen and (max-width: 1340px) {
+    .seventeenth-comp-main-container {
+        .bottom-part-div {
+            .tenant-data-div {
+                .view-btn {
+                    left: 8%;
+                }
+
+                .top-div {
+                    right: 2%;
+                    top: 4%;
+                }
+                img {
+                    width: 100%;
+                    height: 90%;
+                    top: 10%;
+                    left: 0;
+                }
+            }
+
+            //===================================================================
+            .landlord-data-div {
+                .view-btn {
+                    right: 14%;
+                }
+
+                .landlord-data-top-div {
+                    width: 78%;
+                    right: 3%;
+                    top: 10%;
+                }
+                img {
+                    width: 100%;
+                    height: 105%;
+                    bottom: -24%;
+                    right: -9%;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1280px  --------------------------------------
+
+@media only screen and (max-width: 1280px) {
+    .seventeenth-comp-main-container {
+        .bottom-part-div {
+            .tenant-data-div {
+                .view-btn {
+                    left: 8%;
+                }
+
+                .top-div {
+                    right: 2%;
+                    top: 5%;
+                }
+                img {
+                    width: 100%;
+                    height: 85%;
+                    top: 12%;
+                    left: 0;
+                }
+            }
+
+            //===================================================================
+            .landlord-data-div {
+                .view-btn {
+                    right: 14%;
+                }
+
+                .landlord-data-top-div {
+                    width: 80%;
+                    right: 3%;
+                    top: 10%;
+                }
+                img {
+                    width: 105%;
+                    height: 105%;
+                    bottom: -24%;
+                    right: -9%;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1180px  --------------------------------------
+
+@media only screen and (max-width: 1180px) {
+    .seventeenth-comp-main-container {
+        .bottom-part-div {
+            .tenant-data-div {
+                .view-btn {
+                    left: 8%;
+                }
+
+                .top-div {
+                    right: 2%;
+                    top: 14%;
+                }
+                img {
+                    width: 100%;
+                    height: 78%;
+                    top: 21%;
+                    left: 0;
+                }
+            }
+
+            //===================================================================
+            .landlord-data-div {
+                .view-btn {
+                    right: 14%;
+                }
+
+                .landlord-data-top-div {
+                    width: 80%;
+                    right: 3%;
+                    top: 16%;
+                }
+                img {
+                    width: 105%;
+                    height: 95%;
+                    bottom: -21%;
+                    right: -9%;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 1112px  --------------------------------------
+
+@media only screen and (max-width: 1112px) {
+    .seventeenth-comp-main-container {
+        .bottom-part-div {
+            .tenant-data-div {
+                .view-btn {
+                    left: 8%;
+                }
+
+                .top-div {
+                    right: 2%;
+                    top: 18%;
+                }
+                img {
+                    width: 100%;
+                    height: 72%;
+                    top: 24%;
+                    left: 0;
+                }
+            }
+
+            //===================================================================
+            .landlord-data-div {
+                .view-btn {
+                    right: 14%;
+                }
+
+                .landlord-data-top-div {
+                    width: 80%;
+                    right: 3%;
+                    top: 22%;
+                }
+                img {
+                    width: 105%;
+                    height: 100%;
+                    bottom: -26%;
+                    right: -9%;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------  max-width: 926px  --------------------------------------
+
+@media only screen and (max-width: 926px) {
+    .seventeenth-comp-main-container {
+        .top-heading-div {
+            // border: 1px solid black;
+            .middle-heading-div {
+                .heading-before {
+                    line-height: 1rem;
+
+                    .span1 {
+                        font-size: 0.65rem;
+                        margin-bottom: 5px;
+                    }
+                    .span2 {
+                        font-size: 1.1rem;
+                    }
+                    .span3 {
+                        font-size: 0.7rem;
+                    }
+                }
+               
+            }
+
+            .more-details-btn {
+                font-size: 0.7rem;
+                padding: 5px 20px;
+                border-radius: 5px;
+            }
+            .view-dashboard-btn {
+                font-size: 0.7rem;
+                padding: 5px 10px;
+                border-radius: 5px;
+
+                span {
+                    width: 5px;
+                    height: 5px;
+                }
+            }
+        }
+        .bottom-part-div {
+            .dashbord-name-div {
+                p {
+                    font-size: 0.7rem;
+                    font-weight: 500;
+                }
+            }
+
+            .bg-img {
+                left: -38%;
+                bottom: -62%;
+                width: 175%;
+                height: 145%;
+            }
+            .tenant-data-div {
+                .view-btn {
+                    width: 65px;
+                    height: 22px;
+                    border-radius: 5px;
+                    left: 16%;
+
+                    p {
+                        font-size: 0.7rem;
+
+                        border-radius: 4px;
+                    }
+
+                    .tap-icon {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .top-div {
+                    right: 2%;
+                    top: 4%;
+                    width: 70%;
+                    right: 12%;
+
+                    p {
+                        font-size: 0.8rem;
+                        line-height: 0.8rem;
+                    }
+                    .toggle-div {
+                        width: 40px;
+                        height: 15px;
+                        border-radius: 20px;
+                        padding: 2px;
+
+                        .toggle-circle {
+                            width: 11px;
+                            height: 11px;
+                        }
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 90%;
+                    top: 10%;
+                    left: 0;
+                }
+            }
+            .tenant-content-div {
+                .cross-btn {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 1rem;
+                    top: -4.5%;
+                    right: -4%;
+                }
+            }
+
+            .landlord-content-div {
+                .cross-btn {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 1rem;
+                    top: -6%;
+                    left: -4%;
+                }
+            }
+
+            //===================================================================
+            .landlord-data-div {
+                .view-btn {
+                    width: 65px;
+                    height: 22px;
+                    border-radius: 4px;
+                    right: 19%;
+
+                    p {
+                        font-size: 0.7rem;
+                        border-radius: 5px;
+                    }
+                    .tap-icon {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .landlord-data-top-div {
+                    width: 60%;
+                    right: 11%;
+                    top: 10%;
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 105%;
+                    object-fit: contain;
+                    position: absolute;
+                    bottom: -24%;
+                    right: -9%;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+}

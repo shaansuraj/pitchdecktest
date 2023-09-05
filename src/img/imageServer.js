@@ -1,0 +1,1 @@
+export const ImageServer = 'https://rentblob.blob.core.windows.net/pitch/';
